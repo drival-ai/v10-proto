@@ -2,7 +2,7 @@
 // versions:
 // - protoc-gen-go-grpc v1.5.1
 // - protoc             (unknown)
-// source: base/v1/v12.proto
+// source: base/v1/v10.proto
 
 package base
 
@@ -19,19 +19,19 @@ import (
 const _ = grpc.SupportPackageIsVersion9
 
 const (
-	V12_CreateEnvironment_FullMethodName = "/v12proto.base.v1.V12/CreateEnvironment"
-	V12_GetEnvironment_FullMethodName    = "/v12proto.base.v1.V12/GetEnvironment"
-	V12_ListEnvironments_FullMethodName  = "/v12proto.base.v1.V12/ListEnvironments"
-	V12_DeleteEnvironment_FullMethodName = "/v12proto.base.v1.V12/DeleteEnvironment"
-	V12_Do_FullMethodName                = "/v12proto.base.v1.V12/Do"
+	V10_CreateEnvironment_FullMethodName = "/v10proto.base.v1.V10/CreateEnvironment"
+	V10_GetEnvironment_FullMethodName    = "/v10proto.base.v1.V10/GetEnvironment"
+	V10_ListEnvironments_FullMethodName  = "/v10proto.base.v1.V10/ListEnvironments"
+	V10_DeleteEnvironment_FullMethodName = "/v10proto.base.v1.V10/DeleteEnvironment"
+	V10_Do_FullMethodName                = "/v10proto.base.v1.V10/Do"
 )
 
-// V12Client is the client API for V12 service.
+// V10Client is the client API for V10 service.
 //
 // For semantics around ctx use and closing/ending streaming RPCs, please refer to https://pkg.go.dev/google.golang.org/grpc/?tab=doc#ClientConn.NewStream.
 //
-// V12 service definition.
-type V12Client interface {
+// V10 service definition.
+type V10Client interface {
 	// Create a deployment environment.
 	CreateEnvironment(ctx context.Context, in *CreateEnvironmentRequest, opts ...grpc.CallOption) (*CreateEnvironmentResponse, error)
 	// Describe a deployment environment.
@@ -44,70 +44,70 @@ type V12Client interface {
 	Do(ctx context.Context, in *DoRequest, opts ...grpc.CallOption) (*DoResponse, error)
 }
 
-type v12Client struct {
+type v10Client struct {
 	cc grpc.ClientConnInterface
 }
 
-func NewV12Client(cc grpc.ClientConnInterface) V12Client {
-	return &v12Client{cc}
+func NewV10Client(cc grpc.ClientConnInterface) V10Client {
+	return &v10Client{cc}
 }
 
-func (c *v12Client) CreateEnvironment(ctx context.Context, in *CreateEnvironmentRequest, opts ...grpc.CallOption) (*CreateEnvironmentResponse, error) {
+func (c *v10Client) CreateEnvironment(ctx context.Context, in *CreateEnvironmentRequest, opts ...grpc.CallOption) (*CreateEnvironmentResponse, error) {
 	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
 	out := new(CreateEnvironmentResponse)
-	err := c.cc.Invoke(ctx, V12_CreateEnvironment_FullMethodName, in, out, cOpts...)
+	err := c.cc.Invoke(ctx, V10_CreateEnvironment_FullMethodName, in, out, cOpts...)
 	if err != nil {
 		return nil, err
 	}
 	return out, nil
 }
 
-func (c *v12Client) GetEnvironment(ctx context.Context, in *GetEnvironmentRequest, opts ...grpc.CallOption) (*GetEnvironmentResponse, error) {
+func (c *v10Client) GetEnvironment(ctx context.Context, in *GetEnvironmentRequest, opts ...grpc.CallOption) (*GetEnvironmentResponse, error) {
 	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
 	out := new(GetEnvironmentResponse)
-	err := c.cc.Invoke(ctx, V12_GetEnvironment_FullMethodName, in, out, cOpts...)
+	err := c.cc.Invoke(ctx, V10_GetEnvironment_FullMethodName, in, out, cOpts...)
 	if err != nil {
 		return nil, err
 	}
 	return out, nil
 }
 
-func (c *v12Client) ListEnvironments(ctx context.Context, in *ListEnvironmentsRequest, opts ...grpc.CallOption) (*ListEnvironmentsResponse, error) {
+func (c *v10Client) ListEnvironments(ctx context.Context, in *ListEnvironmentsRequest, opts ...grpc.CallOption) (*ListEnvironmentsResponse, error) {
 	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
 	out := new(ListEnvironmentsResponse)
-	err := c.cc.Invoke(ctx, V12_ListEnvironments_FullMethodName, in, out, cOpts...)
+	err := c.cc.Invoke(ctx, V10_ListEnvironments_FullMethodName, in, out, cOpts...)
 	if err != nil {
 		return nil, err
 	}
 	return out, nil
 }
 
-func (c *v12Client) DeleteEnvironment(ctx context.Context, in *DeleteEnvironmentRequest, opts ...grpc.CallOption) (*DeleteEnvironmentResponse, error) {
+func (c *v10Client) DeleteEnvironment(ctx context.Context, in *DeleteEnvironmentRequest, opts ...grpc.CallOption) (*DeleteEnvironmentResponse, error) {
 	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
 	out := new(DeleteEnvironmentResponse)
-	err := c.cc.Invoke(ctx, V12_DeleteEnvironment_FullMethodName, in, out, cOpts...)
+	err := c.cc.Invoke(ctx, V10_DeleteEnvironment_FullMethodName, in, out, cOpts...)
 	if err != nil {
 		return nil, err
 	}
 	return out, nil
 }
 
-func (c *v12Client) Do(ctx context.Context, in *DoRequest, opts ...grpc.CallOption) (*DoResponse, error) {
+func (c *v10Client) Do(ctx context.Context, in *DoRequest, opts ...grpc.CallOption) (*DoResponse, error) {
 	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
 	out := new(DoResponse)
-	err := c.cc.Invoke(ctx, V12_Do_FullMethodName, in, out, cOpts...)
+	err := c.cc.Invoke(ctx, V10_Do_FullMethodName, in, out, cOpts...)
 	if err != nil {
 		return nil, err
 	}
 	return out, nil
 }
 
-// V12Server is the server API for V12 service.
-// All implementations must embed UnimplementedV12Server
+// V10Server is the server API for V10 service.
+// All implementations must embed UnimplementedV10Server
 // for forward compatibility.
 //
-// V12 service definition.
-type V12Server interface {
+// V10 service definition.
+type V10Server interface {
 	// Create a deployment environment.
 	CreateEnvironment(context.Context, *CreateEnvironmentRequest) (*CreateEnvironmentResponse, error)
 	// Describe a deployment environment.
@@ -118,170 +118,170 @@ type V12Server interface {
 	DeleteEnvironment(context.Context, *DeleteEnvironmentRequest) (*DeleteEnvironmentResponse, error)
 	// Testing endpoint.
 	Do(context.Context, *DoRequest) (*DoResponse, error)
-	mustEmbedUnimplementedV12Server()
+	mustEmbedUnimplementedV10Server()
 }
 
-// UnimplementedV12Server must be embedded to have
+// UnimplementedV10Server must be embedded to have
 // forward compatible implementations.
 //
 // NOTE: this should be embedded by value instead of pointer to avoid a nil
 // pointer dereference when methods are called.
-type UnimplementedV12Server struct{}
+type UnimplementedV10Server struct{}
 
-func (UnimplementedV12Server) CreateEnvironment(context.Context, *CreateEnvironmentRequest) (*CreateEnvironmentResponse, error) {
+func (UnimplementedV10Server) CreateEnvironment(context.Context, *CreateEnvironmentRequest) (*CreateEnvironmentResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method CreateEnvironment not implemented")
 }
-func (UnimplementedV12Server) GetEnvironment(context.Context, *GetEnvironmentRequest) (*GetEnvironmentResponse, error) {
+func (UnimplementedV10Server) GetEnvironment(context.Context, *GetEnvironmentRequest) (*GetEnvironmentResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetEnvironment not implemented")
 }
-func (UnimplementedV12Server) ListEnvironments(context.Context, *ListEnvironmentsRequest) (*ListEnvironmentsResponse, error) {
+func (UnimplementedV10Server) ListEnvironments(context.Context, *ListEnvironmentsRequest) (*ListEnvironmentsResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method ListEnvironments not implemented")
 }
-func (UnimplementedV12Server) DeleteEnvironment(context.Context, *DeleteEnvironmentRequest) (*DeleteEnvironmentResponse, error) {
+func (UnimplementedV10Server) DeleteEnvironment(context.Context, *DeleteEnvironmentRequest) (*DeleteEnvironmentResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method DeleteEnvironment not implemented")
 }
-func (UnimplementedV12Server) Do(context.Context, *DoRequest) (*DoResponse, error) {
+func (UnimplementedV10Server) Do(context.Context, *DoRequest) (*DoResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method Do not implemented")
 }
-func (UnimplementedV12Server) mustEmbedUnimplementedV12Server() {}
-func (UnimplementedV12Server) testEmbeddedByValue()             {}
+func (UnimplementedV10Server) mustEmbedUnimplementedV10Server() {}
+func (UnimplementedV10Server) testEmbeddedByValue()             {}
 
-// UnsafeV12Server may be embedded to opt out of forward compatibility for this service.
-// Use of this interface is not recommended, as added methods to V12Server will
+// UnsafeV10Server may be embedded to opt out of forward compatibility for this service.
+// Use of this interface is not recommended, as added methods to V10Server will
 // result in compilation errors.
-type UnsafeV12Server interface {
-	mustEmbedUnimplementedV12Server()
+type UnsafeV10Server interface {
+	mustEmbedUnimplementedV10Server()
 }
 
-func RegisterV12Server(s grpc.ServiceRegistrar, srv V12Server) {
-	// If the following call pancis, it indicates UnimplementedV12Server was
+func RegisterV10Server(s grpc.ServiceRegistrar, srv V10Server) {
+	// If the following call pancis, it indicates UnimplementedV10Server was
 	// embedded by pointer and is nil.  This will cause panics if an
 	// unimplemented method is ever invoked, so we test this at initialization
 	// time to prevent it from happening at runtime later due to I/O.
 	if t, ok := srv.(interface{ testEmbeddedByValue() }); ok {
 		t.testEmbeddedByValue()
 	}
-	s.RegisterService(&V12_ServiceDesc, srv)
+	s.RegisterService(&V10_ServiceDesc, srv)
 }
 
-func _V12_CreateEnvironment_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+func _V10_CreateEnvironment_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
 	in := new(CreateEnvironmentRequest)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
 	if interceptor == nil {
-		return srv.(V12Server).CreateEnvironment(ctx, in)
+		return srv.(V10Server).CreateEnvironment(ctx, in)
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: V12_CreateEnvironment_FullMethodName,
+		FullMethod: V10_CreateEnvironment_FullMethodName,
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(V12Server).CreateEnvironment(ctx, req.(*CreateEnvironmentRequest))
+		return srv.(V10Server).CreateEnvironment(ctx, req.(*CreateEnvironmentRequest))
 	}
 	return interceptor(ctx, in, info, handler)
 }
 
-func _V12_GetEnvironment_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+func _V10_GetEnvironment_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
 	in := new(GetEnvironmentRequest)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
 	if interceptor == nil {
-		return srv.(V12Server).GetEnvironment(ctx, in)
+		return srv.(V10Server).GetEnvironment(ctx, in)
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: V12_GetEnvironment_FullMethodName,
+		FullMethod: V10_GetEnvironment_FullMethodName,
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(V12Server).GetEnvironment(ctx, req.(*GetEnvironmentRequest))
+		return srv.(V10Server).GetEnvironment(ctx, req.(*GetEnvironmentRequest))
 	}
 	return interceptor(ctx, in, info, handler)
 }
 
-func _V12_ListEnvironments_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+func _V10_ListEnvironments_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
 	in := new(ListEnvironmentsRequest)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
 	if interceptor == nil {
-		return srv.(V12Server).ListEnvironments(ctx, in)
+		return srv.(V10Server).ListEnvironments(ctx, in)
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: V12_ListEnvironments_FullMethodName,
+		FullMethod: V10_ListEnvironments_FullMethodName,
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(V12Server).ListEnvironments(ctx, req.(*ListEnvironmentsRequest))
+		return srv.(V10Server).ListEnvironments(ctx, req.(*ListEnvironmentsRequest))
 	}
 	return interceptor(ctx, in, info, handler)
 }
 
-func _V12_DeleteEnvironment_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+func _V10_DeleteEnvironment_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
 	in := new(DeleteEnvironmentRequest)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
 	if interceptor == nil {
-		return srv.(V12Server).DeleteEnvironment(ctx, in)
+		return srv.(V10Server).DeleteEnvironment(ctx, in)
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: V12_DeleteEnvironment_FullMethodName,
+		FullMethod: V10_DeleteEnvironment_FullMethodName,
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(V12Server).DeleteEnvironment(ctx, req.(*DeleteEnvironmentRequest))
+		return srv.(V10Server).DeleteEnvironment(ctx, req.(*DeleteEnvironmentRequest))
 	}
 	return interceptor(ctx, in, info, handler)
 }
 
-func _V12_Do_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+func _V10_Do_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
 	in := new(DoRequest)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
 	if interceptor == nil {
-		return srv.(V12Server).Do(ctx, in)
+		return srv.(V10Server).Do(ctx, in)
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: V12_Do_FullMethodName,
+		FullMethod: V10_Do_FullMethodName,
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(V12Server).Do(ctx, req.(*DoRequest))
+		return srv.(V10Server).Do(ctx, req.(*DoRequest))
 	}
 	return interceptor(ctx, in, info, handler)
 }
 
-// V12_ServiceDesc is the grpc.ServiceDesc for V12 service.
+// V10_ServiceDesc is the grpc.ServiceDesc for V10 service.
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
-var V12_ServiceDesc = grpc.ServiceDesc{
-	ServiceName: "v12proto.base.v1.V12",
-	HandlerType: (*V12Server)(nil),
+var V10_ServiceDesc = grpc.ServiceDesc{
+	ServiceName: "v10proto.base.v1.V10",
+	HandlerType: (*V10Server)(nil),
 	Methods: []grpc.MethodDesc{
 		{
 			MethodName: "CreateEnvironment",
-			Handler:    _V12_CreateEnvironment_Handler,
+			Handler:    _V10_CreateEnvironment_Handler,
 		},
 		{
 			MethodName: "GetEnvironment",
-			Handler:    _V12_GetEnvironment_Handler,
+			Handler:    _V10_GetEnvironment_Handler,
 		},
 		{
 			MethodName: "ListEnvironments",
-			Handler:    _V12_ListEnvironments_Handler,
+			Handler:    _V10_ListEnvironments_Handler,
 		},
 		{
 			MethodName: "DeleteEnvironment",
-			Handler:    _V12_DeleteEnvironment_Handler,
+			Handler:    _V10_DeleteEnvironment_Handler,
 		},
 		{
 			MethodName: "Do",
-			Handler:    _V12_Do_Handler,
+			Handler:    _V10_Do_Handler,
 		},
 	},
 	Streams:  []grpc.StreamDesc{},
-	Metadata: "base/v1/v12.proto",
+	Metadata: "base/v1/v10.proto",
 }

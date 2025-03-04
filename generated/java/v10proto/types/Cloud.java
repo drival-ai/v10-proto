@@ -3,7 +3,7 @@
 // source: types/cloud.proto
 // Protobuf Java Version: 4.29.1
 
-package v12proto.types;
+package v10proto.types;
 
 public final class Cloud {
   private Cloud() {}
@@ -26,7 +26,7 @@ public final class Cloud {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   public interface LocationOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:v12proto.types.Location)
+      // @@protoc_insertion_point(interface_extends:v10proto.types.Location)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -110,11 +110,11 @@ public final class Cloud {
         getPassiveRegionBytes();
   }
   /**
-   * Protobuf type {@code v12proto.types.Location}
+   * Protobuf type {@code v10proto.types.Location}
    */
   public static final class Location extends
       com.google.protobuf.GeneratedMessage implements
-      // @@protoc_insertion_point(message_implements:v12proto.types.Location)
+      // @@protoc_insertion_point(message_implements:v10proto.types.Location)
       LocationOrBuilder {
   private static final long serialVersionUID = 0L;
     static {
@@ -139,15 +139,15 @@ public final class Cloud {
 
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return v12proto.types.Cloud.internal_static_v12proto_types_Location_descriptor;
+      return v10proto.types.Cloud.internal_static_v10proto_types_Location_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return v12proto.types.Cloud.internal_static_v12proto_types_Location_fieldAccessorTable
+      return v10proto.types.Cloud.internal_static_v10proto_types_Location_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              v12proto.types.Cloud.Location.class, v12proto.types.Cloud.Location.Builder.class);
+              v10proto.types.Cloud.Location.class, v10proto.types.Cloud.Location.Builder.class);
     }
 
     public static final int ACTIVE_ZONE_FIELD_NUMBER = 1;
@@ -395,10 +395,10 @@ public final class Cloud {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof v12proto.types.Cloud.Location)) {
+      if (!(obj instanceof v10proto.types.Cloud.Location)) {
         return super.equals(obj);
       }
-      v12proto.types.Cloud.Location other = (v12proto.types.Cloud.Location) obj;
+      v10proto.types.Cloud.Location other = (v10proto.types.Cloud.Location) obj;
 
       if (!getActiveZone()
           .equals(other.getActiveZone())) return false;
@@ -432,44 +432,44 @@ public final class Cloud {
       return hash;
     }
 
-    public static v12proto.types.Cloud.Location parseFrom(
+    public static v10proto.types.Cloud.Location parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static v12proto.types.Cloud.Location parseFrom(
+    public static v10proto.types.Cloud.Location parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static v12proto.types.Cloud.Location parseFrom(
+    public static v10proto.types.Cloud.Location parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static v12proto.types.Cloud.Location parseFrom(
+    public static v10proto.types.Cloud.Location parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static v12proto.types.Cloud.Location parseFrom(byte[] data)
+    public static v10proto.types.Cloud.Location parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static v12proto.types.Cloud.Location parseFrom(
+    public static v10proto.types.Cloud.Location parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static v12proto.types.Cloud.Location parseFrom(java.io.InputStream input)
+    public static v10proto.types.Cloud.Location parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseWithIOException(PARSER, input);
     }
-    public static v12proto.types.Cloud.Location parseFrom(
+    public static v10proto.types.Cloud.Location parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -477,26 +477,26 @@ public final class Cloud {
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    public static v12proto.types.Cloud.Location parseDelimitedFrom(java.io.InputStream input)
+    public static v10proto.types.Cloud.Location parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseDelimitedWithIOException(PARSER, input);
     }
 
-    public static v12proto.types.Cloud.Location parseDelimitedFrom(
+    public static v10proto.types.Cloud.Location parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static v12proto.types.Cloud.Location parseFrom(
+    public static v10proto.types.Cloud.Location parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseWithIOException(PARSER, input);
     }
-    public static v12proto.types.Cloud.Location parseFrom(
+    public static v10proto.types.Cloud.Location parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -509,7 +509,7 @@ public final class Cloud {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(v12proto.types.Cloud.Location prototype) {
+    public static Builder newBuilder(v10proto.types.Cloud.Location prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -525,26 +525,26 @@ public final class Cloud {
       return builder;
     }
     /**
-     * Protobuf type {@code v12proto.types.Location}
+     * Protobuf type {@code v10proto.types.Location}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:v12proto.types.Location)
-        v12proto.types.Cloud.LocationOrBuilder {
+        // @@protoc_insertion_point(builder_implements:v10proto.types.Location)
+        v10proto.types.Cloud.LocationOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return v12proto.types.Cloud.internal_static_v12proto_types_Location_descriptor;
+        return v10proto.types.Cloud.internal_static_v10proto_types_Location_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return v12proto.types.Cloud.internal_static_v12proto_types_Location_fieldAccessorTable
+        return v10proto.types.Cloud.internal_static_v10proto_types_Location_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                v12proto.types.Cloud.Location.class, v12proto.types.Cloud.Location.Builder.class);
+                v10proto.types.Cloud.Location.class, v10proto.types.Cloud.Location.Builder.class);
       }
 
-      // Construct using v12proto.types.Cloud.Location.newBuilder()
+      // Construct using v10proto.types.Cloud.Location.newBuilder()
       private Builder() {
 
       }
@@ -568,17 +568,17 @@ public final class Cloud {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return v12proto.types.Cloud.internal_static_v12proto_types_Location_descriptor;
+        return v10proto.types.Cloud.internal_static_v10proto_types_Location_descriptor;
       }
 
       @java.lang.Override
-      public v12proto.types.Cloud.Location getDefaultInstanceForType() {
-        return v12proto.types.Cloud.Location.getDefaultInstance();
+      public v10proto.types.Cloud.Location getDefaultInstanceForType() {
+        return v10proto.types.Cloud.Location.getDefaultInstance();
       }
 
       @java.lang.Override
-      public v12proto.types.Cloud.Location build() {
-        v12proto.types.Cloud.Location result = buildPartial();
+      public v10proto.types.Cloud.Location build() {
+        v10proto.types.Cloud.Location result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -586,14 +586,14 @@ public final class Cloud {
       }
 
       @java.lang.Override
-      public v12proto.types.Cloud.Location buildPartial() {
-        v12proto.types.Cloud.Location result = new v12proto.types.Cloud.Location(this);
+      public v10proto.types.Cloud.Location buildPartial() {
+        v10proto.types.Cloud.Location result = new v10proto.types.Cloud.Location(this);
         if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
       }
 
-      private void buildPartial0(v12proto.types.Cloud.Location result) {
+      private void buildPartial0(v10proto.types.Cloud.Location result) {
         int from_bitField0_ = bitField0_;
         if (((from_bitField0_ & 0x00000001) != 0)) {
           result.activeZone_ = activeZone_;
@@ -611,16 +611,16 @@ public final class Cloud {
 
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof v12proto.types.Cloud.Location) {
-          return mergeFrom((v12proto.types.Cloud.Location)other);
+        if (other instanceof v10proto.types.Cloud.Location) {
+          return mergeFrom((v10proto.types.Cloud.Location)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(v12proto.types.Cloud.Location other) {
-        if (other == v12proto.types.Cloud.Location.getDefaultInstance()) return this;
+      public Builder mergeFrom(v10proto.types.Cloud.Location other) {
+        if (other == v10proto.types.Cloud.Location.getDefaultInstance()) return this;
         if (!other.getActiveZone().isEmpty()) {
           activeZone_ = other.activeZone_;
           bitField0_ |= 0x00000001;
@@ -1072,16 +1072,16 @@ public final class Cloud {
         return this;
       }
 
-      // @@protoc_insertion_point(builder_scope:v12proto.types.Location)
+      // @@protoc_insertion_point(builder_scope:v10proto.types.Location)
     }
 
-    // @@protoc_insertion_point(class_scope:v12proto.types.Location)
-    private static final v12proto.types.Cloud.Location DEFAULT_INSTANCE;
+    // @@protoc_insertion_point(class_scope:v10proto.types.Location)
+    private static final v10proto.types.Cloud.Location DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new v12proto.types.Cloud.Location();
+      DEFAULT_INSTANCE = new v10proto.types.Cloud.Location();
     }
 
-    public static v12proto.types.Cloud.Location getDefaultInstance() {
+    public static v10proto.types.Cloud.Location getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
@@ -1117,14 +1117,14 @@ public final class Cloud {
     }
 
     @java.lang.Override
-    public v12proto.types.Cloud.Location getDefaultInstanceForType() {
+    public v10proto.types.Cloud.Location getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
   }
 
   public interface GCPInfoOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:v12proto.types.GCPInfo)
+      // @@protoc_insertion_point(interface_extends:v10proto.types.GCPInfo)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -1134,26 +1134,26 @@ public final class Cloud {
     com.google.protobuf.ByteString getServiceAccount();
 
     /**
-     * <code>.v12proto.types.Location location = 2 [json_name = "location"];</code>
+     * <code>.v10proto.types.Location location = 2 [json_name = "location"];</code>
      * @return Whether the location field is set.
      */
     boolean hasLocation();
     /**
-     * <code>.v12proto.types.Location location = 2 [json_name = "location"];</code>
+     * <code>.v10proto.types.Location location = 2 [json_name = "location"];</code>
      * @return The location.
      */
-    v12proto.types.Cloud.Location getLocation();
+    v10proto.types.Cloud.Location getLocation();
     /**
-     * <code>.v12proto.types.Location location = 2 [json_name = "location"];</code>
+     * <code>.v10proto.types.Location location = 2 [json_name = "location"];</code>
      */
-    v12proto.types.Cloud.LocationOrBuilder getLocationOrBuilder();
+    v10proto.types.Cloud.LocationOrBuilder getLocationOrBuilder();
   }
   /**
-   * Protobuf type {@code v12proto.types.GCPInfo}
+   * Protobuf type {@code v10proto.types.GCPInfo}
    */
   public static final class GCPInfo extends
       com.google.protobuf.GeneratedMessage implements
-      // @@protoc_insertion_point(message_implements:v12proto.types.GCPInfo)
+      // @@protoc_insertion_point(message_implements:v10proto.types.GCPInfo)
       GCPInfoOrBuilder {
   private static final long serialVersionUID = 0L;
     static {
@@ -1175,15 +1175,15 @@ public final class Cloud {
 
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return v12proto.types.Cloud.internal_static_v12proto_types_GCPInfo_descriptor;
+      return v10proto.types.Cloud.internal_static_v10proto_types_GCPInfo_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return v12proto.types.Cloud.internal_static_v12proto_types_GCPInfo_fieldAccessorTable
+      return v10proto.types.Cloud.internal_static_v10proto_types_GCPInfo_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              v12proto.types.Cloud.GCPInfo.class, v12proto.types.Cloud.GCPInfo.Builder.class);
+              v10proto.types.Cloud.GCPInfo.class, v10proto.types.Cloud.GCPInfo.Builder.class);
     }
 
     private int bitField0_;
@@ -1199,9 +1199,9 @@ public final class Cloud {
     }
 
     public static final int LOCATION_FIELD_NUMBER = 2;
-    private v12proto.types.Cloud.Location location_;
+    private v10proto.types.Cloud.Location location_;
     /**
-     * <code>.v12proto.types.Location location = 2 [json_name = "location"];</code>
+     * <code>.v10proto.types.Location location = 2 [json_name = "location"];</code>
      * @return Whether the location field is set.
      */
     @java.lang.Override
@@ -1209,19 +1209,19 @@ public final class Cloud {
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
-     * <code>.v12proto.types.Location location = 2 [json_name = "location"];</code>
+     * <code>.v10proto.types.Location location = 2 [json_name = "location"];</code>
      * @return The location.
      */
     @java.lang.Override
-    public v12proto.types.Cloud.Location getLocation() {
-      return location_ == null ? v12proto.types.Cloud.Location.getDefaultInstance() : location_;
+    public v10proto.types.Cloud.Location getLocation() {
+      return location_ == null ? v10proto.types.Cloud.Location.getDefaultInstance() : location_;
     }
     /**
-     * <code>.v12proto.types.Location location = 2 [json_name = "location"];</code>
+     * <code>.v10proto.types.Location location = 2 [json_name = "location"];</code>
      */
     @java.lang.Override
-    public v12proto.types.Cloud.LocationOrBuilder getLocationOrBuilder() {
-      return location_ == null ? v12proto.types.Cloud.Location.getDefaultInstance() : location_;
+    public v10proto.types.Cloud.LocationOrBuilder getLocationOrBuilder() {
+      return location_ == null ? v10proto.types.Cloud.Location.getDefaultInstance() : location_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -1271,10 +1271,10 @@ public final class Cloud {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof v12proto.types.Cloud.GCPInfo)) {
+      if (!(obj instanceof v10proto.types.Cloud.GCPInfo)) {
         return super.equals(obj);
       }
-      v12proto.types.Cloud.GCPInfo other = (v12proto.types.Cloud.GCPInfo) obj;
+      v10proto.types.Cloud.GCPInfo other = (v10proto.types.Cloud.GCPInfo) obj;
 
       if (!getServiceAccount()
           .equals(other.getServiceAccount())) return false;
@@ -1305,44 +1305,44 @@ public final class Cloud {
       return hash;
     }
 
-    public static v12proto.types.Cloud.GCPInfo parseFrom(
+    public static v10proto.types.Cloud.GCPInfo parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static v12proto.types.Cloud.GCPInfo parseFrom(
+    public static v10proto.types.Cloud.GCPInfo parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static v12proto.types.Cloud.GCPInfo parseFrom(
+    public static v10proto.types.Cloud.GCPInfo parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static v12proto.types.Cloud.GCPInfo parseFrom(
+    public static v10proto.types.Cloud.GCPInfo parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static v12proto.types.Cloud.GCPInfo parseFrom(byte[] data)
+    public static v10proto.types.Cloud.GCPInfo parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static v12proto.types.Cloud.GCPInfo parseFrom(
+    public static v10proto.types.Cloud.GCPInfo parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static v12proto.types.Cloud.GCPInfo parseFrom(java.io.InputStream input)
+    public static v10proto.types.Cloud.GCPInfo parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseWithIOException(PARSER, input);
     }
-    public static v12proto.types.Cloud.GCPInfo parseFrom(
+    public static v10proto.types.Cloud.GCPInfo parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -1350,26 +1350,26 @@ public final class Cloud {
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    public static v12proto.types.Cloud.GCPInfo parseDelimitedFrom(java.io.InputStream input)
+    public static v10proto.types.Cloud.GCPInfo parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseDelimitedWithIOException(PARSER, input);
     }
 
-    public static v12proto.types.Cloud.GCPInfo parseDelimitedFrom(
+    public static v10proto.types.Cloud.GCPInfo parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static v12proto.types.Cloud.GCPInfo parseFrom(
+    public static v10proto.types.Cloud.GCPInfo parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseWithIOException(PARSER, input);
     }
-    public static v12proto.types.Cloud.GCPInfo parseFrom(
+    public static v10proto.types.Cloud.GCPInfo parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -1382,7 +1382,7 @@ public final class Cloud {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(v12proto.types.Cloud.GCPInfo prototype) {
+    public static Builder newBuilder(v10proto.types.Cloud.GCPInfo prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -1398,26 +1398,26 @@ public final class Cloud {
       return builder;
     }
     /**
-     * Protobuf type {@code v12proto.types.GCPInfo}
+     * Protobuf type {@code v10proto.types.GCPInfo}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:v12proto.types.GCPInfo)
-        v12proto.types.Cloud.GCPInfoOrBuilder {
+        // @@protoc_insertion_point(builder_implements:v10proto.types.GCPInfo)
+        v10proto.types.Cloud.GCPInfoOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return v12proto.types.Cloud.internal_static_v12proto_types_GCPInfo_descriptor;
+        return v10proto.types.Cloud.internal_static_v10proto_types_GCPInfo_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return v12proto.types.Cloud.internal_static_v12proto_types_GCPInfo_fieldAccessorTable
+        return v10proto.types.Cloud.internal_static_v10proto_types_GCPInfo_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                v12proto.types.Cloud.GCPInfo.class, v12proto.types.Cloud.GCPInfo.Builder.class);
+                v10proto.types.Cloud.GCPInfo.class, v10proto.types.Cloud.GCPInfo.Builder.class);
       }
 
-      // Construct using v12proto.types.Cloud.GCPInfo.newBuilder()
+      // Construct using v10proto.types.Cloud.GCPInfo.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -1449,17 +1449,17 @@ public final class Cloud {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return v12proto.types.Cloud.internal_static_v12proto_types_GCPInfo_descriptor;
+        return v10proto.types.Cloud.internal_static_v10proto_types_GCPInfo_descriptor;
       }
 
       @java.lang.Override
-      public v12proto.types.Cloud.GCPInfo getDefaultInstanceForType() {
-        return v12proto.types.Cloud.GCPInfo.getDefaultInstance();
+      public v10proto.types.Cloud.GCPInfo getDefaultInstanceForType() {
+        return v10proto.types.Cloud.GCPInfo.getDefaultInstance();
       }
 
       @java.lang.Override
-      public v12proto.types.Cloud.GCPInfo build() {
-        v12proto.types.Cloud.GCPInfo result = buildPartial();
+      public v10proto.types.Cloud.GCPInfo build() {
+        v10proto.types.Cloud.GCPInfo result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -1467,14 +1467,14 @@ public final class Cloud {
       }
 
       @java.lang.Override
-      public v12proto.types.Cloud.GCPInfo buildPartial() {
-        v12proto.types.Cloud.GCPInfo result = new v12proto.types.Cloud.GCPInfo(this);
+      public v10proto.types.Cloud.GCPInfo buildPartial() {
+        v10proto.types.Cloud.GCPInfo result = new v10proto.types.Cloud.GCPInfo(this);
         if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
       }
 
-      private void buildPartial0(v12proto.types.Cloud.GCPInfo result) {
+      private void buildPartial0(v10proto.types.Cloud.GCPInfo result) {
         int from_bitField0_ = bitField0_;
         if (((from_bitField0_ & 0x00000001) != 0)) {
           result.serviceAccount_ = serviceAccount_;
@@ -1491,16 +1491,16 @@ public final class Cloud {
 
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof v12proto.types.Cloud.GCPInfo) {
-          return mergeFrom((v12proto.types.Cloud.GCPInfo)other);
+        if (other instanceof v10proto.types.Cloud.GCPInfo) {
+          return mergeFrom((v10proto.types.Cloud.GCPInfo)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(v12proto.types.Cloud.GCPInfo other) {
-        if (other == v12proto.types.Cloud.GCPInfo.getDefaultInstance()) return this;
+      public Builder mergeFrom(v10proto.types.Cloud.GCPInfo other) {
+        if (other == v10proto.types.Cloud.GCPInfo.getDefaultInstance()) return this;
         if (other.getServiceAccount() != com.google.protobuf.ByteString.EMPTY) {
           setServiceAccount(other.getServiceAccount());
         }
@@ -1594,31 +1594,31 @@ public final class Cloud {
         return this;
       }
 
-      private v12proto.types.Cloud.Location location_;
+      private v10proto.types.Cloud.Location location_;
       private com.google.protobuf.SingleFieldBuilder<
-          v12proto.types.Cloud.Location, v12proto.types.Cloud.Location.Builder, v12proto.types.Cloud.LocationOrBuilder> locationBuilder_;
+          v10proto.types.Cloud.Location, v10proto.types.Cloud.Location.Builder, v10proto.types.Cloud.LocationOrBuilder> locationBuilder_;
       /**
-       * <code>.v12proto.types.Location location = 2 [json_name = "location"];</code>
+       * <code>.v10proto.types.Location location = 2 [json_name = "location"];</code>
        * @return Whether the location field is set.
        */
       public boolean hasLocation() {
         return ((bitField0_ & 0x00000002) != 0);
       }
       /**
-       * <code>.v12proto.types.Location location = 2 [json_name = "location"];</code>
+       * <code>.v10proto.types.Location location = 2 [json_name = "location"];</code>
        * @return The location.
        */
-      public v12proto.types.Cloud.Location getLocation() {
+      public v10proto.types.Cloud.Location getLocation() {
         if (locationBuilder_ == null) {
-          return location_ == null ? v12proto.types.Cloud.Location.getDefaultInstance() : location_;
+          return location_ == null ? v10proto.types.Cloud.Location.getDefaultInstance() : location_;
         } else {
           return locationBuilder_.getMessage();
         }
       }
       /**
-       * <code>.v12proto.types.Location location = 2 [json_name = "location"];</code>
+       * <code>.v10proto.types.Location location = 2 [json_name = "location"];</code>
        */
-      public Builder setLocation(v12proto.types.Cloud.Location value) {
+      public Builder setLocation(v10proto.types.Cloud.Location value) {
         if (locationBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -1632,10 +1632,10 @@ public final class Cloud {
         return this;
       }
       /**
-       * <code>.v12proto.types.Location location = 2 [json_name = "location"];</code>
+       * <code>.v10proto.types.Location location = 2 [json_name = "location"];</code>
        */
       public Builder setLocation(
-          v12proto.types.Cloud.Location.Builder builderForValue) {
+          v10proto.types.Cloud.Location.Builder builderForValue) {
         if (locationBuilder_ == null) {
           location_ = builderForValue.build();
         } else {
@@ -1646,13 +1646,13 @@ public final class Cloud {
         return this;
       }
       /**
-       * <code>.v12proto.types.Location location = 2 [json_name = "location"];</code>
+       * <code>.v10proto.types.Location location = 2 [json_name = "location"];</code>
        */
-      public Builder mergeLocation(v12proto.types.Cloud.Location value) {
+      public Builder mergeLocation(v10proto.types.Cloud.Location value) {
         if (locationBuilder_ == null) {
           if (((bitField0_ & 0x00000002) != 0) &&
             location_ != null &&
-            location_ != v12proto.types.Cloud.Location.getDefaultInstance()) {
+            location_ != v10proto.types.Cloud.Location.getDefaultInstance()) {
             getLocationBuilder().mergeFrom(value);
           } else {
             location_ = value;
@@ -1667,7 +1667,7 @@ public final class Cloud {
         return this;
       }
       /**
-       * <code>.v12proto.types.Location location = 2 [json_name = "location"];</code>
+       * <code>.v10proto.types.Location location = 2 [json_name = "location"];</code>
        */
       public Builder clearLocation() {
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -1680,33 +1680,33 @@ public final class Cloud {
         return this;
       }
       /**
-       * <code>.v12proto.types.Location location = 2 [json_name = "location"];</code>
+       * <code>.v10proto.types.Location location = 2 [json_name = "location"];</code>
        */
-      public v12proto.types.Cloud.Location.Builder getLocationBuilder() {
+      public v10proto.types.Cloud.Location.Builder getLocationBuilder() {
         bitField0_ |= 0x00000002;
         onChanged();
         return getLocationFieldBuilder().getBuilder();
       }
       /**
-       * <code>.v12proto.types.Location location = 2 [json_name = "location"];</code>
+       * <code>.v10proto.types.Location location = 2 [json_name = "location"];</code>
        */
-      public v12proto.types.Cloud.LocationOrBuilder getLocationOrBuilder() {
+      public v10proto.types.Cloud.LocationOrBuilder getLocationOrBuilder() {
         if (locationBuilder_ != null) {
           return locationBuilder_.getMessageOrBuilder();
         } else {
           return location_ == null ?
-              v12proto.types.Cloud.Location.getDefaultInstance() : location_;
+              v10proto.types.Cloud.Location.getDefaultInstance() : location_;
         }
       }
       /**
-       * <code>.v12proto.types.Location location = 2 [json_name = "location"];</code>
+       * <code>.v10proto.types.Location location = 2 [json_name = "location"];</code>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          v12proto.types.Cloud.Location, v12proto.types.Cloud.Location.Builder, v12proto.types.Cloud.LocationOrBuilder> 
+          v10proto.types.Cloud.Location, v10proto.types.Cloud.Location.Builder, v10proto.types.Cloud.LocationOrBuilder> 
           getLocationFieldBuilder() {
         if (locationBuilder_ == null) {
           locationBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              v12proto.types.Cloud.Location, v12proto.types.Cloud.Location.Builder, v12proto.types.Cloud.LocationOrBuilder>(
+              v10proto.types.Cloud.Location, v10proto.types.Cloud.Location.Builder, v10proto.types.Cloud.LocationOrBuilder>(
                   getLocation(),
                   getParentForChildren(),
                   isClean());
@@ -1715,16 +1715,16 @@ public final class Cloud {
         return locationBuilder_;
       }
 
-      // @@protoc_insertion_point(builder_scope:v12proto.types.GCPInfo)
+      // @@protoc_insertion_point(builder_scope:v10proto.types.GCPInfo)
     }
 
-    // @@protoc_insertion_point(class_scope:v12proto.types.GCPInfo)
-    private static final v12proto.types.Cloud.GCPInfo DEFAULT_INSTANCE;
+    // @@protoc_insertion_point(class_scope:v10proto.types.GCPInfo)
+    private static final v10proto.types.Cloud.GCPInfo DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new v12proto.types.Cloud.GCPInfo();
+      DEFAULT_INSTANCE = new v10proto.types.Cloud.GCPInfo();
     }
 
-    public static v12proto.types.Cloud.GCPInfo getDefaultInstance() {
+    public static v10proto.types.Cloud.GCPInfo getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
@@ -1760,14 +1760,14 @@ public final class Cloud {
     }
 
     @java.lang.Override
-    public v12proto.types.Cloud.GCPInfo getDefaultInstanceForType() {
+    public v10proto.types.Cloud.GCPInfo getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
   }
 
   public interface AWSInfoOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:v12proto.types.AWSInfo)
+      // @@protoc_insertion_point(interface_extends:v10proto.types.AWSInfo)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -1815,26 +1815,26 @@ public final class Cloud {
         getClientSecretBytes();
 
     /**
-     * <code>.v12proto.types.Location location = 4 [json_name = "location"];</code>
+     * <code>.v10proto.types.Location location = 4 [json_name = "location"];</code>
      * @return Whether the location field is set.
      */
     boolean hasLocation();
     /**
-     * <code>.v12proto.types.Location location = 4 [json_name = "location"];</code>
+     * <code>.v10proto.types.Location location = 4 [json_name = "location"];</code>
      * @return The location.
      */
-    v12proto.types.Cloud.Location getLocation();
+    v10proto.types.Cloud.Location getLocation();
     /**
-     * <code>.v12proto.types.Location location = 4 [json_name = "location"];</code>
+     * <code>.v10proto.types.Location location = 4 [json_name = "location"];</code>
      */
-    v12proto.types.Cloud.LocationOrBuilder getLocationOrBuilder();
+    v10proto.types.Cloud.LocationOrBuilder getLocationOrBuilder();
   }
   /**
-   * Protobuf type {@code v12proto.types.AWSInfo}
+   * Protobuf type {@code v10proto.types.AWSInfo}
    */
   public static final class AWSInfo extends
       com.google.protobuf.GeneratedMessage implements
-      // @@protoc_insertion_point(message_implements:v12proto.types.AWSInfo)
+      // @@protoc_insertion_point(message_implements:v10proto.types.AWSInfo)
       AWSInfoOrBuilder {
   private static final long serialVersionUID = 0L;
     static {
@@ -1858,15 +1858,15 @@ public final class Cloud {
 
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return v12proto.types.Cloud.internal_static_v12proto_types_AWSInfo_descriptor;
+      return v10proto.types.Cloud.internal_static_v10proto_types_AWSInfo_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return v12proto.types.Cloud.internal_static_v12proto_types_AWSInfo_fieldAccessorTable
+      return v10proto.types.Cloud.internal_static_v10proto_types_AWSInfo_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              v12proto.types.Cloud.AWSInfo.class, v12proto.types.Cloud.AWSInfo.Builder.class);
+              v10proto.types.Cloud.AWSInfo.class, v10proto.types.Cloud.AWSInfo.Builder.class);
     }
 
     private int bitField0_;
@@ -1996,9 +1996,9 @@ public final class Cloud {
     }
 
     public static final int LOCATION_FIELD_NUMBER = 4;
-    private v12proto.types.Cloud.Location location_;
+    private v10proto.types.Cloud.Location location_;
     /**
-     * <code>.v12proto.types.Location location = 4 [json_name = "location"];</code>
+     * <code>.v10proto.types.Location location = 4 [json_name = "location"];</code>
      * @return Whether the location field is set.
      */
     @java.lang.Override
@@ -2006,19 +2006,19 @@ public final class Cloud {
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
-     * <code>.v12proto.types.Location location = 4 [json_name = "location"];</code>
+     * <code>.v10proto.types.Location location = 4 [json_name = "location"];</code>
      * @return The location.
      */
     @java.lang.Override
-    public v12proto.types.Cloud.Location getLocation() {
-      return location_ == null ? v12proto.types.Cloud.Location.getDefaultInstance() : location_;
+    public v10proto.types.Cloud.Location getLocation() {
+      return location_ == null ? v10proto.types.Cloud.Location.getDefaultInstance() : location_;
     }
     /**
-     * <code>.v12proto.types.Location location = 4 [json_name = "location"];</code>
+     * <code>.v10proto.types.Location location = 4 [json_name = "location"];</code>
      */
     @java.lang.Override
-    public v12proto.types.Cloud.LocationOrBuilder getLocationOrBuilder() {
-      return location_ == null ? v12proto.types.Cloud.Location.getDefaultInstance() : location_;
+    public v10proto.types.Cloud.LocationOrBuilder getLocationOrBuilder() {
+      return location_ == null ? v10proto.types.Cloud.Location.getDefaultInstance() : location_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -2079,10 +2079,10 @@ public final class Cloud {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof v12proto.types.Cloud.AWSInfo)) {
+      if (!(obj instanceof v10proto.types.Cloud.AWSInfo)) {
         return super.equals(obj);
       }
-      v12proto.types.Cloud.AWSInfo other = (v12proto.types.Cloud.AWSInfo) obj;
+      v10proto.types.Cloud.AWSInfo other = (v10proto.types.Cloud.AWSInfo) obj;
 
       if (!getRoleArn()
           .equals(other.getRoleArn())) return false;
@@ -2121,44 +2121,44 @@ public final class Cloud {
       return hash;
     }
 
-    public static v12proto.types.Cloud.AWSInfo parseFrom(
+    public static v10proto.types.Cloud.AWSInfo parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static v12proto.types.Cloud.AWSInfo parseFrom(
+    public static v10proto.types.Cloud.AWSInfo parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static v12proto.types.Cloud.AWSInfo parseFrom(
+    public static v10proto.types.Cloud.AWSInfo parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static v12proto.types.Cloud.AWSInfo parseFrom(
+    public static v10proto.types.Cloud.AWSInfo parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static v12proto.types.Cloud.AWSInfo parseFrom(byte[] data)
+    public static v10proto.types.Cloud.AWSInfo parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static v12proto.types.Cloud.AWSInfo parseFrom(
+    public static v10proto.types.Cloud.AWSInfo parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static v12proto.types.Cloud.AWSInfo parseFrom(java.io.InputStream input)
+    public static v10proto.types.Cloud.AWSInfo parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseWithIOException(PARSER, input);
     }
-    public static v12proto.types.Cloud.AWSInfo parseFrom(
+    public static v10proto.types.Cloud.AWSInfo parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -2166,26 +2166,26 @@ public final class Cloud {
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    public static v12proto.types.Cloud.AWSInfo parseDelimitedFrom(java.io.InputStream input)
+    public static v10proto.types.Cloud.AWSInfo parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseDelimitedWithIOException(PARSER, input);
     }
 
-    public static v12proto.types.Cloud.AWSInfo parseDelimitedFrom(
+    public static v10proto.types.Cloud.AWSInfo parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static v12proto.types.Cloud.AWSInfo parseFrom(
+    public static v10proto.types.Cloud.AWSInfo parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseWithIOException(PARSER, input);
     }
-    public static v12proto.types.Cloud.AWSInfo parseFrom(
+    public static v10proto.types.Cloud.AWSInfo parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -2198,7 +2198,7 @@ public final class Cloud {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(v12proto.types.Cloud.AWSInfo prototype) {
+    public static Builder newBuilder(v10proto.types.Cloud.AWSInfo prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -2214,26 +2214,26 @@ public final class Cloud {
       return builder;
     }
     /**
-     * Protobuf type {@code v12proto.types.AWSInfo}
+     * Protobuf type {@code v10proto.types.AWSInfo}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:v12proto.types.AWSInfo)
-        v12proto.types.Cloud.AWSInfoOrBuilder {
+        // @@protoc_insertion_point(builder_implements:v10proto.types.AWSInfo)
+        v10proto.types.Cloud.AWSInfoOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return v12proto.types.Cloud.internal_static_v12proto_types_AWSInfo_descriptor;
+        return v10proto.types.Cloud.internal_static_v10proto_types_AWSInfo_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return v12proto.types.Cloud.internal_static_v12proto_types_AWSInfo_fieldAccessorTable
+        return v10proto.types.Cloud.internal_static_v10proto_types_AWSInfo_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                v12proto.types.Cloud.AWSInfo.class, v12proto.types.Cloud.AWSInfo.Builder.class);
+                v10proto.types.Cloud.AWSInfo.class, v10proto.types.Cloud.AWSInfo.Builder.class);
       }
 
-      // Construct using v12proto.types.Cloud.AWSInfo.newBuilder()
+      // Construct using v10proto.types.Cloud.AWSInfo.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -2267,17 +2267,17 @@ public final class Cloud {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return v12proto.types.Cloud.internal_static_v12proto_types_AWSInfo_descriptor;
+        return v10proto.types.Cloud.internal_static_v10proto_types_AWSInfo_descriptor;
       }
 
       @java.lang.Override
-      public v12proto.types.Cloud.AWSInfo getDefaultInstanceForType() {
-        return v12proto.types.Cloud.AWSInfo.getDefaultInstance();
+      public v10proto.types.Cloud.AWSInfo getDefaultInstanceForType() {
+        return v10proto.types.Cloud.AWSInfo.getDefaultInstance();
       }
 
       @java.lang.Override
-      public v12proto.types.Cloud.AWSInfo build() {
-        v12proto.types.Cloud.AWSInfo result = buildPartial();
+      public v10proto.types.Cloud.AWSInfo build() {
+        v10proto.types.Cloud.AWSInfo result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -2285,14 +2285,14 @@ public final class Cloud {
       }
 
       @java.lang.Override
-      public v12proto.types.Cloud.AWSInfo buildPartial() {
-        v12proto.types.Cloud.AWSInfo result = new v12proto.types.Cloud.AWSInfo(this);
+      public v10proto.types.Cloud.AWSInfo buildPartial() {
+        v10proto.types.Cloud.AWSInfo result = new v10proto.types.Cloud.AWSInfo(this);
         if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
       }
 
-      private void buildPartial0(v12proto.types.Cloud.AWSInfo result) {
+      private void buildPartial0(v10proto.types.Cloud.AWSInfo result) {
         int from_bitField0_ = bitField0_;
         if (((from_bitField0_ & 0x00000001) != 0)) {
           result.roleArn_ = roleArn_;
@@ -2315,16 +2315,16 @@ public final class Cloud {
 
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof v12proto.types.Cloud.AWSInfo) {
-          return mergeFrom((v12proto.types.Cloud.AWSInfo)other);
+        if (other instanceof v10proto.types.Cloud.AWSInfo) {
+          return mergeFrom((v10proto.types.Cloud.AWSInfo)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(v12proto.types.Cloud.AWSInfo other) {
-        if (other == v12proto.types.Cloud.AWSInfo.getDefaultInstance()) return this;
+      public Builder mergeFrom(v10proto.types.Cloud.AWSInfo other) {
+        if (other == v10proto.types.Cloud.AWSInfo.getDefaultInstance()) return this;
         if (!other.getRoleArn().isEmpty()) {
           roleArn_ = other.roleArn_;
           bitField0_ |= 0x00000001;
@@ -2644,31 +2644,31 @@ public final class Cloud {
         return this;
       }
 
-      private v12proto.types.Cloud.Location location_;
+      private v10proto.types.Cloud.Location location_;
       private com.google.protobuf.SingleFieldBuilder<
-          v12proto.types.Cloud.Location, v12proto.types.Cloud.Location.Builder, v12proto.types.Cloud.LocationOrBuilder> locationBuilder_;
+          v10proto.types.Cloud.Location, v10proto.types.Cloud.Location.Builder, v10proto.types.Cloud.LocationOrBuilder> locationBuilder_;
       /**
-       * <code>.v12proto.types.Location location = 4 [json_name = "location"];</code>
+       * <code>.v10proto.types.Location location = 4 [json_name = "location"];</code>
        * @return Whether the location field is set.
        */
       public boolean hasLocation() {
         return ((bitField0_ & 0x00000008) != 0);
       }
       /**
-       * <code>.v12proto.types.Location location = 4 [json_name = "location"];</code>
+       * <code>.v10proto.types.Location location = 4 [json_name = "location"];</code>
        * @return The location.
        */
-      public v12proto.types.Cloud.Location getLocation() {
+      public v10proto.types.Cloud.Location getLocation() {
         if (locationBuilder_ == null) {
-          return location_ == null ? v12proto.types.Cloud.Location.getDefaultInstance() : location_;
+          return location_ == null ? v10proto.types.Cloud.Location.getDefaultInstance() : location_;
         } else {
           return locationBuilder_.getMessage();
         }
       }
       /**
-       * <code>.v12proto.types.Location location = 4 [json_name = "location"];</code>
+       * <code>.v10proto.types.Location location = 4 [json_name = "location"];</code>
        */
-      public Builder setLocation(v12proto.types.Cloud.Location value) {
+      public Builder setLocation(v10proto.types.Cloud.Location value) {
         if (locationBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -2682,10 +2682,10 @@ public final class Cloud {
         return this;
       }
       /**
-       * <code>.v12proto.types.Location location = 4 [json_name = "location"];</code>
+       * <code>.v10proto.types.Location location = 4 [json_name = "location"];</code>
        */
       public Builder setLocation(
-          v12proto.types.Cloud.Location.Builder builderForValue) {
+          v10proto.types.Cloud.Location.Builder builderForValue) {
         if (locationBuilder_ == null) {
           location_ = builderForValue.build();
         } else {
@@ -2696,13 +2696,13 @@ public final class Cloud {
         return this;
       }
       /**
-       * <code>.v12proto.types.Location location = 4 [json_name = "location"];</code>
+       * <code>.v10proto.types.Location location = 4 [json_name = "location"];</code>
        */
-      public Builder mergeLocation(v12proto.types.Cloud.Location value) {
+      public Builder mergeLocation(v10proto.types.Cloud.Location value) {
         if (locationBuilder_ == null) {
           if (((bitField0_ & 0x00000008) != 0) &&
             location_ != null &&
-            location_ != v12proto.types.Cloud.Location.getDefaultInstance()) {
+            location_ != v10proto.types.Cloud.Location.getDefaultInstance()) {
             getLocationBuilder().mergeFrom(value);
           } else {
             location_ = value;
@@ -2717,7 +2717,7 @@ public final class Cloud {
         return this;
       }
       /**
-       * <code>.v12proto.types.Location location = 4 [json_name = "location"];</code>
+       * <code>.v10proto.types.Location location = 4 [json_name = "location"];</code>
        */
       public Builder clearLocation() {
         bitField0_ = (bitField0_ & ~0x00000008);
@@ -2730,33 +2730,33 @@ public final class Cloud {
         return this;
       }
       /**
-       * <code>.v12proto.types.Location location = 4 [json_name = "location"];</code>
+       * <code>.v10proto.types.Location location = 4 [json_name = "location"];</code>
        */
-      public v12proto.types.Cloud.Location.Builder getLocationBuilder() {
+      public v10proto.types.Cloud.Location.Builder getLocationBuilder() {
         bitField0_ |= 0x00000008;
         onChanged();
         return getLocationFieldBuilder().getBuilder();
       }
       /**
-       * <code>.v12proto.types.Location location = 4 [json_name = "location"];</code>
+       * <code>.v10proto.types.Location location = 4 [json_name = "location"];</code>
        */
-      public v12proto.types.Cloud.LocationOrBuilder getLocationOrBuilder() {
+      public v10proto.types.Cloud.LocationOrBuilder getLocationOrBuilder() {
         if (locationBuilder_ != null) {
           return locationBuilder_.getMessageOrBuilder();
         } else {
           return location_ == null ?
-              v12proto.types.Cloud.Location.getDefaultInstance() : location_;
+              v10proto.types.Cloud.Location.getDefaultInstance() : location_;
         }
       }
       /**
-       * <code>.v12proto.types.Location location = 4 [json_name = "location"];</code>
+       * <code>.v10proto.types.Location location = 4 [json_name = "location"];</code>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          v12proto.types.Cloud.Location, v12proto.types.Cloud.Location.Builder, v12proto.types.Cloud.LocationOrBuilder> 
+          v10proto.types.Cloud.Location, v10proto.types.Cloud.Location.Builder, v10proto.types.Cloud.LocationOrBuilder> 
           getLocationFieldBuilder() {
         if (locationBuilder_ == null) {
           locationBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              v12proto.types.Cloud.Location, v12proto.types.Cloud.Location.Builder, v12proto.types.Cloud.LocationOrBuilder>(
+              v10proto.types.Cloud.Location, v10proto.types.Cloud.Location.Builder, v10proto.types.Cloud.LocationOrBuilder>(
                   getLocation(),
                   getParentForChildren(),
                   isClean());
@@ -2765,16 +2765,16 @@ public final class Cloud {
         return locationBuilder_;
       }
 
-      // @@protoc_insertion_point(builder_scope:v12proto.types.AWSInfo)
+      // @@protoc_insertion_point(builder_scope:v10proto.types.AWSInfo)
     }
 
-    // @@protoc_insertion_point(class_scope:v12proto.types.AWSInfo)
-    private static final v12proto.types.Cloud.AWSInfo DEFAULT_INSTANCE;
+    // @@protoc_insertion_point(class_scope:v10proto.types.AWSInfo)
+    private static final v10proto.types.Cloud.AWSInfo DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new v12proto.types.Cloud.AWSInfo();
+      DEFAULT_INSTANCE = new v10proto.types.Cloud.AWSInfo();
     }
 
-    public static v12proto.types.Cloud.AWSInfo getDefaultInstance() {
+    public static v10proto.types.Cloud.AWSInfo getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
@@ -2810,22 +2810,22 @@ public final class Cloud {
     }
 
     @java.lang.Override
-    public v12proto.types.Cloud.AWSInfo getDefaultInstanceForType() {
+    public v10proto.types.Cloud.AWSInfo getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
   }
 
   public interface AzureInfoOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:v12proto.types.AzureInfo)
+      // @@protoc_insertion_point(interface_extends:v10proto.types.AzureInfo)
       com.google.protobuf.MessageOrBuilder {
   }
   /**
-   * Protobuf type {@code v12proto.types.AzureInfo}
+   * Protobuf type {@code v10proto.types.AzureInfo}
    */
   public static final class AzureInfo extends
       com.google.protobuf.GeneratedMessage implements
-      // @@protoc_insertion_point(message_implements:v12proto.types.AzureInfo)
+      // @@protoc_insertion_point(message_implements:v10proto.types.AzureInfo)
       AzureInfoOrBuilder {
   private static final long serialVersionUID = 0L;
     static {
@@ -2846,15 +2846,15 @@ public final class Cloud {
 
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return v12proto.types.Cloud.internal_static_v12proto_types_AzureInfo_descriptor;
+      return v10proto.types.Cloud.internal_static_v10proto_types_AzureInfo_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return v12proto.types.Cloud.internal_static_v12proto_types_AzureInfo_fieldAccessorTable
+      return v10proto.types.Cloud.internal_static_v10proto_types_AzureInfo_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              v12proto.types.Cloud.AzureInfo.class, v12proto.types.Cloud.AzureInfo.Builder.class);
+              v10proto.types.Cloud.AzureInfo.class, v10proto.types.Cloud.AzureInfo.Builder.class);
     }
 
     private byte memoizedIsInitialized = -1;
@@ -2890,10 +2890,10 @@ public final class Cloud {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof v12proto.types.Cloud.AzureInfo)) {
+      if (!(obj instanceof v10proto.types.Cloud.AzureInfo)) {
         return super.equals(obj);
       }
-      v12proto.types.Cloud.AzureInfo other = (v12proto.types.Cloud.AzureInfo) obj;
+      v10proto.types.Cloud.AzureInfo other = (v10proto.types.Cloud.AzureInfo) obj;
 
       if (!getUnknownFields().equals(other.getUnknownFields())) return false;
       return true;
@@ -2911,44 +2911,44 @@ public final class Cloud {
       return hash;
     }
 
-    public static v12proto.types.Cloud.AzureInfo parseFrom(
+    public static v10proto.types.Cloud.AzureInfo parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static v12proto.types.Cloud.AzureInfo parseFrom(
+    public static v10proto.types.Cloud.AzureInfo parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static v12proto.types.Cloud.AzureInfo parseFrom(
+    public static v10proto.types.Cloud.AzureInfo parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static v12proto.types.Cloud.AzureInfo parseFrom(
+    public static v10proto.types.Cloud.AzureInfo parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static v12proto.types.Cloud.AzureInfo parseFrom(byte[] data)
+    public static v10proto.types.Cloud.AzureInfo parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static v12proto.types.Cloud.AzureInfo parseFrom(
+    public static v10proto.types.Cloud.AzureInfo parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static v12proto.types.Cloud.AzureInfo parseFrom(java.io.InputStream input)
+    public static v10proto.types.Cloud.AzureInfo parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseWithIOException(PARSER, input);
     }
-    public static v12proto.types.Cloud.AzureInfo parseFrom(
+    public static v10proto.types.Cloud.AzureInfo parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -2956,26 +2956,26 @@ public final class Cloud {
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    public static v12proto.types.Cloud.AzureInfo parseDelimitedFrom(java.io.InputStream input)
+    public static v10proto.types.Cloud.AzureInfo parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseDelimitedWithIOException(PARSER, input);
     }
 
-    public static v12proto.types.Cloud.AzureInfo parseDelimitedFrom(
+    public static v10proto.types.Cloud.AzureInfo parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static v12proto.types.Cloud.AzureInfo parseFrom(
+    public static v10proto.types.Cloud.AzureInfo parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseWithIOException(PARSER, input);
     }
-    public static v12proto.types.Cloud.AzureInfo parseFrom(
+    public static v10proto.types.Cloud.AzureInfo parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -2988,7 +2988,7 @@ public final class Cloud {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(v12proto.types.Cloud.AzureInfo prototype) {
+    public static Builder newBuilder(v10proto.types.Cloud.AzureInfo prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -3004,26 +3004,26 @@ public final class Cloud {
       return builder;
     }
     /**
-     * Protobuf type {@code v12proto.types.AzureInfo}
+     * Protobuf type {@code v10proto.types.AzureInfo}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:v12proto.types.AzureInfo)
-        v12proto.types.Cloud.AzureInfoOrBuilder {
+        // @@protoc_insertion_point(builder_implements:v10proto.types.AzureInfo)
+        v10proto.types.Cloud.AzureInfoOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return v12proto.types.Cloud.internal_static_v12proto_types_AzureInfo_descriptor;
+        return v10proto.types.Cloud.internal_static_v10proto_types_AzureInfo_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return v12proto.types.Cloud.internal_static_v12proto_types_AzureInfo_fieldAccessorTable
+        return v10proto.types.Cloud.internal_static_v10proto_types_AzureInfo_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                v12proto.types.Cloud.AzureInfo.class, v12proto.types.Cloud.AzureInfo.Builder.class);
+                v10proto.types.Cloud.AzureInfo.class, v10proto.types.Cloud.AzureInfo.Builder.class);
       }
 
-      // Construct using v12proto.types.Cloud.AzureInfo.newBuilder()
+      // Construct using v10proto.types.Cloud.AzureInfo.newBuilder()
       private Builder() {
 
       }
@@ -3042,17 +3042,17 @@ public final class Cloud {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return v12proto.types.Cloud.internal_static_v12proto_types_AzureInfo_descriptor;
+        return v10proto.types.Cloud.internal_static_v10proto_types_AzureInfo_descriptor;
       }
 
       @java.lang.Override
-      public v12proto.types.Cloud.AzureInfo getDefaultInstanceForType() {
-        return v12proto.types.Cloud.AzureInfo.getDefaultInstance();
+      public v10proto.types.Cloud.AzureInfo getDefaultInstanceForType() {
+        return v10proto.types.Cloud.AzureInfo.getDefaultInstance();
       }
 
       @java.lang.Override
-      public v12proto.types.Cloud.AzureInfo build() {
-        v12proto.types.Cloud.AzureInfo result = buildPartial();
+      public v10proto.types.Cloud.AzureInfo build() {
+        v10proto.types.Cloud.AzureInfo result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -3060,24 +3060,24 @@ public final class Cloud {
       }
 
       @java.lang.Override
-      public v12proto.types.Cloud.AzureInfo buildPartial() {
-        v12proto.types.Cloud.AzureInfo result = new v12proto.types.Cloud.AzureInfo(this);
+      public v10proto.types.Cloud.AzureInfo buildPartial() {
+        v10proto.types.Cloud.AzureInfo result = new v10proto.types.Cloud.AzureInfo(this);
         onBuilt();
         return result;
       }
 
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof v12proto.types.Cloud.AzureInfo) {
-          return mergeFrom((v12proto.types.Cloud.AzureInfo)other);
+        if (other instanceof v10proto.types.Cloud.AzureInfo) {
+          return mergeFrom((v10proto.types.Cloud.AzureInfo)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(v12proto.types.Cloud.AzureInfo other) {
-        if (other == v12proto.types.Cloud.AzureInfo.getDefaultInstance()) return this;
+      public Builder mergeFrom(v10proto.types.Cloud.AzureInfo other) {
+        if (other == v10proto.types.Cloud.AzureInfo.getDefaultInstance()) return this;
         this.mergeUnknownFields(other.getUnknownFields());
         onChanged();
         return this;
@@ -3120,16 +3120,16 @@ public final class Cloud {
         return this;
       }
 
-      // @@protoc_insertion_point(builder_scope:v12proto.types.AzureInfo)
+      // @@protoc_insertion_point(builder_scope:v10proto.types.AzureInfo)
     }
 
-    // @@protoc_insertion_point(class_scope:v12proto.types.AzureInfo)
-    private static final v12proto.types.Cloud.AzureInfo DEFAULT_INSTANCE;
+    // @@protoc_insertion_point(class_scope:v10proto.types.AzureInfo)
+    private static final v10proto.types.Cloud.AzureInfo DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new v12proto.types.Cloud.AzureInfo();
+      DEFAULT_INSTANCE = new v10proto.types.Cloud.AzureInfo();
     }
 
-    public static v12proto.types.Cloud.AzureInfo getDefaultInstance() {
+    public static v10proto.types.Cloud.AzureInfo getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
@@ -3165,32 +3165,32 @@ public final class Cloud {
     }
 
     @java.lang.Override
-    public v12proto.types.Cloud.AzureInfo getDefaultInstanceForType() {
+    public v10proto.types.Cloud.AzureInfo getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
   }
 
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_v12proto_types_Location_descriptor;
+    internal_static_v10proto_types_Location_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_v12proto_types_Location_fieldAccessorTable;
+      internal_static_v10proto_types_Location_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_v12proto_types_GCPInfo_descriptor;
+    internal_static_v10proto_types_GCPInfo_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_v12proto_types_GCPInfo_fieldAccessorTable;
+      internal_static_v10proto_types_GCPInfo_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_v12proto_types_AWSInfo_descriptor;
+    internal_static_v10proto_types_AWSInfo_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_v12proto_types_AWSInfo_fieldAccessorTable;
+      internal_static_v10proto_types_AWSInfo_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_v12proto_types_AzureInfo_descriptor;
+    internal_static_v10proto_types_AzureInfo_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_v12proto_types_AzureInfo_fieldAccessorTable;
+      internal_static_v10proto_types_AzureInfo_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -3200,48 +3200,48 @@ public final class Cloud {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\021types/cloud.proto\022\016v12proto.types\"\232\001\n\010" +
+      "\n\021types/cloud.proto\022\016v10proto.types\"\232\001\n\010" +
       "Location\022\037\n\013active_zone\030\001 \001(\tR\nactiveZon" +
       "e\022#\n\ractive_region\030\002 \001(\tR\014activeRegion\022!" +
       "\n\014passive_zone\030\003 \001(\tR\013passiveZone\022%\n\016pas" +
       "sive_region\030\004 \001(\tR\rpassiveRegion\"h\n\007GCPI" +
       "nfo\022\'\n\017service_account\030\001 \001(\014R\016serviceAcc" +
-      "ount\0224\n\010location\030\002 \001(\0132\030.v12proto.types." +
+      "ount\0224\n\010location\030\002 \001(\0132\030.v10proto.types." +
       "LocationR\010location\"\243\001\n\007AWSInfo\022\031\n\010role_a" +
       "rn\030\001 \001(\tR\007roleArn\022\"\n\rclient_id_arn\030\002 \001(\t" +
       "R\013clientIdArn\022#\n\rclient_secret\030\003 \001(\tR\014cl" +
-      "ientSecret\0224\n\010location\030\004 \001(\0132\030.v12proto." +
-      "types.LocationR\010location\"\013\n\tAzureInfoB&Z" +
-      "$github.com/nightblue-io/v12-go/typesb\006p" +
-      "roto3"
+      "ientSecret\0224\n\010location\030\004 \001(\0132\030.v10proto." +
+      "types.LocationR\010location\"\013\n\tAzureInfoB#Z" +
+      "!github.com/drival-ai/v10-go/typesb\006prot" +
+      "o3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
         });
-    internal_static_v12proto_types_Location_descriptor =
+    internal_static_v10proto_types_Location_descriptor =
       getDescriptor().getMessageTypes().get(0);
-    internal_static_v12proto_types_Location_fieldAccessorTable = new
+    internal_static_v10proto_types_Location_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-        internal_static_v12proto_types_Location_descriptor,
+        internal_static_v10proto_types_Location_descriptor,
         new java.lang.String[] { "ActiveZone", "ActiveRegion", "PassiveZone", "PassiveRegion", });
-    internal_static_v12proto_types_GCPInfo_descriptor =
+    internal_static_v10proto_types_GCPInfo_descriptor =
       getDescriptor().getMessageTypes().get(1);
-    internal_static_v12proto_types_GCPInfo_fieldAccessorTable = new
+    internal_static_v10proto_types_GCPInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-        internal_static_v12proto_types_GCPInfo_descriptor,
+        internal_static_v10proto_types_GCPInfo_descriptor,
         new java.lang.String[] { "ServiceAccount", "Location", });
-    internal_static_v12proto_types_AWSInfo_descriptor =
+    internal_static_v10proto_types_AWSInfo_descriptor =
       getDescriptor().getMessageTypes().get(2);
-    internal_static_v12proto_types_AWSInfo_fieldAccessorTable = new
+    internal_static_v10proto_types_AWSInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-        internal_static_v12proto_types_AWSInfo_descriptor,
+        internal_static_v10proto_types_AWSInfo_descriptor,
         new java.lang.String[] { "RoleArn", "ClientIdArn", "ClientSecret", "Location", });
-    internal_static_v12proto_types_AzureInfo_descriptor =
+    internal_static_v10proto_types_AzureInfo_descriptor =
       getDescriptor().getMessageTypes().get(3);
-    internal_static_v12proto_types_AzureInfo_fieldAccessorTable = new
+    internal_static_v10proto_types_AzureInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-        internal_static_v12proto_types_AzureInfo_descriptor,
+        internal_static_v10proto_types_AzureInfo_descriptor,
         new java.lang.String[] { });
     descriptor.resolveAllFeaturesImmutable();
   }

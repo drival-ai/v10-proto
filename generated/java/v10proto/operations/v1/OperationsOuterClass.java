@@ -3,7 +3,7 @@
 // source: operations/v1/operations.proto
 // Protobuf Java Version: 4.29.1
 
-package v12proto.operations.v1;
+package v10proto.operations.v1;
 
 public final class OperationsOuterClass {
   private OperationsOuterClass() {}
@@ -26,7 +26,7 @@ public final class OperationsOuterClass {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   public interface ListOperationsRequestOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:v12proto.operations.v1.ListOperationsRequest)
+      // @@protoc_insertion_point(interface_extends:v10proto.operations.v1.ListOperationsRequest)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -58,11 +58,11 @@ public final class OperationsOuterClass {
    * Request message for the ListOperations rpc.
    * </pre>
    *
-   * Protobuf type {@code v12proto.operations.v1.ListOperationsRequest}
+   * Protobuf type {@code v10proto.operations.v1.ListOperationsRequest}
    */
   public static final class ListOperationsRequest extends
       com.google.protobuf.GeneratedMessage implements
-      // @@protoc_insertion_point(message_implements:v12proto.operations.v1.ListOperationsRequest)
+      // @@protoc_insertion_point(message_implements:v10proto.operations.v1.ListOperationsRequest)
       ListOperationsRequestOrBuilder {
   private static final long serialVersionUID = 0L;
     static {
@@ -85,15 +85,15 @@ public final class OperationsOuterClass {
 
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return v12proto.operations.v1.OperationsOuterClass.internal_static_v12proto_operations_v1_ListOperationsRequest_descriptor;
+      return v10proto.operations.v1.OperationsOuterClass.internal_static_v10proto_operations_v1_ListOperationsRequest_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return v12proto.operations.v1.OperationsOuterClass.internal_static_v12proto_operations_v1_ListOperationsRequest_fieldAccessorTable
+      return v10proto.operations.v1.OperationsOuterClass.internal_static_v10proto_operations_v1_ListOperationsRequest_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              v12proto.operations.v1.OperationsOuterClass.ListOperationsRequest.class, v12proto.operations.v1.OperationsOuterClass.ListOperationsRequest.Builder.class);
+              v10proto.operations.v1.OperationsOuterClass.ListOperationsRequest.class, v10proto.operations.v1.OperationsOuterClass.ListOperationsRequest.Builder.class);
     }
 
     public static final int NAME_FIELD_NUMBER = 1;
@@ -219,10 +219,10 @@ public final class OperationsOuterClass {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof v12proto.operations.v1.OperationsOuterClass.ListOperationsRequest)) {
+      if (!(obj instanceof v10proto.operations.v1.OperationsOuterClass.ListOperationsRequest)) {
         return super.equals(obj);
       }
-      v12proto.operations.v1.OperationsOuterClass.ListOperationsRequest other = (v12proto.operations.v1.OperationsOuterClass.ListOperationsRequest) obj;
+      v10proto.operations.v1.OperationsOuterClass.ListOperationsRequest other = (v10proto.operations.v1.OperationsOuterClass.ListOperationsRequest) obj;
 
       if (!getName()
           .equals(other.getName())) return false;
@@ -248,44 +248,44 @@ public final class OperationsOuterClass {
       return hash;
     }
 
-    public static v12proto.operations.v1.OperationsOuterClass.ListOperationsRequest parseFrom(
+    public static v10proto.operations.v1.OperationsOuterClass.ListOperationsRequest parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static v12proto.operations.v1.OperationsOuterClass.ListOperationsRequest parseFrom(
+    public static v10proto.operations.v1.OperationsOuterClass.ListOperationsRequest parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static v12proto.operations.v1.OperationsOuterClass.ListOperationsRequest parseFrom(
+    public static v10proto.operations.v1.OperationsOuterClass.ListOperationsRequest parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static v12proto.operations.v1.OperationsOuterClass.ListOperationsRequest parseFrom(
+    public static v10proto.operations.v1.OperationsOuterClass.ListOperationsRequest parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static v12proto.operations.v1.OperationsOuterClass.ListOperationsRequest parseFrom(byte[] data)
+    public static v10proto.operations.v1.OperationsOuterClass.ListOperationsRequest parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static v12proto.operations.v1.OperationsOuterClass.ListOperationsRequest parseFrom(
+    public static v10proto.operations.v1.OperationsOuterClass.ListOperationsRequest parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static v12proto.operations.v1.OperationsOuterClass.ListOperationsRequest parseFrom(java.io.InputStream input)
+    public static v10proto.operations.v1.OperationsOuterClass.ListOperationsRequest parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseWithIOException(PARSER, input);
     }
-    public static v12proto.operations.v1.OperationsOuterClass.ListOperationsRequest parseFrom(
+    public static v10proto.operations.v1.OperationsOuterClass.ListOperationsRequest parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -293,26 +293,26 @@ public final class OperationsOuterClass {
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    public static v12proto.operations.v1.OperationsOuterClass.ListOperationsRequest parseDelimitedFrom(java.io.InputStream input)
+    public static v10proto.operations.v1.OperationsOuterClass.ListOperationsRequest parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseDelimitedWithIOException(PARSER, input);
     }
 
-    public static v12proto.operations.v1.OperationsOuterClass.ListOperationsRequest parseDelimitedFrom(
+    public static v10proto.operations.v1.OperationsOuterClass.ListOperationsRequest parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static v12proto.operations.v1.OperationsOuterClass.ListOperationsRequest parseFrom(
+    public static v10proto.operations.v1.OperationsOuterClass.ListOperationsRequest parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseWithIOException(PARSER, input);
     }
-    public static v12proto.operations.v1.OperationsOuterClass.ListOperationsRequest parseFrom(
+    public static v10proto.operations.v1.OperationsOuterClass.ListOperationsRequest parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -325,7 +325,7 @@ public final class OperationsOuterClass {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(v12proto.operations.v1.OperationsOuterClass.ListOperationsRequest prototype) {
+    public static Builder newBuilder(v10proto.operations.v1.OperationsOuterClass.ListOperationsRequest prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -345,26 +345,26 @@ public final class OperationsOuterClass {
      * Request message for the ListOperations rpc.
      * </pre>
      *
-     * Protobuf type {@code v12proto.operations.v1.ListOperationsRequest}
+     * Protobuf type {@code v10proto.operations.v1.ListOperationsRequest}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:v12proto.operations.v1.ListOperationsRequest)
-        v12proto.operations.v1.OperationsOuterClass.ListOperationsRequestOrBuilder {
+        // @@protoc_insertion_point(builder_implements:v10proto.operations.v1.ListOperationsRequest)
+        v10proto.operations.v1.OperationsOuterClass.ListOperationsRequestOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return v12proto.operations.v1.OperationsOuterClass.internal_static_v12proto_operations_v1_ListOperationsRequest_descriptor;
+        return v10proto.operations.v1.OperationsOuterClass.internal_static_v10proto_operations_v1_ListOperationsRequest_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return v12proto.operations.v1.OperationsOuterClass.internal_static_v12proto_operations_v1_ListOperationsRequest_fieldAccessorTable
+        return v10proto.operations.v1.OperationsOuterClass.internal_static_v10proto_operations_v1_ListOperationsRequest_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                v12proto.operations.v1.OperationsOuterClass.ListOperationsRequest.class, v12proto.operations.v1.OperationsOuterClass.ListOperationsRequest.Builder.class);
+                v10proto.operations.v1.OperationsOuterClass.ListOperationsRequest.class, v10proto.operations.v1.OperationsOuterClass.ListOperationsRequest.Builder.class);
       }
 
-      // Construct using v12proto.operations.v1.OperationsOuterClass.ListOperationsRequest.newBuilder()
+      // Construct using v10proto.operations.v1.OperationsOuterClass.ListOperationsRequest.newBuilder()
       private Builder() {
 
       }
@@ -386,17 +386,17 @@ public final class OperationsOuterClass {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return v12proto.operations.v1.OperationsOuterClass.internal_static_v12proto_operations_v1_ListOperationsRequest_descriptor;
+        return v10proto.operations.v1.OperationsOuterClass.internal_static_v10proto_operations_v1_ListOperationsRequest_descriptor;
       }
 
       @java.lang.Override
-      public v12proto.operations.v1.OperationsOuterClass.ListOperationsRequest getDefaultInstanceForType() {
-        return v12proto.operations.v1.OperationsOuterClass.ListOperationsRequest.getDefaultInstance();
+      public v10proto.operations.v1.OperationsOuterClass.ListOperationsRequest getDefaultInstanceForType() {
+        return v10proto.operations.v1.OperationsOuterClass.ListOperationsRequest.getDefaultInstance();
       }
 
       @java.lang.Override
-      public v12proto.operations.v1.OperationsOuterClass.ListOperationsRequest build() {
-        v12proto.operations.v1.OperationsOuterClass.ListOperationsRequest result = buildPartial();
+      public v10proto.operations.v1.OperationsOuterClass.ListOperationsRequest build() {
+        v10proto.operations.v1.OperationsOuterClass.ListOperationsRequest result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -404,14 +404,14 @@ public final class OperationsOuterClass {
       }
 
       @java.lang.Override
-      public v12proto.operations.v1.OperationsOuterClass.ListOperationsRequest buildPartial() {
-        v12proto.operations.v1.OperationsOuterClass.ListOperationsRequest result = new v12proto.operations.v1.OperationsOuterClass.ListOperationsRequest(this);
+      public v10proto.operations.v1.OperationsOuterClass.ListOperationsRequest buildPartial() {
+        v10proto.operations.v1.OperationsOuterClass.ListOperationsRequest result = new v10proto.operations.v1.OperationsOuterClass.ListOperationsRequest(this);
         if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
       }
 
-      private void buildPartial0(v12proto.operations.v1.OperationsOuterClass.ListOperationsRequest result) {
+      private void buildPartial0(v10proto.operations.v1.OperationsOuterClass.ListOperationsRequest result) {
         int from_bitField0_ = bitField0_;
         if (((from_bitField0_ & 0x00000001) != 0)) {
           result.name_ = name_;
@@ -423,16 +423,16 @@ public final class OperationsOuterClass {
 
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof v12proto.operations.v1.OperationsOuterClass.ListOperationsRequest) {
-          return mergeFrom((v12proto.operations.v1.OperationsOuterClass.ListOperationsRequest)other);
+        if (other instanceof v10proto.operations.v1.OperationsOuterClass.ListOperationsRequest) {
+          return mergeFrom((v10proto.operations.v1.OperationsOuterClass.ListOperationsRequest)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(v12proto.operations.v1.OperationsOuterClass.ListOperationsRequest other) {
-        if (other == v12proto.operations.v1.OperationsOuterClass.ListOperationsRequest.getDefaultInstance()) return this;
+      public Builder mergeFrom(v10proto.operations.v1.OperationsOuterClass.ListOperationsRequest other) {
+        if (other == v10proto.operations.v1.OperationsOuterClass.ListOperationsRequest.getDefaultInstance()) return this;
         if (!other.getName().isEmpty()) {
           name_ = other.name_;
           bitField0_ |= 0x00000001;
@@ -640,16 +640,16 @@ public final class OperationsOuterClass {
         return this;
       }
 
-      // @@protoc_insertion_point(builder_scope:v12proto.operations.v1.ListOperationsRequest)
+      // @@protoc_insertion_point(builder_scope:v10proto.operations.v1.ListOperationsRequest)
     }
 
-    // @@protoc_insertion_point(class_scope:v12proto.operations.v1.ListOperationsRequest)
-    private static final v12proto.operations.v1.OperationsOuterClass.ListOperationsRequest DEFAULT_INSTANCE;
+    // @@protoc_insertion_point(class_scope:v10proto.operations.v1.ListOperationsRequest)
+    private static final v10proto.operations.v1.OperationsOuterClass.ListOperationsRequest DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new v12proto.operations.v1.OperationsOuterClass.ListOperationsRequest();
+      DEFAULT_INSTANCE = new v10proto.operations.v1.OperationsOuterClass.ListOperationsRequest();
     }
 
-    public static v12proto.operations.v1.OperationsOuterClass.ListOperationsRequest getDefaultInstance() {
+    public static v10proto.operations.v1.OperationsOuterClass.ListOperationsRequest getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
@@ -685,38 +685,38 @@ public final class OperationsOuterClass {
     }
 
     @java.lang.Override
-    public v12proto.operations.v1.OperationsOuterClass.ListOperationsRequest getDefaultInstanceForType() {
+    public v10proto.operations.v1.OperationsOuterClass.ListOperationsRequest getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
   }
 
   public interface ListOperationsResponseOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:v12proto.operations.v1.ListOperationsResponse)
+      // @@protoc_insertion_point(interface_extends:v10proto.operations.v1.ListOperationsResponse)
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .v12proto.types.Operation operations = 1 [json_name = "operations"];</code>
+     * <code>repeated .v10proto.types.Operation operations = 1 [json_name = "operations"];</code>
      */
-    java.util.List<v12proto.types.OperationOuterClass.Operation> 
+    java.util.List<v10proto.types.OperationOuterClass.Operation> 
         getOperationsList();
     /**
-     * <code>repeated .v12proto.types.Operation operations = 1 [json_name = "operations"];</code>
+     * <code>repeated .v10proto.types.Operation operations = 1 [json_name = "operations"];</code>
      */
-    v12proto.types.OperationOuterClass.Operation getOperations(int index);
+    v10proto.types.OperationOuterClass.Operation getOperations(int index);
     /**
-     * <code>repeated .v12proto.types.Operation operations = 1 [json_name = "operations"];</code>
+     * <code>repeated .v10proto.types.Operation operations = 1 [json_name = "operations"];</code>
      */
     int getOperationsCount();
     /**
-     * <code>repeated .v12proto.types.Operation operations = 1 [json_name = "operations"];</code>
+     * <code>repeated .v10proto.types.Operation operations = 1 [json_name = "operations"];</code>
      */
-    java.util.List<? extends v12proto.types.OperationOuterClass.OperationOrBuilder> 
+    java.util.List<? extends v10proto.types.OperationOuterClass.OperationOrBuilder> 
         getOperationsOrBuilderList();
     /**
-     * <code>repeated .v12proto.types.Operation operations = 1 [json_name = "operations"];</code>
+     * <code>repeated .v10proto.types.Operation operations = 1 [json_name = "operations"];</code>
      */
-    v12proto.types.OperationOuterClass.OperationOrBuilder getOperationsOrBuilder(
+    v10proto.types.OperationOuterClass.OperationOrBuilder getOperationsOrBuilder(
         int index);
 
     /**
@@ -736,11 +736,11 @@ public final class OperationsOuterClass {
    * Response message for the ListOperations rpc.
    * </pre>
    *
-   * Protobuf type {@code v12proto.operations.v1.ListOperationsResponse}
+   * Protobuf type {@code v10proto.operations.v1.ListOperationsResponse}
    */
   public static final class ListOperationsResponse extends
       com.google.protobuf.GeneratedMessage implements
-      // @@protoc_insertion_point(message_implements:v12proto.operations.v1.ListOperationsResponse)
+      // @@protoc_insertion_point(message_implements:v10proto.operations.v1.ListOperationsResponse)
       ListOperationsResponseOrBuilder {
   private static final long serialVersionUID = 0L;
     static {
@@ -763,54 +763,54 @@ public final class OperationsOuterClass {
 
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return v12proto.operations.v1.OperationsOuterClass.internal_static_v12proto_operations_v1_ListOperationsResponse_descriptor;
+      return v10proto.operations.v1.OperationsOuterClass.internal_static_v10proto_operations_v1_ListOperationsResponse_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return v12proto.operations.v1.OperationsOuterClass.internal_static_v12proto_operations_v1_ListOperationsResponse_fieldAccessorTable
+      return v10proto.operations.v1.OperationsOuterClass.internal_static_v10proto_operations_v1_ListOperationsResponse_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              v12proto.operations.v1.OperationsOuterClass.ListOperationsResponse.class, v12proto.operations.v1.OperationsOuterClass.ListOperationsResponse.Builder.class);
+              v10proto.operations.v1.OperationsOuterClass.ListOperationsResponse.class, v10proto.operations.v1.OperationsOuterClass.ListOperationsResponse.Builder.class);
     }
 
     public static final int OPERATIONS_FIELD_NUMBER = 1;
     @SuppressWarnings("serial")
-    private java.util.List<v12proto.types.OperationOuterClass.Operation> operations_;
+    private java.util.List<v10proto.types.OperationOuterClass.Operation> operations_;
     /**
-     * <code>repeated .v12proto.types.Operation operations = 1 [json_name = "operations"];</code>
+     * <code>repeated .v10proto.types.Operation operations = 1 [json_name = "operations"];</code>
      */
     @java.lang.Override
-    public java.util.List<v12proto.types.OperationOuterClass.Operation> getOperationsList() {
+    public java.util.List<v10proto.types.OperationOuterClass.Operation> getOperationsList() {
       return operations_;
     }
     /**
-     * <code>repeated .v12proto.types.Operation operations = 1 [json_name = "operations"];</code>
+     * <code>repeated .v10proto.types.Operation operations = 1 [json_name = "operations"];</code>
      */
     @java.lang.Override
-    public java.util.List<? extends v12proto.types.OperationOuterClass.OperationOrBuilder> 
+    public java.util.List<? extends v10proto.types.OperationOuterClass.OperationOrBuilder> 
         getOperationsOrBuilderList() {
       return operations_;
     }
     /**
-     * <code>repeated .v12proto.types.Operation operations = 1 [json_name = "operations"];</code>
+     * <code>repeated .v10proto.types.Operation operations = 1 [json_name = "operations"];</code>
      */
     @java.lang.Override
     public int getOperationsCount() {
       return operations_.size();
     }
     /**
-     * <code>repeated .v12proto.types.Operation operations = 1 [json_name = "operations"];</code>
+     * <code>repeated .v10proto.types.Operation operations = 1 [json_name = "operations"];</code>
      */
     @java.lang.Override
-    public v12proto.types.OperationOuterClass.Operation getOperations(int index) {
+    public v10proto.types.OperationOuterClass.Operation getOperations(int index) {
       return operations_.get(index);
     }
     /**
-     * <code>repeated .v12proto.types.Operation operations = 1 [json_name = "operations"];</code>
+     * <code>repeated .v10proto.types.Operation operations = 1 [json_name = "operations"];</code>
      */
     @java.lang.Override
-    public v12proto.types.OperationOuterClass.OperationOrBuilder getOperationsOrBuilder(
+    public v10proto.types.OperationOuterClass.OperationOrBuilder getOperationsOrBuilder(
         int index) {
       return operations_.get(index);
     }
@@ -900,10 +900,10 @@ public final class OperationsOuterClass {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof v12proto.operations.v1.OperationsOuterClass.ListOperationsResponse)) {
+      if (!(obj instanceof v10proto.operations.v1.OperationsOuterClass.ListOperationsResponse)) {
         return super.equals(obj);
       }
-      v12proto.operations.v1.OperationsOuterClass.ListOperationsResponse other = (v12proto.operations.v1.OperationsOuterClass.ListOperationsResponse) obj;
+      v10proto.operations.v1.OperationsOuterClass.ListOperationsResponse other = (v10proto.operations.v1.OperationsOuterClass.ListOperationsResponse) obj;
 
       if (!getOperationsList()
           .equals(other.getOperationsList())) return false;
@@ -931,44 +931,44 @@ public final class OperationsOuterClass {
       return hash;
     }
 
-    public static v12proto.operations.v1.OperationsOuterClass.ListOperationsResponse parseFrom(
+    public static v10proto.operations.v1.OperationsOuterClass.ListOperationsResponse parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static v12proto.operations.v1.OperationsOuterClass.ListOperationsResponse parseFrom(
+    public static v10proto.operations.v1.OperationsOuterClass.ListOperationsResponse parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static v12proto.operations.v1.OperationsOuterClass.ListOperationsResponse parseFrom(
+    public static v10proto.operations.v1.OperationsOuterClass.ListOperationsResponse parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static v12proto.operations.v1.OperationsOuterClass.ListOperationsResponse parseFrom(
+    public static v10proto.operations.v1.OperationsOuterClass.ListOperationsResponse parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static v12proto.operations.v1.OperationsOuterClass.ListOperationsResponse parseFrom(byte[] data)
+    public static v10proto.operations.v1.OperationsOuterClass.ListOperationsResponse parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static v12proto.operations.v1.OperationsOuterClass.ListOperationsResponse parseFrom(
+    public static v10proto.operations.v1.OperationsOuterClass.ListOperationsResponse parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static v12proto.operations.v1.OperationsOuterClass.ListOperationsResponse parseFrom(java.io.InputStream input)
+    public static v10proto.operations.v1.OperationsOuterClass.ListOperationsResponse parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseWithIOException(PARSER, input);
     }
-    public static v12proto.operations.v1.OperationsOuterClass.ListOperationsResponse parseFrom(
+    public static v10proto.operations.v1.OperationsOuterClass.ListOperationsResponse parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -976,26 +976,26 @@ public final class OperationsOuterClass {
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    public static v12proto.operations.v1.OperationsOuterClass.ListOperationsResponse parseDelimitedFrom(java.io.InputStream input)
+    public static v10proto.operations.v1.OperationsOuterClass.ListOperationsResponse parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseDelimitedWithIOException(PARSER, input);
     }
 
-    public static v12proto.operations.v1.OperationsOuterClass.ListOperationsResponse parseDelimitedFrom(
+    public static v10proto.operations.v1.OperationsOuterClass.ListOperationsResponse parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static v12proto.operations.v1.OperationsOuterClass.ListOperationsResponse parseFrom(
+    public static v10proto.operations.v1.OperationsOuterClass.ListOperationsResponse parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseWithIOException(PARSER, input);
     }
-    public static v12proto.operations.v1.OperationsOuterClass.ListOperationsResponse parseFrom(
+    public static v10proto.operations.v1.OperationsOuterClass.ListOperationsResponse parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -1008,7 +1008,7 @@ public final class OperationsOuterClass {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(v12proto.operations.v1.OperationsOuterClass.ListOperationsResponse prototype) {
+    public static Builder newBuilder(v10proto.operations.v1.OperationsOuterClass.ListOperationsResponse prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -1028,26 +1028,26 @@ public final class OperationsOuterClass {
      * Response message for the ListOperations rpc.
      * </pre>
      *
-     * Protobuf type {@code v12proto.operations.v1.ListOperationsResponse}
+     * Protobuf type {@code v10proto.operations.v1.ListOperationsResponse}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:v12proto.operations.v1.ListOperationsResponse)
-        v12proto.operations.v1.OperationsOuterClass.ListOperationsResponseOrBuilder {
+        // @@protoc_insertion_point(builder_implements:v10proto.operations.v1.ListOperationsResponse)
+        v10proto.operations.v1.OperationsOuterClass.ListOperationsResponseOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return v12proto.operations.v1.OperationsOuterClass.internal_static_v12proto_operations_v1_ListOperationsResponse_descriptor;
+        return v10proto.operations.v1.OperationsOuterClass.internal_static_v10proto_operations_v1_ListOperationsResponse_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return v12proto.operations.v1.OperationsOuterClass.internal_static_v12proto_operations_v1_ListOperationsResponse_fieldAccessorTable
+        return v10proto.operations.v1.OperationsOuterClass.internal_static_v10proto_operations_v1_ListOperationsResponse_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                v12proto.operations.v1.OperationsOuterClass.ListOperationsResponse.class, v12proto.operations.v1.OperationsOuterClass.ListOperationsResponse.Builder.class);
+                v10proto.operations.v1.OperationsOuterClass.ListOperationsResponse.class, v10proto.operations.v1.OperationsOuterClass.ListOperationsResponse.Builder.class);
       }
 
-      // Construct using v12proto.operations.v1.OperationsOuterClass.ListOperationsResponse.newBuilder()
+      // Construct using v10proto.operations.v1.OperationsOuterClass.ListOperationsResponse.newBuilder()
       private Builder() {
 
       }
@@ -1075,17 +1075,17 @@ public final class OperationsOuterClass {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return v12proto.operations.v1.OperationsOuterClass.internal_static_v12proto_operations_v1_ListOperationsResponse_descriptor;
+        return v10proto.operations.v1.OperationsOuterClass.internal_static_v10proto_operations_v1_ListOperationsResponse_descriptor;
       }
 
       @java.lang.Override
-      public v12proto.operations.v1.OperationsOuterClass.ListOperationsResponse getDefaultInstanceForType() {
-        return v12proto.operations.v1.OperationsOuterClass.ListOperationsResponse.getDefaultInstance();
+      public v10proto.operations.v1.OperationsOuterClass.ListOperationsResponse getDefaultInstanceForType() {
+        return v10proto.operations.v1.OperationsOuterClass.ListOperationsResponse.getDefaultInstance();
       }
 
       @java.lang.Override
-      public v12proto.operations.v1.OperationsOuterClass.ListOperationsResponse build() {
-        v12proto.operations.v1.OperationsOuterClass.ListOperationsResponse result = buildPartial();
+      public v10proto.operations.v1.OperationsOuterClass.ListOperationsResponse build() {
+        v10proto.operations.v1.OperationsOuterClass.ListOperationsResponse result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -1093,15 +1093,15 @@ public final class OperationsOuterClass {
       }
 
       @java.lang.Override
-      public v12proto.operations.v1.OperationsOuterClass.ListOperationsResponse buildPartial() {
-        v12proto.operations.v1.OperationsOuterClass.ListOperationsResponse result = new v12proto.operations.v1.OperationsOuterClass.ListOperationsResponse(this);
+      public v10proto.operations.v1.OperationsOuterClass.ListOperationsResponse buildPartial() {
+        v10proto.operations.v1.OperationsOuterClass.ListOperationsResponse result = new v10proto.operations.v1.OperationsOuterClass.ListOperationsResponse(this);
         buildPartialRepeatedFields(result);
         if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
       }
 
-      private void buildPartialRepeatedFields(v12proto.operations.v1.OperationsOuterClass.ListOperationsResponse result) {
+      private void buildPartialRepeatedFields(v10proto.operations.v1.OperationsOuterClass.ListOperationsResponse result) {
         if (operationsBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
             operations_ = java.util.Collections.unmodifiableList(operations_);
@@ -1113,7 +1113,7 @@ public final class OperationsOuterClass {
         }
       }
 
-      private void buildPartial0(v12proto.operations.v1.OperationsOuterClass.ListOperationsResponse result) {
+      private void buildPartial0(v10proto.operations.v1.OperationsOuterClass.ListOperationsResponse result) {
         int from_bitField0_ = bitField0_;
         if (((from_bitField0_ & 0x00000002) != 0)) {
           result.nextToken_ = nextToken_;
@@ -1122,16 +1122,16 @@ public final class OperationsOuterClass {
 
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof v12proto.operations.v1.OperationsOuterClass.ListOperationsResponse) {
-          return mergeFrom((v12proto.operations.v1.OperationsOuterClass.ListOperationsResponse)other);
+        if (other instanceof v10proto.operations.v1.OperationsOuterClass.ListOperationsResponse) {
+          return mergeFrom((v10proto.operations.v1.OperationsOuterClass.ListOperationsResponse)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(v12proto.operations.v1.OperationsOuterClass.ListOperationsResponse other) {
-        if (other == v12proto.operations.v1.OperationsOuterClass.ListOperationsResponse.getDefaultInstance()) return this;
+      public Builder mergeFrom(v10proto.operations.v1.OperationsOuterClass.ListOperationsResponse other) {
+        if (other == v10proto.operations.v1.OperationsOuterClass.ListOperationsResponse.getDefaultInstance()) return this;
         if (operationsBuilder_ == null) {
           if (!other.operations_.isEmpty()) {
             if (operations_.isEmpty()) {
@@ -1190,9 +1190,9 @@ public final class OperationsOuterClass {
                 done = true;
                 break;
               case 10: {
-                v12proto.types.OperationOuterClass.Operation m =
+                v10proto.types.OperationOuterClass.Operation m =
                     input.readMessage(
-                        v12proto.types.OperationOuterClass.Operation.parser(),
+                        v10proto.types.OperationOuterClass.Operation.parser(),
                         extensionRegistry);
                 if (operationsBuilder_ == null) {
                   ensureOperationsIsMutable();
@@ -1224,22 +1224,22 @@ public final class OperationsOuterClass {
       }
       private int bitField0_;
 
-      private java.util.List<v12proto.types.OperationOuterClass.Operation> operations_ =
+      private java.util.List<v10proto.types.OperationOuterClass.Operation> operations_ =
         java.util.Collections.emptyList();
       private void ensureOperationsIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          operations_ = new java.util.ArrayList<v12proto.types.OperationOuterClass.Operation>(operations_);
+          operations_ = new java.util.ArrayList<v10proto.types.OperationOuterClass.Operation>(operations_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilder<
-          v12proto.types.OperationOuterClass.Operation, v12proto.types.OperationOuterClass.Operation.Builder, v12proto.types.OperationOuterClass.OperationOrBuilder> operationsBuilder_;
+          v10proto.types.OperationOuterClass.Operation, v10proto.types.OperationOuterClass.Operation.Builder, v10proto.types.OperationOuterClass.OperationOrBuilder> operationsBuilder_;
 
       /**
-       * <code>repeated .v12proto.types.Operation operations = 1 [json_name = "operations"];</code>
+       * <code>repeated .v10proto.types.Operation operations = 1 [json_name = "operations"];</code>
        */
-      public java.util.List<v12proto.types.OperationOuterClass.Operation> getOperationsList() {
+      public java.util.List<v10proto.types.OperationOuterClass.Operation> getOperationsList() {
         if (operationsBuilder_ == null) {
           return java.util.Collections.unmodifiableList(operations_);
         } else {
@@ -1247,7 +1247,7 @@ public final class OperationsOuterClass {
         }
       }
       /**
-       * <code>repeated .v12proto.types.Operation operations = 1 [json_name = "operations"];</code>
+       * <code>repeated .v10proto.types.Operation operations = 1 [json_name = "operations"];</code>
        */
       public int getOperationsCount() {
         if (operationsBuilder_ == null) {
@@ -1257,9 +1257,9 @@ public final class OperationsOuterClass {
         }
       }
       /**
-       * <code>repeated .v12proto.types.Operation operations = 1 [json_name = "operations"];</code>
+       * <code>repeated .v10proto.types.Operation operations = 1 [json_name = "operations"];</code>
        */
-      public v12proto.types.OperationOuterClass.Operation getOperations(int index) {
+      public v10proto.types.OperationOuterClass.Operation getOperations(int index) {
         if (operationsBuilder_ == null) {
           return operations_.get(index);
         } else {
@@ -1267,10 +1267,10 @@ public final class OperationsOuterClass {
         }
       }
       /**
-       * <code>repeated .v12proto.types.Operation operations = 1 [json_name = "operations"];</code>
+       * <code>repeated .v10proto.types.Operation operations = 1 [json_name = "operations"];</code>
        */
       public Builder setOperations(
-          int index, v12proto.types.OperationOuterClass.Operation value) {
+          int index, v10proto.types.OperationOuterClass.Operation value) {
         if (operationsBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -1284,10 +1284,10 @@ public final class OperationsOuterClass {
         return this;
       }
       /**
-       * <code>repeated .v12proto.types.Operation operations = 1 [json_name = "operations"];</code>
+       * <code>repeated .v10proto.types.Operation operations = 1 [json_name = "operations"];</code>
        */
       public Builder setOperations(
-          int index, v12proto.types.OperationOuterClass.Operation.Builder builderForValue) {
+          int index, v10proto.types.OperationOuterClass.Operation.Builder builderForValue) {
         if (operationsBuilder_ == null) {
           ensureOperationsIsMutable();
           operations_.set(index, builderForValue.build());
@@ -1298,9 +1298,9 @@ public final class OperationsOuterClass {
         return this;
       }
       /**
-       * <code>repeated .v12proto.types.Operation operations = 1 [json_name = "operations"];</code>
+       * <code>repeated .v10proto.types.Operation operations = 1 [json_name = "operations"];</code>
        */
-      public Builder addOperations(v12proto.types.OperationOuterClass.Operation value) {
+      public Builder addOperations(v10proto.types.OperationOuterClass.Operation value) {
         if (operationsBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -1314,10 +1314,10 @@ public final class OperationsOuterClass {
         return this;
       }
       /**
-       * <code>repeated .v12proto.types.Operation operations = 1 [json_name = "operations"];</code>
+       * <code>repeated .v10proto.types.Operation operations = 1 [json_name = "operations"];</code>
        */
       public Builder addOperations(
-          int index, v12proto.types.OperationOuterClass.Operation value) {
+          int index, v10proto.types.OperationOuterClass.Operation value) {
         if (operationsBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -1331,10 +1331,10 @@ public final class OperationsOuterClass {
         return this;
       }
       /**
-       * <code>repeated .v12proto.types.Operation operations = 1 [json_name = "operations"];</code>
+       * <code>repeated .v10proto.types.Operation operations = 1 [json_name = "operations"];</code>
        */
       public Builder addOperations(
-          v12proto.types.OperationOuterClass.Operation.Builder builderForValue) {
+          v10proto.types.OperationOuterClass.Operation.Builder builderForValue) {
         if (operationsBuilder_ == null) {
           ensureOperationsIsMutable();
           operations_.add(builderForValue.build());
@@ -1345,10 +1345,10 @@ public final class OperationsOuterClass {
         return this;
       }
       /**
-       * <code>repeated .v12proto.types.Operation operations = 1 [json_name = "operations"];</code>
+       * <code>repeated .v10proto.types.Operation operations = 1 [json_name = "operations"];</code>
        */
       public Builder addOperations(
-          int index, v12proto.types.OperationOuterClass.Operation.Builder builderForValue) {
+          int index, v10proto.types.OperationOuterClass.Operation.Builder builderForValue) {
         if (operationsBuilder_ == null) {
           ensureOperationsIsMutable();
           operations_.add(index, builderForValue.build());
@@ -1359,10 +1359,10 @@ public final class OperationsOuterClass {
         return this;
       }
       /**
-       * <code>repeated .v12proto.types.Operation operations = 1 [json_name = "operations"];</code>
+       * <code>repeated .v10proto.types.Operation operations = 1 [json_name = "operations"];</code>
        */
       public Builder addAllOperations(
-          java.lang.Iterable<? extends v12proto.types.OperationOuterClass.Operation> values) {
+          java.lang.Iterable<? extends v10proto.types.OperationOuterClass.Operation> values) {
         if (operationsBuilder_ == null) {
           ensureOperationsIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -1374,7 +1374,7 @@ public final class OperationsOuterClass {
         return this;
       }
       /**
-       * <code>repeated .v12proto.types.Operation operations = 1 [json_name = "operations"];</code>
+       * <code>repeated .v10proto.types.Operation operations = 1 [json_name = "operations"];</code>
        */
       public Builder clearOperations() {
         if (operationsBuilder_ == null) {
@@ -1387,7 +1387,7 @@ public final class OperationsOuterClass {
         return this;
       }
       /**
-       * <code>repeated .v12proto.types.Operation operations = 1 [json_name = "operations"];</code>
+       * <code>repeated .v10proto.types.Operation operations = 1 [json_name = "operations"];</code>
        */
       public Builder removeOperations(int index) {
         if (operationsBuilder_ == null) {
@@ -1400,16 +1400,16 @@ public final class OperationsOuterClass {
         return this;
       }
       /**
-       * <code>repeated .v12proto.types.Operation operations = 1 [json_name = "operations"];</code>
+       * <code>repeated .v10proto.types.Operation operations = 1 [json_name = "operations"];</code>
        */
-      public v12proto.types.OperationOuterClass.Operation.Builder getOperationsBuilder(
+      public v10proto.types.OperationOuterClass.Operation.Builder getOperationsBuilder(
           int index) {
         return getOperationsFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .v12proto.types.Operation operations = 1 [json_name = "operations"];</code>
+       * <code>repeated .v10proto.types.Operation operations = 1 [json_name = "operations"];</code>
        */
-      public v12proto.types.OperationOuterClass.OperationOrBuilder getOperationsOrBuilder(
+      public v10proto.types.OperationOuterClass.OperationOrBuilder getOperationsOrBuilder(
           int index) {
         if (operationsBuilder_ == null) {
           return operations_.get(index);  } else {
@@ -1417,9 +1417,9 @@ public final class OperationsOuterClass {
         }
       }
       /**
-       * <code>repeated .v12proto.types.Operation operations = 1 [json_name = "operations"];</code>
+       * <code>repeated .v10proto.types.Operation operations = 1 [json_name = "operations"];</code>
        */
-      public java.util.List<? extends v12proto.types.OperationOuterClass.OperationOrBuilder> 
+      public java.util.List<? extends v10proto.types.OperationOuterClass.OperationOrBuilder> 
            getOperationsOrBuilderList() {
         if (operationsBuilder_ != null) {
           return operationsBuilder_.getMessageOrBuilderList();
@@ -1428,33 +1428,33 @@ public final class OperationsOuterClass {
         }
       }
       /**
-       * <code>repeated .v12proto.types.Operation operations = 1 [json_name = "operations"];</code>
+       * <code>repeated .v10proto.types.Operation operations = 1 [json_name = "operations"];</code>
        */
-      public v12proto.types.OperationOuterClass.Operation.Builder addOperationsBuilder() {
+      public v10proto.types.OperationOuterClass.Operation.Builder addOperationsBuilder() {
         return getOperationsFieldBuilder().addBuilder(
-            v12proto.types.OperationOuterClass.Operation.getDefaultInstance());
+            v10proto.types.OperationOuterClass.Operation.getDefaultInstance());
       }
       /**
-       * <code>repeated .v12proto.types.Operation operations = 1 [json_name = "operations"];</code>
+       * <code>repeated .v10proto.types.Operation operations = 1 [json_name = "operations"];</code>
        */
-      public v12proto.types.OperationOuterClass.Operation.Builder addOperationsBuilder(
+      public v10proto.types.OperationOuterClass.Operation.Builder addOperationsBuilder(
           int index) {
         return getOperationsFieldBuilder().addBuilder(
-            index, v12proto.types.OperationOuterClass.Operation.getDefaultInstance());
+            index, v10proto.types.OperationOuterClass.Operation.getDefaultInstance());
       }
       /**
-       * <code>repeated .v12proto.types.Operation operations = 1 [json_name = "operations"];</code>
+       * <code>repeated .v10proto.types.Operation operations = 1 [json_name = "operations"];</code>
        */
-      public java.util.List<v12proto.types.OperationOuterClass.Operation.Builder> 
+      public java.util.List<v10proto.types.OperationOuterClass.Operation.Builder> 
            getOperationsBuilderList() {
         return getOperationsFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilder<
-          v12proto.types.OperationOuterClass.Operation, v12proto.types.OperationOuterClass.Operation.Builder, v12proto.types.OperationOuterClass.OperationOrBuilder> 
+          v10proto.types.OperationOuterClass.Operation, v10proto.types.OperationOuterClass.Operation.Builder, v10proto.types.OperationOuterClass.OperationOrBuilder> 
           getOperationsFieldBuilder() {
         if (operationsBuilder_ == null) {
           operationsBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
-              v12proto.types.OperationOuterClass.Operation, v12proto.types.OperationOuterClass.Operation.Builder, v12proto.types.OperationOuterClass.OperationOrBuilder>(
+              v10proto.types.OperationOuterClass.Operation, v10proto.types.OperationOuterClass.Operation.Builder, v10proto.types.OperationOuterClass.OperationOrBuilder>(
                   operations_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
@@ -1536,16 +1536,16 @@ public final class OperationsOuterClass {
         return this;
       }
 
-      // @@protoc_insertion_point(builder_scope:v12proto.operations.v1.ListOperationsResponse)
+      // @@protoc_insertion_point(builder_scope:v10proto.operations.v1.ListOperationsResponse)
     }
 
-    // @@protoc_insertion_point(class_scope:v12proto.operations.v1.ListOperationsResponse)
-    private static final v12proto.operations.v1.OperationsOuterClass.ListOperationsResponse DEFAULT_INSTANCE;
+    // @@protoc_insertion_point(class_scope:v10proto.operations.v1.ListOperationsResponse)
+    private static final v10proto.operations.v1.OperationsOuterClass.ListOperationsResponse DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new v12proto.operations.v1.OperationsOuterClass.ListOperationsResponse();
+      DEFAULT_INSTANCE = new v10proto.operations.v1.OperationsOuterClass.ListOperationsResponse();
     }
 
-    public static v12proto.operations.v1.OperationsOuterClass.ListOperationsResponse getDefaultInstance() {
+    public static v10proto.operations.v1.OperationsOuterClass.ListOperationsResponse getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
@@ -1581,14 +1581,14 @@ public final class OperationsOuterClass {
     }
 
     @java.lang.Override
-    public v12proto.operations.v1.OperationsOuterClass.ListOperationsResponse getDefaultInstanceForType() {
+    public v10proto.operations.v1.OperationsOuterClass.ListOperationsResponse getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
   }
 
   public interface GetOperationRequestOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:v12proto.operations.v1.GetOperationRequest)
+      // @@protoc_insertion_point(interface_extends:v10proto.operations.v1.GetOperationRequest)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -1608,11 +1608,11 @@ public final class OperationsOuterClass {
    * Request message for the GetOperation rpc.
    * </pre>
    *
-   * Protobuf type {@code v12proto.operations.v1.GetOperationRequest}
+   * Protobuf type {@code v10proto.operations.v1.GetOperationRequest}
    */
   public static final class GetOperationRequest extends
       com.google.protobuf.GeneratedMessage implements
-      // @@protoc_insertion_point(message_implements:v12proto.operations.v1.GetOperationRequest)
+      // @@protoc_insertion_point(message_implements:v10proto.operations.v1.GetOperationRequest)
       GetOperationRequestOrBuilder {
   private static final long serialVersionUID = 0L;
     static {
@@ -1634,15 +1634,15 @@ public final class OperationsOuterClass {
 
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return v12proto.operations.v1.OperationsOuterClass.internal_static_v12proto_operations_v1_GetOperationRequest_descriptor;
+      return v10proto.operations.v1.OperationsOuterClass.internal_static_v10proto_operations_v1_GetOperationRequest_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return v12proto.operations.v1.OperationsOuterClass.internal_static_v12proto_operations_v1_GetOperationRequest_fieldAccessorTable
+      return v10proto.operations.v1.OperationsOuterClass.internal_static_v10proto_operations_v1_GetOperationRequest_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              v12proto.operations.v1.OperationsOuterClass.GetOperationRequest.class, v12proto.operations.v1.OperationsOuterClass.GetOperationRequest.Builder.class);
+              v10proto.operations.v1.OperationsOuterClass.GetOperationRequest.class, v10proto.operations.v1.OperationsOuterClass.GetOperationRequest.Builder.class);
     }
 
     public static final int NAME_FIELD_NUMBER = 1;
@@ -1723,10 +1723,10 @@ public final class OperationsOuterClass {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof v12proto.operations.v1.OperationsOuterClass.GetOperationRequest)) {
+      if (!(obj instanceof v10proto.operations.v1.OperationsOuterClass.GetOperationRequest)) {
         return super.equals(obj);
       }
-      v12proto.operations.v1.OperationsOuterClass.GetOperationRequest other = (v12proto.operations.v1.OperationsOuterClass.GetOperationRequest) obj;
+      v10proto.operations.v1.OperationsOuterClass.GetOperationRequest other = (v10proto.operations.v1.OperationsOuterClass.GetOperationRequest) obj;
 
       if (!getName()
           .equals(other.getName())) return false;
@@ -1748,44 +1748,44 @@ public final class OperationsOuterClass {
       return hash;
     }
 
-    public static v12proto.operations.v1.OperationsOuterClass.GetOperationRequest parseFrom(
+    public static v10proto.operations.v1.OperationsOuterClass.GetOperationRequest parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static v12proto.operations.v1.OperationsOuterClass.GetOperationRequest parseFrom(
+    public static v10proto.operations.v1.OperationsOuterClass.GetOperationRequest parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static v12proto.operations.v1.OperationsOuterClass.GetOperationRequest parseFrom(
+    public static v10proto.operations.v1.OperationsOuterClass.GetOperationRequest parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static v12proto.operations.v1.OperationsOuterClass.GetOperationRequest parseFrom(
+    public static v10proto.operations.v1.OperationsOuterClass.GetOperationRequest parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static v12proto.operations.v1.OperationsOuterClass.GetOperationRequest parseFrom(byte[] data)
+    public static v10proto.operations.v1.OperationsOuterClass.GetOperationRequest parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static v12proto.operations.v1.OperationsOuterClass.GetOperationRequest parseFrom(
+    public static v10proto.operations.v1.OperationsOuterClass.GetOperationRequest parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static v12proto.operations.v1.OperationsOuterClass.GetOperationRequest parseFrom(java.io.InputStream input)
+    public static v10proto.operations.v1.OperationsOuterClass.GetOperationRequest parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseWithIOException(PARSER, input);
     }
-    public static v12proto.operations.v1.OperationsOuterClass.GetOperationRequest parseFrom(
+    public static v10proto.operations.v1.OperationsOuterClass.GetOperationRequest parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -1793,26 +1793,26 @@ public final class OperationsOuterClass {
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    public static v12proto.operations.v1.OperationsOuterClass.GetOperationRequest parseDelimitedFrom(java.io.InputStream input)
+    public static v10proto.operations.v1.OperationsOuterClass.GetOperationRequest parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseDelimitedWithIOException(PARSER, input);
     }
 
-    public static v12proto.operations.v1.OperationsOuterClass.GetOperationRequest parseDelimitedFrom(
+    public static v10proto.operations.v1.OperationsOuterClass.GetOperationRequest parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static v12proto.operations.v1.OperationsOuterClass.GetOperationRequest parseFrom(
+    public static v10proto.operations.v1.OperationsOuterClass.GetOperationRequest parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseWithIOException(PARSER, input);
     }
-    public static v12proto.operations.v1.OperationsOuterClass.GetOperationRequest parseFrom(
+    public static v10proto.operations.v1.OperationsOuterClass.GetOperationRequest parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -1825,7 +1825,7 @@ public final class OperationsOuterClass {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(v12proto.operations.v1.OperationsOuterClass.GetOperationRequest prototype) {
+    public static Builder newBuilder(v10proto.operations.v1.OperationsOuterClass.GetOperationRequest prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -1845,26 +1845,26 @@ public final class OperationsOuterClass {
      * Request message for the GetOperation rpc.
      * </pre>
      *
-     * Protobuf type {@code v12proto.operations.v1.GetOperationRequest}
+     * Protobuf type {@code v10proto.operations.v1.GetOperationRequest}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:v12proto.operations.v1.GetOperationRequest)
-        v12proto.operations.v1.OperationsOuterClass.GetOperationRequestOrBuilder {
+        // @@protoc_insertion_point(builder_implements:v10proto.operations.v1.GetOperationRequest)
+        v10proto.operations.v1.OperationsOuterClass.GetOperationRequestOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return v12proto.operations.v1.OperationsOuterClass.internal_static_v12proto_operations_v1_GetOperationRequest_descriptor;
+        return v10proto.operations.v1.OperationsOuterClass.internal_static_v10proto_operations_v1_GetOperationRequest_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return v12proto.operations.v1.OperationsOuterClass.internal_static_v12proto_operations_v1_GetOperationRequest_fieldAccessorTable
+        return v10proto.operations.v1.OperationsOuterClass.internal_static_v10proto_operations_v1_GetOperationRequest_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                v12proto.operations.v1.OperationsOuterClass.GetOperationRequest.class, v12proto.operations.v1.OperationsOuterClass.GetOperationRequest.Builder.class);
+                v10proto.operations.v1.OperationsOuterClass.GetOperationRequest.class, v10proto.operations.v1.OperationsOuterClass.GetOperationRequest.Builder.class);
       }
 
-      // Construct using v12proto.operations.v1.OperationsOuterClass.GetOperationRequest.newBuilder()
+      // Construct using v10proto.operations.v1.OperationsOuterClass.GetOperationRequest.newBuilder()
       private Builder() {
 
       }
@@ -1885,17 +1885,17 @@ public final class OperationsOuterClass {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return v12proto.operations.v1.OperationsOuterClass.internal_static_v12proto_operations_v1_GetOperationRequest_descriptor;
+        return v10proto.operations.v1.OperationsOuterClass.internal_static_v10proto_operations_v1_GetOperationRequest_descriptor;
       }
 
       @java.lang.Override
-      public v12proto.operations.v1.OperationsOuterClass.GetOperationRequest getDefaultInstanceForType() {
-        return v12proto.operations.v1.OperationsOuterClass.GetOperationRequest.getDefaultInstance();
+      public v10proto.operations.v1.OperationsOuterClass.GetOperationRequest getDefaultInstanceForType() {
+        return v10proto.operations.v1.OperationsOuterClass.GetOperationRequest.getDefaultInstance();
       }
 
       @java.lang.Override
-      public v12proto.operations.v1.OperationsOuterClass.GetOperationRequest build() {
-        v12proto.operations.v1.OperationsOuterClass.GetOperationRequest result = buildPartial();
+      public v10proto.operations.v1.OperationsOuterClass.GetOperationRequest build() {
+        v10proto.operations.v1.OperationsOuterClass.GetOperationRequest result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -1903,14 +1903,14 @@ public final class OperationsOuterClass {
       }
 
       @java.lang.Override
-      public v12proto.operations.v1.OperationsOuterClass.GetOperationRequest buildPartial() {
-        v12proto.operations.v1.OperationsOuterClass.GetOperationRequest result = new v12proto.operations.v1.OperationsOuterClass.GetOperationRequest(this);
+      public v10proto.operations.v1.OperationsOuterClass.GetOperationRequest buildPartial() {
+        v10proto.operations.v1.OperationsOuterClass.GetOperationRequest result = new v10proto.operations.v1.OperationsOuterClass.GetOperationRequest(this);
         if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
       }
 
-      private void buildPartial0(v12proto.operations.v1.OperationsOuterClass.GetOperationRequest result) {
+      private void buildPartial0(v10proto.operations.v1.OperationsOuterClass.GetOperationRequest result) {
         int from_bitField0_ = bitField0_;
         if (((from_bitField0_ & 0x00000001) != 0)) {
           result.name_ = name_;
@@ -1919,16 +1919,16 @@ public final class OperationsOuterClass {
 
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof v12proto.operations.v1.OperationsOuterClass.GetOperationRequest) {
-          return mergeFrom((v12proto.operations.v1.OperationsOuterClass.GetOperationRequest)other);
+        if (other instanceof v10proto.operations.v1.OperationsOuterClass.GetOperationRequest) {
+          return mergeFrom((v10proto.operations.v1.OperationsOuterClass.GetOperationRequest)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(v12proto.operations.v1.OperationsOuterClass.GetOperationRequest other) {
-        if (other == v12proto.operations.v1.OperationsOuterClass.GetOperationRequest.getDefaultInstance()) return this;
+      public Builder mergeFrom(v10proto.operations.v1.OperationsOuterClass.GetOperationRequest other) {
+        if (other == v10proto.operations.v1.OperationsOuterClass.GetOperationRequest.getDefaultInstance()) return this;
         if (!other.getName().isEmpty()) {
           name_ = other.name_;
           bitField0_ |= 0x00000001;
@@ -2054,16 +2054,16 @@ public final class OperationsOuterClass {
         return this;
       }
 
-      // @@protoc_insertion_point(builder_scope:v12proto.operations.v1.GetOperationRequest)
+      // @@protoc_insertion_point(builder_scope:v10proto.operations.v1.GetOperationRequest)
     }
 
-    // @@protoc_insertion_point(class_scope:v12proto.operations.v1.GetOperationRequest)
-    private static final v12proto.operations.v1.OperationsOuterClass.GetOperationRequest DEFAULT_INSTANCE;
+    // @@protoc_insertion_point(class_scope:v10proto.operations.v1.GetOperationRequest)
+    private static final v10proto.operations.v1.OperationsOuterClass.GetOperationRequest DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new v12proto.operations.v1.OperationsOuterClass.GetOperationRequest();
+      DEFAULT_INSTANCE = new v10proto.operations.v1.OperationsOuterClass.GetOperationRequest();
     }
 
-    public static v12proto.operations.v1.OperationsOuterClass.GetOperationRequest getDefaultInstance() {
+    public static v10proto.operations.v1.OperationsOuterClass.GetOperationRequest getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
@@ -2099,14 +2099,14 @@ public final class OperationsOuterClass {
     }
 
     @java.lang.Override
-    public v12proto.operations.v1.OperationsOuterClass.GetOperationRequest getDefaultInstanceForType() {
+    public v10proto.operations.v1.OperationsOuterClass.GetOperationRequest getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
   }
 
   public interface DeleteOperationRequestOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:v12proto.operations.v1.DeleteOperationRequest)
+      // @@protoc_insertion_point(interface_extends:v10proto.operations.v1.DeleteOperationRequest)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -2126,11 +2126,11 @@ public final class OperationsOuterClass {
    * Request message for the DeleteOperation rpc.
    * </pre>
    *
-   * Protobuf type {@code v12proto.operations.v1.DeleteOperationRequest}
+   * Protobuf type {@code v10proto.operations.v1.DeleteOperationRequest}
    */
   public static final class DeleteOperationRequest extends
       com.google.protobuf.GeneratedMessage implements
-      // @@protoc_insertion_point(message_implements:v12proto.operations.v1.DeleteOperationRequest)
+      // @@protoc_insertion_point(message_implements:v10proto.operations.v1.DeleteOperationRequest)
       DeleteOperationRequestOrBuilder {
   private static final long serialVersionUID = 0L;
     static {
@@ -2152,15 +2152,15 @@ public final class OperationsOuterClass {
 
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return v12proto.operations.v1.OperationsOuterClass.internal_static_v12proto_operations_v1_DeleteOperationRequest_descriptor;
+      return v10proto.operations.v1.OperationsOuterClass.internal_static_v10proto_operations_v1_DeleteOperationRequest_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return v12proto.operations.v1.OperationsOuterClass.internal_static_v12proto_operations_v1_DeleteOperationRequest_fieldAccessorTable
+      return v10proto.operations.v1.OperationsOuterClass.internal_static_v10proto_operations_v1_DeleteOperationRequest_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              v12proto.operations.v1.OperationsOuterClass.DeleteOperationRequest.class, v12proto.operations.v1.OperationsOuterClass.DeleteOperationRequest.Builder.class);
+              v10proto.operations.v1.OperationsOuterClass.DeleteOperationRequest.class, v10proto.operations.v1.OperationsOuterClass.DeleteOperationRequest.Builder.class);
     }
 
     public static final int NAME_FIELD_NUMBER = 1;
@@ -2241,10 +2241,10 @@ public final class OperationsOuterClass {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof v12proto.operations.v1.OperationsOuterClass.DeleteOperationRequest)) {
+      if (!(obj instanceof v10proto.operations.v1.OperationsOuterClass.DeleteOperationRequest)) {
         return super.equals(obj);
       }
-      v12proto.operations.v1.OperationsOuterClass.DeleteOperationRequest other = (v12proto.operations.v1.OperationsOuterClass.DeleteOperationRequest) obj;
+      v10proto.operations.v1.OperationsOuterClass.DeleteOperationRequest other = (v10proto.operations.v1.OperationsOuterClass.DeleteOperationRequest) obj;
 
       if (!getName()
           .equals(other.getName())) return false;
@@ -2266,44 +2266,44 @@ public final class OperationsOuterClass {
       return hash;
     }
 
-    public static v12proto.operations.v1.OperationsOuterClass.DeleteOperationRequest parseFrom(
+    public static v10proto.operations.v1.OperationsOuterClass.DeleteOperationRequest parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static v12proto.operations.v1.OperationsOuterClass.DeleteOperationRequest parseFrom(
+    public static v10proto.operations.v1.OperationsOuterClass.DeleteOperationRequest parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static v12proto.operations.v1.OperationsOuterClass.DeleteOperationRequest parseFrom(
+    public static v10proto.operations.v1.OperationsOuterClass.DeleteOperationRequest parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static v12proto.operations.v1.OperationsOuterClass.DeleteOperationRequest parseFrom(
+    public static v10proto.operations.v1.OperationsOuterClass.DeleteOperationRequest parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static v12proto.operations.v1.OperationsOuterClass.DeleteOperationRequest parseFrom(byte[] data)
+    public static v10proto.operations.v1.OperationsOuterClass.DeleteOperationRequest parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static v12proto.operations.v1.OperationsOuterClass.DeleteOperationRequest parseFrom(
+    public static v10proto.operations.v1.OperationsOuterClass.DeleteOperationRequest parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static v12proto.operations.v1.OperationsOuterClass.DeleteOperationRequest parseFrom(java.io.InputStream input)
+    public static v10proto.operations.v1.OperationsOuterClass.DeleteOperationRequest parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseWithIOException(PARSER, input);
     }
-    public static v12proto.operations.v1.OperationsOuterClass.DeleteOperationRequest parseFrom(
+    public static v10proto.operations.v1.OperationsOuterClass.DeleteOperationRequest parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -2311,26 +2311,26 @@ public final class OperationsOuterClass {
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    public static v12proto.operations.v1.OperationsOuterClass.DeleteOperationRequest parseDelimitedFrom(java.io.InputStream input)
+    public static v10proto.operations.v1.OperationsOuterClass.DeleteOperationRequest parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseDelimitedWithIOException(PARSER, input);
     }
 
-    public static v12proto.operations.v1.OperationsOuterClass.DeleteOperationRequest parseDelimitedFrom(
+    public static v10proto.operations.v1.OperationsOuterClass.DeleteOperationRequest parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static v12proto.operations.v1.OperationsOuterClass.DeleteOperationRequest parseFrom(
+    public static v10proto.operations.v1.OperationsOuterClass.DeleteOperationRequest parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseWithIOException(PARSER, input);
     }
-    public static v12proto.operations.v1.OperationsOuterClass.DeleteOperationRequest parseFrom(
+    public static v10proto.operations.v1.OperationsOuterClass.DeleteOperationRequest parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -2343,7 +2343,7 @@ public final class OperationsOuterClass {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(v12proto.operations.v1.OperationsOuterClass.DeleteOperationRequest prototype) {
+    public static Builder newBuilder(v10proto.operations.v1.OperationsOuterClass.DeleteOperationRequest prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -2363,26 +2363,26 @@ public final class OperationsOuterClass {
      * Request message for the DeleteOperation rpc.
      * </pre>
      *
-     * Protobuf type {@code v12proto.operations.v1.DeleteOperationRequest}
+     * Protobuf type {@code v10proto.operations.v1.DeleteOperationRequest}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:v12proto.operations.v1.DeleteOperationRequest)
-        v12proto.operations.v1.OperationsOuterClass.DeleteOperationRequestOrBuilder {
+        // @@protoc_insertion_point(builder_implements:v10proto.operations.v1.DeleteOperationRequest)
+        v10proto.operations.v1.OperationsOuterClass.DeleteOperationRequestOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return v12proto.operations.v1.OperationsOuterClass.internal_static_v12proto_operations_v1_DeleteOperationRequest_descriptor;
+        return v10proto.operations.v1.OperationsOuterClass.internal_static_v10proto_operations_v1_DeleteOperationRequest_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return v12proto.operations.v1.OperationsOuterClass.internal_static_v12proto_operations_v1_DeleteOperationRequest_fieldAccessorTable
+        return v10proto.operations.v1.OperationsOuterClass.internal_static_v10proto_operations_v1_DeleteOperationRequest_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                v12proto.operations.v1.OperationsOuterClass.DeleteOperationRequest.class, v12proto.operations.v1.OperationsOuterClass.DeleteOperationRequest.Builder.class);
+                v10proto.operations.v1.OperationsOuterClass.DeleteOperationRequest.class, v10proto.operations.v1.OperationsOuterClass.DeleteOperationRequest.Builder.class);
       }
 
-      // Construct using v12proto.operations.v1.OperationsOuterClass.DeleteOperationRequest.newBuilder()
+      // Construct using v10proto.operations.v1.OperationsOuterClass.DeleteOperationRequest.newBuilder()
       private Builder() {
 
       }
@@ -2403,17 +2403,17 @@ public final class OperationsOuterClass {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return v12proto.operations.v1.OperationsOuterClass.internal_static_v12proto_operations_v1_DeleteOperationRequest_descriptor;
+        return v10proto.operations.v1.OperationsOuterClass.internal_static_v10proto_operations_v1_DeleteOperationRequest_descriptor;
       }
 
       @java.lang.Override
-      public v12proto.operations.v1.OperationsOuterClass.DeleteOperationRequest getDefaultInstanceForType() {
-        return v12proto.operations.v1.OperationsOuterClass.DeleteOperationRequest.getDefaultInstance();
+      public v10proto.operations.v1.OperationsOuterClass.DeleteOperationRequest getDefaultInstanceForType() {
+        return v10proto.operations.v1.OperationsOuterClass.DeleteOperationRequest.getDefaultInstance();
       }
 
       @java.lang.Override
-      public v12proto.operations.v1.OperationsOuterClass.DeleteOperationRequest build() {
-        v12proto.operations.v1.OperationsOuterClass.DeleteOperationRequest result = buildPartial();
+      public v10proto.operations.v1.OperationsOuterClass.DeleteOperationRequest build() {
+        v10proto.operations.v1.OperationsOuterClass.DeleteOperationRequest result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -2421,14 +2421,14 @@ public final class OperationsOuterClass {
       }
 
       @java.lang.Override
-      public v12proto.operations.v1.OperationsOuterClass.DeleteOperationRequest buildPartial() {
-        v12proto.operations.v1.OperationsOuterClass.DeleteOperationRequest result = new v12proto.operations.v1.OperationsOuterClass.DeleteOperationRequest(this);
+      public v10proto.operations.v1.OperationsOuterClass.DeleteOperationRequest buildPartial() {
+        v10proto.operations.v1.OperationsOuterClass.DeleteOperationRequest result = new v10proto.operations.v1.OperationsOuterClass.DeleteOperationRequest(this);
         if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
       }
 
-      private void buildPartial0(v12proto.operations.v1.OperationsOuterClass.DeleteOperationRequest result) {
+      private void buildPartial0(v10proto.operations.v1.OperationsOuterClass.DeleteOperationRequest result) {
         int from_bitField0_ = bitField0_;
         if (((from_bitField0_ & 0x00000001) != 0)) {
           result.name_ = name_;
@@ -2437,16 +2437,16 @@ public final class OperationsOuterClass {
 
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof v12proto.operations.v1.OperationsOuterClass.DeleteOperationRequest) {
-          return mergeFrom((v12proto.operations.v1.OperationsOuterClass.DeleteOperationRequest)other);
+        if (other instanceof v10proto.operations.v1.OperationsOuterClass.DeleteOperationRequest) {
+          return mergeFrom((v10proto.operations.v1.OperationsOuterClass.DeleteOperationRequest)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(v12proto.operations.v1.OperationsOuterClass.DeleteOperationRequest other) {
-        if (other == v12proto.operations.v1.OperationsOuterClass.DeleteOperationRequest.getDefaultInstance()) return this;
+      public Builder mergeFrom(v10proto.operations.v1.OperationsOuterClass.DeleteOperationRequest other) {
+        if (other == v10proto.operations.v1.OperationsOuterClass.DeleteOperationRequest.getDefaultInstance()) return this;
         if (!other.getName().isEmpty()) {
           name_ = other.name_;
           bitField0_ |= 0x00000001;
@@ -2572,16 +2572,16 @@ public final class OperationsOuterClass {
         return this;
       }
 
-      // @@protoc_insertion_point(builder_scope:v12proto.operations.v1.DeleteOperationRequest)
+      // @@protoc_insertion_point(builder_scope:v10proto.operations.v1.DeleteOperationRequest)
     }
 
-    // @@protoc_insertion_point(class_scope:v12proto.operations.v1.DeleteOperationRequest)
-    private static final v12proto.operations.v1.OperationsOuterClass.DeleteOperationRequest DEFAULT_INSTANCE;
+    // @@protoc_insertion_point(class_scope:v10proto.operations.v1.DeleteOperationRequest)
+    private static final v10proto.operations.v1.OperationsOuterClass.DeleteOperationRequest DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new v12proto.operations.v1.OperationsOuterClass.DeleteOperationRequest();
+      DEFAULT_INSTANCE = new v10proto.operations.v1.OperationsOuterClass.DeleteOperationRequest();
     }
 
-    public static v12proto.operations.v1.OperationsOuterClass.DeleteOperationRequest getDefaultInstance() {
+    public static v10proto.operations.v1.OperationsOuterClass.DeleteOperationRequest getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
@@ -2617,14 +2617,14 @@ public final class OperationsOuterClass {
     }
 
     @java.lang.Override
-    public v12proto.operations.v1.OperationsOuterClass.DeleteOperationRequest getDefaultInstanceForType() {
+    public v10proto.operations.v1.OperationsOuterClass.DeleteOperationRequest getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
   }
 
   public interface CancelOperationRequestOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:v12proto.operations.v1.CancelOperationRequest)
+      // @@protoc_insertion_point(interface_extends:v10proto.operations.v1.CancelOperationRequest)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -2644,11 +2644,11 @@ public final class OperationsOuterClass {
    * Request message for the CancelOperation rpc.
    * </pre>
    *
-   * Protobuf type {@code v12proto.operations.v1.CancelOperationRequest}
+   * Protobuf type {@code v10proto.operations.v1.CancelOperationRequest}
    */
   public static final class CancelOperationRequest extends
       com.google.protobuf.GeneratedMessage implements
-      // @@protoc_insertion_point(message_implements:v12proto.operations.v1.CancelOperationRequest)
+      // @@protoc_insertion_point(message_implements:v10proto.operations.v1.CancelOperationRequest)
       CancelOperationRequestOrBuilder {
   private static final long serialVersionUID = 0L;
     static {
@@ -2670,15 +2670,15 @@ public final class OperationsOuterClass {
 
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return v12proto.operations.v1.OperationsOuterClass.internal_static_v12proto_operations_v1_CancelOperationRequest_descriptor;
+      return v10proto.operations.v1.OperationsOuterClass.internal_static_v10proto_operations_v1_CancelOperationRequest_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return v12proto.operations.v1.OperationsOuterClass.internal_static_v12proto_operations_v1_CancelOperationRequest_fieldAccessorTable
+      return v10proto.operations.v1.OperationsOuterClass.internal_static_v10proto_operations_v1_CancelOperationRequest_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              v12proto.operations.v1.OperationsOuterClass.CancelOperationRequest.class, v12proto.operations.v1.OperationsOuterClass.CancelOperationRequest.Builder.class);
+              v10proto.operations.v1.OperationsOuterClass.CancelOperationRequest.class, v10proto.operations.v1.OperationsOuterClass.CancelOperationRequest.Builder.class);
     }
 
     public static final int NAME_FIELD_NUMBER = 1;
@@ -2759,10 +2759,10 @@ public final class OperationsOuterClass {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof v12proto.operations.v1.OperationsOuterClass.CancelOperationRequest)) {
+      if (!(obj instanceof v10proto.operations.v1.OperationsOuterClass.CancelOperationRequest)) {
         return super.equals(obj);
       }
-      v12proto.operations.v1.OperationsOuterClass.CancelOperationRequest other = (v12proto.operations.v1.OperationsOuterClass.CancelOperationRequest) obj;
+      v10proto.operations.v1.OperationsOuterClass.CancelOperationRequest other = (v10proto.operations.v1.OperationsOuterClass.CancelOperationRequest) obj;
 
       if (!getName()
           .equals(other.getName())) return false;
@@ -2784,44 +2784,44 @@ public final class OperationsOuterClass {
       return hash;
     }
 
-    public static v12proto.operations.v1.OperationsOuterClass.CancelOperationRequest parseFrom(
+    public static v10proto.operations.v1.OperationsOuterClass.CancelOperationRequest parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static v12proto.operations.v1.OperationsOuterClass.CancelOperationRequest parseFrom(
+    public static v10proto.operations.v1.OperationsOuterClass.CancelOperationRequest parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static v12proto.operations.v1.OperationsOuterClass.CancelOperationRequest parseFrom(
+    public static v10proto.operations.v1.OperationsOuterClass.CancelOperationRequest parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static v12proto.operations.v1.OperationsOuterClass.CancelOperationRequest parseFrom(
+    public static v10proto.operations.v1.OperationsOuterClass.CancelOperationRequest parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static v12proto.operations.v1.OperationsOuterClass.CancelOperationRequest parseFrom(byte[] data)
+    public static v10proto.operations.v1.OperationsOuterClass.CancelOperationRequest parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static v12proto.operations.v1.OperationsOuterClass.CancelOperationRequest parseFrom(
+    public static v10proto.operations.v1.OperationsOuterClass.CancelOperationRequest parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static v12proto.operations.v1.OperationsOuterClass.CancelOperationRequest parseFrom(java.io.InputStream input)
+    public static v10proto.operations.v1.OperationsOuterClass.CancelOperationRequest parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseWithIOException(PARSER, input);
     }
-    public static v12proto.operations.v1.OperationsOuterClass.CancelOperationRequest parseFrom(
+    public static v10proto.operations.v1.OperationsOuterClass.CancelOperationRequest parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -2829,26 +2829,26 @@ public final class OperationsOuterClass {
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    public static v12proto.operations.v1.OperationsOuterClass.CancelOperationRequest parseDelimitedFrom(java.io.InputStream input)
+    public static v10proto.operations.v1.OperationsOuterClass.CancelOperationRequest parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseDelimitedWithIOException(PARSER, input);
     }
 
-    public static v12proto.operations.v1.OperationsOuterClass.CancelOperationRequest parseDelimitedFrom(
+    public static v10proto.operations.v1.OperationsOuterClass.CancelOperationRequest parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static v12proto.operations.v1.OperationsOuterClass.CancelOperationRequest parseFrom(
+    public static v10proto.operations.v1.OperationsOuterClass.CancelOperationRequest parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseWithIOException(PARSER, input);
     }
-    public static v12proto.operations.v1.OperationsOuterClass.CancelOperationRequest parseFrom(
+    public static v10proto.operations.v1.OperationsOuterClass.CancelOperationRequest parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -2861,7 +2861,7 @@ public final class OperationsOuterClass {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(v12proto.operations.v1.OperationsOuterClass.CancelOperationRequest prototype) {
+    public static Builder newBuilder(v10proto.operations.v1.OperationsOuterClass.CancelOperationRequest prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -2881,26 +2881,26 @@ public final class OperationsOuterClass {
      * Request message for the CancelOperation rpc.
      * </pre>
      *
-     * Protobuf type {@code v12proto.operations.v1.CancelOperationRequest}
+     * Protobuf type {@code v10proto.operations.v1.CancelOperationRequest}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:v12proto.operations.v1.CancelOperationRequest)
-        v12proto.operations.v1.OperationsOuterClass.CancelOperationRequestOrBuilder {
+        // @@protoc_insertion_point(builder_implements:v10proto.operations.v1.CancelOperationRequest)
+        v10proto.operations.v1.OperationsOuterClass.CancelOperationRequestOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return v12proto.operations.v1.OperationsOuterClass.internal_static_v12proto_operations_v1_CancelOperationRequest_descriptor;
+        return v10proto.operations.v1.OperationsOuterClass.internal_static_v10proto_operations_v1_CancelOperationRequest_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return v12proto.operations.v1.OperationsOuterClass.internal_static_v12proto_operations_v1_CancelOperationRequest_fieldAccessorTable
+        return v10proto.operations.v1.OperationsOuterClass.internal_static_v10proto_operations_v1_CancelOperationRequest_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                v12proto.operations.v1.OperationsOuterClass.CancelOperationRequest.class, v12proto.operations.v1.OperationsOuterClass.CancelOperationRequest.Builder.class);
+                v10proto.operations.v1.OperationsOuterClass.CancelOperationRequest.class, v10proto.operations.v1.OperationsOuterClass.CancelOperationRequest.Builder.class);
       }
 
-      // Construct using v12proto.operations.v1.OperationsOuterClass.CancelOperationRequest.newBuilder()
+      // Construct using v10proto.operations.v1.OperationsOuterClass.CancelOperationRequest.newBuilder()
       private Builder() {
 
       }
@@ -2921,17 +2921,17 @@ public final class OperationsOuterClass {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return v12proto.operations.v1.OperationsOuterClass.internal_static_v12proto_operations_v1_CancelOperationRequest_descriptor;
+        return v10proto.operations.v1.OperationsOuterClass.internal_static_v10proto_operations_v1_CancelOperationRequest_descriptor;
       }
 
       @java.lang.Override
-      public v12proto.operations.v1.OperationsOuterClass.CancelOperationRequest getDefaultInstanceForType() {
-        return v12proto.operations.v1.OperationsOuterClass.CancelOperationRequest.getDefaultInstance();
+      public v10proto.operations.v1.OperationsOuterClass.CancelOperationRequest getDefaultInstanceForType() {
+        return v10proto.operations.v1.OperationsOuterClass.CancelOperationRequest.getDefaultInstance();
       }
 
       @java.lang.Override
-      public v12proto.operations.v1.OperationsOuterClass.CancelOperationRequest build() {
-        v12proto.operations.v1.OperationsOuterClass.CancelOperationRequest result = buildPartial();
+      public v10proto.operations.v1.OperationsOuterClass.CancelOperationRequest build() {
+        v10proto.operations.v1.OperationsOuterClass.CancelOperationRequest result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -2939,14 +2939,14 @@ public final class OperationsOuterClass {
       }
 
       @java.lang.Override
-      public v12proto.operations.v1.OperationsOuterClass.CancelOperationRequest buildPartial() {
-        v12proto.operations.v1.OperationsOuterClass.CancelOperationRequest result = new v12proto.operations.v1.OperationsOuterClass.CancelOperationRequest(this);
+      public v10proto.operations.v1.OperationsOuterClass.CancelOperationRequest buildPartial() {
+        v10proto.operations.v1.OperationsOuterClass.CancelOperationRequest result = new v10proto.operations.v1.OperationsOuterClass.CancelOperationRequest(this);
         if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
       }
 
-      private void buildPartial0(v12proto.operations.v1.OperationsOuterClass.CancelOperationRequest result) {
+      private void buildPartial0(v10proto.operations.v1.OperationsOuterClass.CancelOperationRequest result) {
         int from_bitField0_ = bitField0_;
         if (((from_bitField0_ & 0x00000001) != 0)) {
           result.name_ = name_;
@@ -2955,16 +2955,16 @@ public final class OperationsOuterClass {
 
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof v12proto.operations.v1.OperationsOuterClass.CancelOperationRequest) {
-          return mergeFrom((v12proto.operations.v1.OperationsOuterClass.CancelOperationRequest)other);
+        if (other instanceof v10proto.operations.v1.OperationsOuterClass.CancelOperationRequest) {
+          return mergeFrom((v10proto.operations.v1.OperationsOuterClass.CancelOperationRequest)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(v12proto.operations.v1.OperationsOuterClass.CancelOperationRequest other) {
-        if (other == v12proto.operations.v1.OperationsOuterClass.CancelOperationRequest.getDefaultInstance()) return this;
+      public Builder mergeFrom(v10proto.operations.v1.OperationsOuterClass.CancelOperationRequest other) {
+        if (other == v10proto.operations.v1.OperationsOuterClass.CancelOperationRequest.getDefaultInstance()) return this;
         if (!other.getName().isEmpty()) {
           name_ = other.name_;
           bitField0_ |= 0x00000001;
@@ -3090,16 +3090,16 @@ public final class OperationsOuterClass {
         return this;
       }
 
-      // @@protoc_insertion_point(builder_scope:v12proto.operations.v1.CancelOperationRequest)
+      // @@protoc_insertion_point(builder_scope:v10proto.operations.v1.CancelOperationRequest)
     }
 
-    // @@protoc_insertion_point(class_scope:v12proto.operations.v1.CancelOperationRequest)
-    private static final v12proto.operations.v1.OperationsOuterClass.CancelOperationRequest DEFAULT_INSTANCE;
+    // @@protoc_insertion_point(class_scope:v10proto.operations.v1.CancelOperationRequest)
+    private static final v10proto.operations.v1.OperationsOuterClass.CancelOperationRequest DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new v12proto.operations.v1.OperationsOuterClass.CancelOperationRequest();
+      DEFAULT_INSTANCE = new v10proto.operations.v1.OperationsOuterClass.CancelOperationRequest();
     }
 
-    public static v12proto.operations.v1.OperationsOuterClass.CancelOperationRequest getDefaultInstance() {
+    public static v10proto.operations.v1.OperationsOuterClass.CancelOperationRequest getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
@@ -3135,14 +3135,14 @@ public final class OperationsOuterClass {
     }
 
     @java.lang.Override
-    public v12proto.operations.v1.OperationsOuterClass.CancelOperationRequest getDefaultInstanceForType() {
+    public v10proto.operations.v1.OperationsOuterClass.CancelOperationRequest getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
   }
 
   public interface WaitOperationRequestOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:v12proto.operations.v1.WaitOperationRequest)
+      // @@protoc_insertion_point(interface_extends:v10proto.operations.v1.WaitOperationRequest)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -3162,11 +3162,11 @@ public final class OperationsOuterClass {
    * Request message for the WaitOperation rpc.
    * </pre>
    *
-   * Protobuf type {@code v12proto.operations.v1.WaitOperationRequest}
+   * Protobuf type {@code v10proto.operations.v1.WaitOperationRequest}
    */
   public static final class WaitOperationRequest extends
       com.google.protobuf.GeneratedMessage implements
-      // @@protoc_insertion_point(message_implements:v12proto.operations.v1.WaitOperationRequest)
+      // @@protoc_insertion_point(message_implements:v10proto.operations.v1.WaitOperationRequest)
       WaitOperationRequestOrBuilder {
   private static final long serialVersionUID = 0L;
     static {
@@ -3188,15 +3188,15 @@ public final class OperationsOuterClass {
 
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return v12proto.operations.v1.OperationsOuterClass.internal_static_v12proto_operations_v1_WaitOperationRequest_descriptor;
+      return v10proto.operations.v1.OperationsOuterClass.internal_static_v10proto_operations_v1_WaitOperationRequest_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return v12proto.operations.v1.OperationsOuterClass.internal_static_v12proto_operations_v1_WaitOperationRequest_fieldAccessorTable
+      return v10proto.operations.v1.OperationsOuterClass.internal_static_v10proto_operations_v1_WaitOperationRequest_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              v12proto.operations.v1.OperationsOuterClass.WaitOperationRequest.class, v12proto.operations.v1.OperationsOuterClass.WaitOperationRequest.Builder.class);
+              v10proto.operations.v1.OperationsOuterClass.WaitOperationRequest.class, v10proto.operations.v1.OperationsOuterClass.WaitOperationRequest.Builder.class);
     }
 
     public static final int NAME_FIELD_NUMBER = 1;
@@ -3277,10 +3277,10 @@ public final class OperationsOuterClass {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof v12proto.operations.v1.OperationsOuterClass.WaitOperationRequest)) {
+      if (!(obj instanceof v10proto.operations.v1.OperationsOuterClass.WaitOperationRequest)) {
         return super.equals(obj);
       }
-      v12proto.operations.v1.OperationsOuterClass.WaitOperationRequest other = (v12proto.operations.v1.OperationsOuterClass.WaitOperationRequest) obj;
+      v10proto.operations.v1.OperationsOuterClass.WaitOperationRequest other = (v10proto.operations.v1.OperationsOuterClass.WaitOperationRequest) obj;
 
       if (!getName()
           .equals(other.getName())) return false;
@@ -3302,44 +3302,44 @@ public final class OperationsOuterClass {
       return hash;
     }
 
-    public static v12proto.operations.v1.OperationsOuterClass.WaitOperationRequest parseFrom(
+    public static v10proto.operations.v1.OperationsOuterClass.WaitOperationRequest parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static v12proto.operations.v1.OperationsOuterClass.WaitOperationRequest parseFrom(
+    public static v10proto.operations.v1.OperationsOuterClass.WaitOperationRequest parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static v12proto.operations.v1.OperationsOuterClass.WaitOperationRequest parseFrom(
+    public static v10proto.operations.v1.OperationsOuterClass.WaitOperationRequest parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static v12proto.operations.v1.OperationsOuterClass.WaitOperationRequest parseFrom(
+    public static v10proto.operations.v1.OperationsOuterClass.WaitOperationRequest parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static v12proto.operations.v1.OperationsOuterClass.WaitOperationRequest parseFrom(byte[] data)
+    public static v10proto.operations.v1.OperationsOuterClass.WaitOperationRequest parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static v12proto.operations.v1.OperationsOuterClass.WaitOperationRequest parseFrom(
+    public static v10proto.operations.v1.OperationsOuterClass.WaitOperationRequest parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static v12proto.operations.v1.OperationsOuterClass.WaitOperationRequest parseFrom(java.io.InputStream input)
+    public static v10proto.operations.v1.OperationsOuterClass.WaitOperationRequest parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseWithIOException(PARSER, input);
     }
-    public static v12proto.operations.v1.OperationsOuterClass.WaitOperationRequest parseFrom(
+    public static v10proto.operations.v1.OperationsOuterClass.WaitOperationRequest parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -3347,26 +3347,26 @@ public final class OperationsOuterClass {
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    public static v12proto.operations.v1.OperationsOuterClass.WaitOperationRequest parseDelimitedFrom(java.io.InputStream input)
+    public static v10proto.operations.v1.OperationsOuterClass.WaitOperationRequest parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseDelimitedWithIOException(PARSER, input);
     }
 
-    public static v12proto.operations.v1.OperationsOuterClass.WaitOperationRequest parseDelimitedFrom(
+    public static v10proto.operations.v1.OperationsOuterClass.WaitOperationRequest parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static v12proto.operations.v1.OperationsOuterClass.WaitOperationRequest parseFrom(
+    public static v10proto.operations.v1.OperationsOuterClass.WaitOperationRequest parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseWithIOException(PARSER, input);
     }
-    public static v12proto.operations.v1.OperationsOuterClass.WaitOperationRequest parseFrom(
+    public static v10proto.operations.v1.OperationsOuterClass.WaitOperationRequest parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -3379,7 +3379,7 @@ public final class OperationsOuterClass {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(v12proto.operations.v1.OperationsOuterClass.WaitOperationRequest prototype) {
+    public static Builder newBuilder(v10proto.operations.v1.OperationsOuterClass.WaitOperationRequest prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -3399,26 +3399,26 @@ public final class OperationsOuterClass {
      * Request message for the WaitOperation rpc.
      * </pre>
      *
-     * Protobuf type {@code v12proto.operations.v1.WaitOperationRequest}
+     * Protobuf type {@code v10proto.operations.v1.WaitOperationRequest}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:v12proto.operations.v1.WaitOperationRequest)
-        v12proto.operations.v1.OperationsOuterClass.WaitOperationRequestOrBuilder {
+        // @@protoc_insertion_point(builder_implements:v10proto.operations.v1.WaitOperationRequest)
+        v10proto.operations.v1.OperationsOuterClass.WaitOperationRequestOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return v12proto.operations.v1.OperationsOuterClass.internal_static_v12proto_operations_v1_WaitOperationRequest_descriptor;
+        return v10proto.operations.v1.OperationsOuterClass.internal_static_v10proto_operations_v1_WaitOperationRequest_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return v12proto.operations.v1.OperationsOuterClass.internal_static_v12proto_operations_v1_WaitOperationRequest_fieldAccessorTable
+        return v10proto.operations.v1.OperationsOuterClass.internal_static_v10proto_operations_v1_WaitOperationRequest_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                v12proto.operations.v1.OperationsOuterClass.WaitOperationRequest.class, v12proto.operations.v1.OperationsOuterClass.WaitOperationRequest.Builder.class);
+                v10proto.operations.v1.OperationsOuterClass.WaitOperationRequest.class, v10proto.operations.v1.OperationsOuterClass.WaitOperationRequest.Builder.class);
       }
 
-      // Construct using v12proto.operations.v1.OperationsOuterClass.WaitOperationRequest.newBuilder()
+      // Construct using v10proto.operations.v1.OperationsOuterClass.WaitOperationRequest.newBuilder()
       private Builder() {
 
       }
@@ -3439,17 +3439,17 @@ public final class OperationsOuterClass {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return v12proto.operations.v1.OperationsOuterClass.internal_static_v12proto_operations_v1_WaitOperationRequest_descriptor;
+        return v10proto.operations.v1.OperationsOuterClass.internal_static_v10proto_operations_v1_WaitOperationRequest_descriptor;
       }
 
       @java.lang.Override
-      public v12proto.operations.v1.OperationsOuterClass.WaitOperationRequest getDefaultInstanceForType() {
-        return v12proto.operations.v1.OperationsOuterClass.WaitOperationRequest.getDefaultInstance();
+      public v10proto.operations.v1.OperationsOuterClass.WaitOperationRequest getDefaultInstanceForType() {
+        return v10proto.operations.v1.OperationsOuterClass.WaitOperationRequest.getDefaultInstance();
       }
 
       @java.lang.Override
-      public v12proto.operations.v1.OperationsOuterClass.WaitOperationRequest build() {
-        v12proto.operations.v1.OperationsOuterClass.WaitOperationRequest result = buildPartial();
+      public v10proto.operations.v1.OperationsOuterClass.WaitOperationRequest build() {
+        v10proto.operations.v1.OperationsOuterClass.WaitOperationRequest result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -3457,14 +3457,14 @@ public final class OperationsOuterClass {
       }
 
       @java.lang.Override
-      public v12proto.operations.v1.OperationsOuterClass.WaitOperationRequest buildPartial() {
-        v12proto.operations.v1.OperationsOuterClass.WaitOperationRequest result = new v12proto.operations.v1.OperationsOuterClass.WaitOperationRequest(this);
+      public v10proto.operations.v1.OperationsOuterClass.WaitOperationRequest buildPartial() {
+        v10proto.operations.v1.OperationsOuterClass.WaitOperationRequest result = new v10proto.operations.v1.OperationsOuterClass.WaitOperationRequest(this);
         if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
       }
 
-      private void buildPartial0(v12proto.operations.v1.OperationsOuterClass.WaitOperationRequest result) {
+      private void buildPartial0(v10proto.operations.v1.OperationsOuterClass.WaitOperationRequest result) {
         int from_bitField0_ = bitField0_;
         if (((from_bitField0_ & 0x00000001) != 0)) {
           result.name_ = name_;
@@ -3473,16 +3473,16 @@ public final class OperationsOuterClass {
 
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof v12proto.operations.v1.OperationsOuterClass.WaitOperationRequest) {
-          return mergeFrom((v12proto.operations.v1.OperationsOuterClass.WaitOperationRequest)other);
+        if (other instanceof v10proto.operations.v1.OperationsOuterClass.WaitOperationRequest) {
+          return mergeFrom((v10proto.operations.v1.OperationsOuterClass.WaitOperationRequest)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(v12proto.operations.v1.OperationsOuterClass.WaitOperationRequest other) {
-        if (other == v12proto.operations.v1.OperationsOuterClass.WaitOperationRequest.getDefaultInstance()) return this;
+      public Builder mergeFrom(v10proto.operations.v1.OperationsOuterClass.WaitOperationRequest other) {
+        if (other == v10proto.operations.v1.OperationsOuterClass.WaitOperationRequest.getDefaultInstance()) return this;
         if (!other.getName().isEmpty()) {
           name_ = other.name_;
           bitField0_ |= 0x00000001;
@@ -3608,16 +3608,16 @@ public final class OperationsOuterClass {
         return this;
       }
 
-      // @@protoc_insertion_point(builder_scope:v12proto.operations.v1.WaitOperationRequest)
+      // @@protoc_insertion_point(builder_scope:v10proto.operations.v1.WaitOperationRequest)
     }
 
-    // @@protoc_insertion_point(class_scope:v12proto.operations.v1.WaitOperationRequest)
-    private static final v12proto.operations.v1.OperationsOuterClass.WaitOperationRequest DEFAULT_INSTANCE;
+    // @@protoc_insertion_point(class_scope:v10proto.operations.v1.WaitOperationRequest)
+    private static final v10proto.operations.v1.OperationsOuterClass.WaitOperationRequest DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new v12proto.operations.v1.OperationsOuterClass.WaitOperationRequest();
+      DEFAULT_INSTANCE = new v10proto.operations.v1.OperationsOuterClass.WaitOperationRequest();
     }
 
-    public static v12proto.operations.v1.OperationsOuterClass.WaitOperationRequest getDefaultInstance() {
+    public static v10proto.operations.v1.OperationsOuterClass.WaitOperationRequest getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
@@ -3653,42 +3653,42 @@ public final class OperationsOuterClass {
     }
 
     @java.lang.Override
-    public v12proto.operations.v1.OperationsOuterClass.WaitOperationRequest getDefaultInstanceForType() {
+    public v10proto.operations.v1.OperationsOuterClass.WaitOperationRequest getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
   }
 
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_v12proto_operations_v1_ListOperationsRequest_descriptor;
+    internal_static_v10proto_operations_v1_ListOperationsRequest_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_v12proto_operations_v1_ListOperationsRequest_fieldAccessorTable;
+      internal_static_v10proto_operations_v1_ListOperationsRequest_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_v12proto_operations_v1_ListOperationsResponse_descriptor;
+    internal_static_v10proto_operations_v1_ListOperationsResponse_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_v12proto_operations_v1_ListOperationsResponse_fieldAccessorTable;
+      internal_static_v10proto_operations_v1_ListOperationsResponse_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_v12proto_operations_v1_GetOperationRequest_descriptor;
+    internal_static_v10proto_operations_v1_GetOperationRequest_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_v12proto_operations_v1_GetOperationRequest_fieldAccessorTable;
+      internal_static_v10proto_operations_v1_GetOperationRequest_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_v12proto_operations_v1_DeleteOperationRequest_descriptor;
+    internal_static_v10proto_operations_v1_DeleteOperationRequest_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_v12proto_operations_v1_DeleteOperationRequest_fieldAccessorTable;
+      internal_static_v10proto_operations_v1_DeleteOperationRequest_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_v12proto_operations_v1_CancelOperationRequest_descriptor;
+    internal_static_v10proto_operations_v1_CancelOperationRequest_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_v12proto_operations_v1_CancelOperationRequest_fieldAccessorTable;
+      internal_static_v10proto_operations_v1_CancelOperationRequest_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_v12proto_operations_v1_WaitOperationRequest_descriptor;
+    internal_static_v10proto_operations_v1_WaitOperationRequest_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_v12proto_operations_v1_WaitOperationRequest_fieldAccessorTable;
+      internal_static_v10proto_operations_v1_WaitOperationRequest_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -3698,41 +3698,41 @@ public final class OperationsOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\036operations/v1/operations.proto\022\026v12pro" +
+      "\n\036operations/v1/operations.proto\022\026v10pro" +
       "to.operations.v1\032\034google/api/annotations" +
       ".proto\032\033google/protobuf/empty.proto\032.pro" +
       "toc-gen-openapiv2/options/annotations.pr" +
       "oto\032\025types/operation.proto\"J\n\025ListOperat" +
       "ionsRequest\022\022\n\004name\030\001 \001(\tR\004name\022\035\n\nnext_" +
       "token\030\002 \001(\tR\tnextToken\"r\n\026ListOperations" +
-      "Response\0229\n\noperations\030\001 \003(\0132\031.v12proto." +
+      "Response\0229\n\noperations\030\001 \003(\0132\031.v10proto." +
       "types.OperationR\noperations\022\035\n\nnext_toke" +
       "n\030\002 \001(\tR\tnextToken\")\n\023GetOperationReques" +
       "t\022\022\n\004name\030\001 \001(\tR\004name\",\n\026DeleteOperation" +
       "Request\022\022\n\004name\030\001 \001(\tR\004name\",\n\026CancelOpe" +
       "rationRequest\022\022\n\004name\030\001 \001(\tR\004name\"*\n\024Wai" +
       "tOperationRequest\022\022\n\004name\030\001 \001(\tR\004name2\211\006" +
-      "\n\nOperations\022\204\001\n\016ListOperations\022-.v12pro" +
+      "\n\nOperations\022\204\001\n\016ListOperations\022-.v10pro" +
       "to.operations.v1.ListOperationsRequest\032." +
-      ".v12proto.operations.v1.ListOperationsRe" +
-      "sponse\"\023\202\323\344\223\002\r\022\013/v12/ops/v1\022r\n\014GetOperat" +
-      "ion\022+.v12proto.operations.v1.GetOperatio" +
-      "nRequest\032\031.v12proto.types.Operation\"\032\202\323\344" +
-      "\223\002\024\022\022/v12/ops/v1/{name}\022u\n\017DeleteOperati" +
-      "on\022..v12proto.operations.v1.DeleteOperat" +
+      ".v10proto.operations.v1.ListOperationsRe" +
+      "sponse\"\023\202\323\344\223\002\r\022\013/v10/ops/v1\022r\n\014GetOperat" +
+      "ion\022+.v10proto.operations.v1.GetOperatio" +
+      "nRequest\032\031.v10proto.types.Operation\"\032\202\323\344" +
+      "\223\002\024\022\022/v10/ops/v1/{name}\022u\n\017DeleteOperati" +
+      "on\022..v10proto.operations.v1.DeleteOperat" +
       "ionRequest\032\026.google.protobuf.Empty\"\032\202\323\344\223" +
-      "\002\024*\022/v12/ops/v1/{name}\022\177\n\017CancelOperatio" +
-      "n\022..v12proto.operations.v1.CancelOperati" +
+      "\002\024*\022/v10/ops/v1/{name}\022\177\n\017CancelOperatio" +
+      "n\022..v10proto.operations.v1.CancelOperati" +
       "onRequest\032\026.google.protobuf.Empty\"$\202\323\344\223\002" +
-      "\036\"\031/v12/ops/v1/{name}:cancel:\001*\022Z\n\rWaitO" +
-      "peration\022,.v12proto.operations.v1.WaitOp" +
-      "erationRequest\032\031.v12proto.types.Operatio" +
+      "\036\"\031/v10/ops/v1/{name}:cancel:\001*\022Z\n\rWaitO" +
+      "peration\022,.v10proto.operations.v1.WaitOp" +
+      "erationRequest\032\031.v10proto.types.Operatio" +
       "n\"\000\032\253\001\222A\247\001\022:(ALPHA) Operations API. Base" +
       " URL: https://api.nightblue.io\032i\n$See he" +
       "re for the service definition.\022Ahttps://" +
-      "github.com/nightblue-io/v12-proto/tree/m" +
-      "ain/operations/v1B+Z)github.com/nightblu" +
-      "e-io/v12-go/operationsb\006proto3"
+      "github.com/nightblue-io/v10-proto/tree/m" +
+      "ain/operations/v1B(Z&github.com/drival-a" +
+      "i/v10-go/operationsb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -3740,49 +3740,49 @@ public final class OperationsOuterClass {
           com.google.api.AnnotationsProto.getDescriptor(),
           com.google.protobuf.EmptyProto.getDescriptor(),
           grpc.gateway.protoc_gen_openapiv2.options.Annotations.getDescriptor(),
-          v12proto.types.OperationOuterClass.getDescriptor(),
+          v10proto.types.OperationOuterClass.getDescriptor(),
         });
-    internal_static_v12proto_operations_v1_ListOperationsRequest_descriptor =
+    internal_static_v10proto_operations_v1_ListOperationsRequest_descriptor =
       getDescriptor().getMessageTypes().get(0);
-    internal_static_v12proto_operations_v1_ListOperationsRequest_fieldAccessorTable = new
+    internal_static_v10proto_operations_v1_ListOperationsRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-        internal_static_v12proto_operations_v1_ListOperationsRequest_descriptor,
+        internal_static_v10proto_operations_v1_ListOperationsRequest_descriptor,
         new java.lang.String[] { "Name", "NextToken", });
-    internal_static_v12proto_operations_v1_ListOperationsResponse_descriptor =
+    internal_static_v10proto_operations_v1_ListOperationsResponse_descriptor =
       getDescriptor().getMessageTypes().get(1);
-    internal_static_v12proto_operations_v1_ListOperationsResponse_fieldAccessorTable = new
+    internal_static_v10proto_operations_v1_ListOperationsResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-        internal_static_v12proto_operations_v1_ListOperationsResponse_descriptor,
+        internal_static_v10proto_operations_v1_ListOperationsResponse_descriptor,
         new java.lang.String[] { "Operations", "NextToken", });
-    internal_static_v12proto_operations_v1_GetOperationRequest_descriptor =
+    internal_static_v10proto_operations_v1_GetOperationRequest_descriptor =
       getDescriptor().getMessageTypes().get(2);
-    internal_static_v12proto_operations_v1_GetOperationRequest_fieldAccessorTable = new
+    internal_static_v10proto_operations_v1_GetOperationRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-        internal_static_v12proto_operations_v1_GetOperationRequest_descriptor,
+        internal_static_v10proto_operations_v1_GetOperationRequest_descriptor,
         new java.lang.String[] { "Name", });
-    internal_static_v12proto_operations_v1_DeleteOperationRequest_descriptor =
+    internal_static_v10proto_operations_v1_DeleteOperationRequest_descriptor =
       getDescriptor().getMessageTypes().get(3);
-    internal_static_v12proto_operations_v1_DeleteOperationRequest_fieldAccessorTable = new
+    internal_static_v10proto_operations_v1_DeleteOperationRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-        internal_static_v12proto_operations_v1_DeleteOperationRequest_descriptor,
+        internal_static_v10proto_operations_v1_DeleteOperationRequest_descriptor,
         new java.lang.String[] { "Name", });
-    internal_static_v12proto_operations_v1_CancelOperationRequest_descriptor =
+    internal_static_v10proto_operations_v1_CancelOperationRequest_descriptor =
       getDescriptor().getMessageTypes().get(4);
-    internal_static_v12proto_operations_v1_CancelOperationRequest_fieldAccessorTable = new
+    internal_static_v10proto_operations_v1_CancelOperationRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-        internal_static_v12proto_operations_v1_CancelOperationRequest_descriptor,
+        internal_static_v10proto_operations_v1_CancelOperationRequest_descriptor,
         new java.lang.String[] { "Name", });
-    internal_static_v12proto_operations_v1_WaitOperationRequest_descriptor =
+    internal_static_v10proto_operations_v1_WaitOperationRequest_descriptor =
       getDescriptor().getMessageTypes().get(5);
-    internal_static_v12proto_operations_v1_WaitOperationRequest_fieldAccessorTable = new
+    internal_static_v10proto_operations_v1_WaitOperationRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-        internal_static_v12proto_operations_v1_WaitOperationRequest_descriptor,
+        internal_static_v10proto_operations_v1_WaitOperationRequest_descriptor,
         new java.lang.String[] { "Name", });
     descriptor.resolveAllFeaturesImmutable();
     com.google.api.AnnotationsProto.getDescriptor();
     com.google.protobuf.EmptyProto.getDescriptor();
     grpc.gateway.protoc_gen_openapiv2.options.Annotations.getDescriptor();
-    v12proto.types.OperationOuterClass.getDescriptor();
+    v10proto.types.OperationOuterClass.getDescriptor();
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.google.api.AnnotationsProto.http);

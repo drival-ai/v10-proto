@@ -3,7 +3,7 @@
 // source: iam/v1/iam.proto
 // Protobuf Java Version: 4.29.1
 
-package v12proto.iam.v1;
+package v10proto.iam.v1;
 
 public final class IamOuterClass {
   private IamOuterClass() {}
@@ -26,7 +26,7 @@ public final class IamOuterClass {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   public interface LoginRequestOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:v12proto.iam.v1.LoginRequest)
+      // @@protoc_insertion_point(interface_extends:v10proto.iam.v1.LoginRequest)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -98,11 +98,11 @@ public final class IamOuterClass {
    * Request message for the Login rpc.
    * </pre>
    *
-   * Protobuf type {@code v12proto.iam.v1.LoginRequest}
+   * Protobuf type {@code v10proto.iam.v1.LoginRequest}
    */
   public static final class LoginRequest extends
       com.google.protobuf.GeneratedMessage implements
-      // @@protoc_insertion_point(message_implements:v12proto.iam.v1.LoginRequest)
+      // @@protoc_insertion_point(message_implements:v10proto.iam.v1.LoginRequest)
       LoginRequestOrBuilder {
   private static final long serialVersionUID = 0L;
     static {
@@ -127,15 +127,15 @@ public final class IamOuterClass {
 
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return v12proto.iam.v1.IamOuterClass.internal_static_v12proto_iam_v1_LoginRequest_descriptor;
+      return v10proto.iam.v1.IamOuterClass.internal_static_v10proto_iam_v1_LoginRequest_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return v12proto.iam.v1.IamOuterClass.internal_static_v12proto_iam_v1_LoginRequest_fieldAccessorTable
+      return v10proto.iam.v1.IamOuterClass.internal_static_v10proto_iam_v1_LoginRequest_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              v12proto.iam.v1.IamOuterClass.LoginRequest.class, v12proto.iam.v1.IamOuterClass.LoginRequest.Builder.class);
+              v10proto.iam.v1.IamOuterClass.LoginRequest.class, v10proto.iam.v1.IamOuterClass.LoginRequest.Builder.class);
     }
 
     public static final int ACCESS_TOKEN_FIELD_NUMBER = 1;
@@ -367,10 +367,10 @@ public final class IamOuterClass {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof v12proto.iam.v1.IamOuterClass.LoginRequest)) {
+      if (!(obj instanceof v10proto.iam.v1.IamOuterClass.LoginRequest)) {
         return super.equals(obj);
       }
-      v12proto.iam.v1.IamOuterClass.LoginRequest other = (v12proto.iam.v1.IamOuterClass.LoginRequest) obj;
+      v10proto.iam.v1.IamOuterClass.LoginRequest other = (v10proto.iam.v1.IamOuterClass.LoginRequest) obj;
 
       if (!getAccessToken()
           .equals(other.getAccessToken())) return false;
@@ -404,44 +404,44 @@ public final class IamOuterClass {
       return hash;
     }
 
-    public static v12proto.iam.v1.IamOuterClass.LoginRequest parseFrom(
+    public static v10proto.iam.v1.IamOuterClass.LoginRequest parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static v12proto.iam.v1.IamOuterClass.LoginRequest parseFrom(
+    public static v10proto.iam.v1.IamOuterClass.LoginRequest parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static v12proto.iam.v1.IamOuterClass.LoginRequest parseFrom(
+    public static v10proto.iam.v1.IamOuterClass.LoginRequest parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static v12proto.iam.v1.IamOuterClass.LoginRequest parseFrom(
+    public static v10proto.iam.v1.IamOuterClass.LoginRequest parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static v12proto.iam.v1.IamOuterClass.LoginRequest parseFrom(byte[] data)
+    public static v10proto.iam.v1.IamOuterClass.LoginRequest parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static v12proto.iam.v1.IamOuterClass.LoginRequest parseFrom(
+    public static v10proto.iam.v1.IamOuterClass.LoginRequest parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static v12proto.iam.v1.IamOuterClass.LoginRequest parseFrom(java.io.InputStream input)
+    public static v10proto.iam.v1.IamOuterClass.LoginRequest parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseWithIOException(PARSER, input);
     }
-    public static v12proto.iam.v1.IamOuterClass.LoginRequest parseFrom(
+    public static v10proto.iam.v1.IamOuterClass.LoginRequest parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -449,26 +449,26 @@ public final class IamOuterClass {
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    public static v12proto.iam.v1.IamOuterClass.LoginRequest parseDelimitedFrom(java.io.InputStream input)
+    public static v10proto.iam.v1.IamOuterClass.LoginRequest parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseDelimitedWithIOException(PARSER, input);
     }
 
-    public static v12proto.iam.v1.IamOuterClass.LoginRequest parseDelimitedFrom(
+    public static v10proto.iam.v1.IamOuterClass.LoginRequest parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static v12proto.iam.v1.IamOuterClass.LoginRequest parseFrom(
+    public static v10proto.iam.v1.IamOuterClass.LoginRequest parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseWithIOException(PARSER, input);
     }
-    public static v12proto.iam.v1.IamOuterClass.LoginRequest parseFrom(
+    public static v10proto.iam.v1.IamOuterClass.LoginRequest parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -481,7 +481,7 @@ public final class IamOuterClass {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(v12proto.iam.v1.IamOuterClass.LoginRequest prototype) {
+    public static Builder newBuilder(v10proto.iam.v1.IamOuterClass.LoginRequest prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -501,26 +501,26 @@ public final class IamOuterClass {
      * Request message for the Login rpc.
      * </pre>
      *
-     * Protobuf type {@code v12proto.iam.v1.LoginRequest}
+     * Protobuf type {@code v10proto.iam.v1.LoginRequest}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:v12proto.iam.v1.LoginRequest)
-        v12proto.iam.v1.IamOuterClass.LoginRequestOrBuilder {
+        // @@protoc_insertion_point(builder_implements:v10proto.iam.v1.LoginRequest)
+        v10proto.iam.v1.IamOuterClass.LoginRequestOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return v12proto.iam.v1.IamOuterClass.internal_static_v12proto_iam_v1_LoginRequest_descriptor;
+        return v10proto.iam.v1.IamOuterClass.internal_static_v10proto_iam_v1_LoginRequest_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return v12proto.iam.v1.IamOuterClass.internal_static_v12proto_iam_v1_LoginRequest_fieldAccessorTable
+        return v10proto.iam.v1.IamOuterClass.internal_static_v10proto_iam_v1_LoginRequest_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                v12proto.iam.v1.IamOuterClass.LoginRequest.class, v12proto.iam.v1.IamOuterClass.LoginRequest.Builder.class);
+                v10proto.iam.v1.IamOuterClass.LoginRequest.class, v10proto.iam.v1.IamOuterClass.LoginRequest.Builder.class);
       }
 
-      // Construct using v12proto.iam.v1.IamOuterClass.LoginRequest.newBuilder()
+      // Construct using v10proto.iam.v1.IamOuterClass.LoginRequest.newBuilder()
       private Builder() {
 
       }
@@ -544,17 +544,17 @@ public final class IamOuterClass {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return v12proto.iam.v1.IamOuterClass.internal_static_v12proto_iam_v1_LoginRequest_descriptor;
+        return v10proto.iam.v1.IamOuterClass.internal_static_v10proto_iam_v1_LoginRequest_descriptor;
       }
 
       @java.lang.Override
-      public v12proto.iam.v1.IamOuterClass.LoginRequest getDefaultInstanceForType() {
-        return v12proto.iam.v1.IamOuterClass.LoginRequest.getDefaultInstance();
+      public v10proto.iam.v1.IamOuterClass.LoginRequest getDefaultInstanceForType() {
+        return v10proto.iam.v1.IamOuterClass.LoginRequest.getDefaultInstance();
       }
 
       @java.lang.Override
-      public v12proto.iam.v1.IamOuterClass.LoginRequest build() {
-        v12proto.iam.v1.IamOuterClass.LoginRequest result = buildPartial();
+      public v10proto.iam.v1.IamOuterClass.LoginRequest build() {
+        v10proto.iam.v1.IamOuterClass.LoginRequest result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -562,14 +562,14 @@ public final class IamOuterClass {
       }
 
       @java.lang.Override
-      public v12proto.iam.v1.IamOuterClass.LoginRequest buildPartial() {
-        v12proto.iam.v1.IamOuterClass.LoginRequest result = new v12proto.iam.v1.IamOuterClass.LoginRequest(this);
+      public v10proto.iam.v1.IamOuterClass.LoginRequest buildPartial() {
+        v10proto.iam.v1.IamOuterClass.LoginRequest result = new v10proto.iam.v1.IamOuterClass.LoginRequest(this);
         if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
       }
 
-      private void buildPartial0(v12proto.iam.v1.IamOuterClass.LoginRequest result) {
+      private void buildPartial0(v10proto.iam.v1.IamOuterClass.LoginRequest result) {
         int from_bitField0_ = bitField0_;
         if (((from_bitField0_ & 0x00000001) != 0)) {
           result.accessToken_ = accessToken_;
@@ -587,16 +587,16 @@ public final class IamOuterClass {
 
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof v12proto.iam.v1.IamOuterClass.LoginRequest) {
-          return mergeFrom((v12proto.iam.v1.IamOuterClass.LoginRequest)other);
+        if (other instanceof v10proto.iam.v1.IamOuterClass.LoginRequest) {
+          return mergeFrom((v10proto.iam.v1.IamOuterClass.LoginRequest)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(v12proto.iam.v1.IamOuterClass.LoginRequest other) {
-        if (other == v12proto.iam.v1.IamOuterClass.LoginRequest.getDefaultInstance()) return this;
+      public Builder mergeFrom(v10proto.iam.v1.IamOuterClass.LoginRequest other) {
+        if (other == v10proto.iam.v1.IamOuterClass.LoginRequest.getDefaultInstance()) return this;
         if (!other.getAccessToken().isEmpty()) {
           accessToken_ = other.accessToken_;
           bitField0_ |= 0x00000001;
@@ -1008,16 +1008,16 @@ public final class IamOuterClass {
         return this;
       }
 
-      // @@protoc_insertion_point(builder_scope:v12proto.iam.v1.LoginRequest)
+      // @@protoc_insertion_point(builder_scope:v10proto.iam.v1.LoginRequest)
     }
 
-    // @@protoc_insertion_point(class_scope:v12proto.iam.v1.LoginRequest)
-    private static final v12proto.iam.v1.IamOuterClass.LoginRequest DEFAULT_INSTANCE;
+    // @@protoc_insertion_point(class_scope:v10proto.iam.v1.LoginRequest)
+    private static final v10proto.iam.v1.IamOuterClass.LoginRequest DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new v12proto.iam.v1.IamOuterClass.LoginRequest();
+      DEFAULT_INSTANCE = new v10proto.iam.v1.IamOuterClass.LoginRequest();
     }
 
-    public static v12proto.iam.v1.IamOuterClass.LoginRequest getDefaultInstance() {
+    public static v10proto.iam.v1.IamOuterClass.LoginRequest getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
@@ -1053,30 +1053,30 @@ public final class IamOuterClass {
     }
 
     @java.lang.Override
-    public v12proto.iam.v1.IamOuterClass.LoginRequest getDefaultInstanceForType() {
+    public v10proto.iam.v1.IamOuterClass.LoginRequest getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
   }
 
   public interface LoginResponseOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:v12proto.iam.v1.LoginResponse)
+      // @@protoc_insertion_point(interface_extends:v10proto.iam.v1.LoginResponse)
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.v12proto.iam.v1.LoginResponse.DeviceAuth device_auth = 1 [json_name = "deviceAuth"];</code>
+     * <code>.v10proto.iam.v1.LoginResponse.DeviceAuth device_auth = 1 [json_name = "deviceAuth"];</code>
      * @return Whether the deviceAuth field is set.
      */
     boolean hasDeviceAuth();
     /**
-     * <code>.v12proto.iam.v1.LoginResponse.DeviceAuth device_auth = 1 [json_name = "deviceAuth"];</code>
+     * <code>.v10proto.iam.v1.LoginResponse.DeviceAuth device_auth = 1 [json_name = "deviceAuth"];</code>
      * @return The deviceAuth.
      */
-    v12proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth getDeviceAuth();
+    v10proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth getDeviceAuth();
     /**
-     * <code>.v12proto.iam.v1.LoginResponse.DeviceAuth device_auth = 1 [json_name = "deviceAuth"];</code>
+     * <code>.v10proto.iam.v1.LoginResponse.DeviceAuth device_auth = 1 [json_name = "deviceAuth"];</code>
      */
-    v12proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuthOrBuilder getDeviceAuthOrBuilder();
+    v10proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuthOrBuilder getDeviceAuthOrBuilder();
 
     /**
      * <code>string access_token = 2 [json_name = "accessToken"];</code>
@@ -1110,11 +1110,11 @@ public final class IamOuterClass {
    * Response message for the Login rpc.
    * </pre>
    *
-   * Protobuf type {@code v12proto.iam.v1.LoginResponse}
+   * Protobuf type {@code v10proto.iam.v1.LoginResponse}
    */
   public static final class LoginResponse extends
       com.google.protobuf.GeneratedMessage implements
-      // @@protoc_insertion_point(message_implements:v12proto.iam.v1.LoginResponse)
+      // @@protoc_insertion_point(message_implements:v10proto.iam.v1.LoginResponse)
       LoginResponseOrBuilder {
   private static final long serialVersionUID = 0L;
     static {
@@ -1136,19 +1136,19 @@ public final class IamOuterClass {
 
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return v12proto.iam.v1.IamOuterClass.internal_static_v12proto_iam_v1_LoginResponse_descriptor;
+      return v10proto.iam.v1.IamOuterClass.internal_static_v10proto_iam_v1_LoginResponse_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return v12proto.iam.v1.IamOuterClass.internal_static_v12proto_iam_v1_LoginResponse_fieldAccessorTable
+      return v10proto.iam.v1.IamOuterClass.internal_static_v10proto_iam_v1_LoginResponse_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              v12proto.iam.v1.IamOuterClass.LoginResponse.class, v12proto.iam.v1.IamOuterClass.LoginResponse.Builder.class);
+              v10proto.iam.v1.IamOuterClass.LoginResponse.class, v10proto.iam.v1.IamOuterClass.LoginResponse.Builder.class);
     }
 
     public interface DeviceAuthOrBuilder extends
-        // @@protoc_insertion_point(interface_extends:v12proto.iam.v1.LoginResponse.DeviceAuth)
+        // @@protoc_insertion_point(interface_extends:v10proto.iam.v1.LoginResponse.DeviceAuth)
         com.google.protobuf.MessageOrBuilder {
 
       /**
@@ -1182,11 +1182,11 @@ public final class IamOuterClass {
       long getExpiresIn();
     }
     /**
-     * Protobuf type {@code v12proto.iam.v1.LoginResponse.DeviceAuth}
+     * Protobuf type {@code v10proto.iam.v1.LoginResponse.DeviceAuth}
      */
     public static final class DeviceAuth extends
         com.google.protobuf.GeneratedMessage implements
-        // @@protoc_insertion_point(message_implements:v12proto.iam.v1.LoginResponse.DeviceAuth)
+        // @@protoc_insertion_point(message_implements:v10proto.iam.v1.LoginResponse.DeviceAuth)
         DeviceAuthOrBuilder {
     private static final long serialVersionUID = 0L;
       static {
@@ -1209,15 +1209,15 @@ public final class IamOuterClass {
 
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return v12proto.iam.v1.IamOuterClass.internal_static_v12proto_iam_v1_LoginResponse_DeviceAuth_descriptor;
+        return v10proto.iam.v1.IamOuterClass.internal_static_v10proto_iam_v1_LoginResponse_DeviceAuth_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return v12proto.iam.v1.IamOuterClass.internal_static_v12proto_iam_v1_LoginResponse_DeviceAuth_fieldAccessorTable
+        return v10proto.iam.v1.IamOuterClass.internal_static_v10proto_iam_v1_LoginResponse_DeviceAuth_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                v12proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth.class, v12proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth.Builder.class);
+                v10proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth.class, v10proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth.Builder.class);
       }
 
       public static final int USER_CODE_FIELD_NUMBER = 1;
@@ -1361,10 +1361,10 @@ public final class IamOuterClass {
         if (obj == this) {
          return true;
         }
-        if (!(obj instanceof v12proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth)) {
+        if (!(obj instanceof v10proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth)) {
           return super.equals(obj);
         }
-        v12proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth other = (v12proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth) obj;
+        v10proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth other = (v10proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth) obj;
 
         if (!getUserCode()
             .equals(other.getUserCode())) return false;
@@ -1395,44 +1395,44 @@ public final class IamOuterClass {
         return hash;
       }
 
-      public static v12proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth parseFrom(
+      public static v10proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth parseFrom(
           java.nio.ByteBuffer data)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data);
       }
-      public static v12proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth parseFrom(
+      public static v10proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth parseFrom(
           java.nio.ByteBuffer data,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data, extensionRegistry);
       }
-      public static v12proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth parseFrom(
+      public static v10proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth parseFrom(
           com.google.protobuf.ByteString data)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data);
       }
-      public static v12proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth parseFrom(
+      public static v10proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth parseFrom(
           com.google.protobuf.ByteString data,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data, extensionRegistry);
       }
-      public static v12proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth parseFrom(byte[] data)
+      public static v10proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth parseFrom(byte[] data)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data);
       }
-      public static v12proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth parseFrom(
+      public static v10proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth parseFrom(
           byte[] data,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data, extensionRegistry);
       }
-      public static v12proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth parseFrom(java.io.InputStream input)
+      public static v10proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth parseFrom(java.io.InputStream input)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessage
             .parseWithIOException(PARSER, input);
       }
-      public static v12proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth parseFrom(
+      public static v10proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth parseFrom(
           java.io.InputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
@@ -1440,26 +1440,26 @@ public final class IamOuterClass {
             .parseWithIOException(PARSER, input, extensionRegistry);
       }
 
-      public static v12proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth parseDelimitedFrom(java.io.InputStream input)
+      public static v10proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth parseDelimitedFrom(java.io.InputStream input)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessage
             .parseDelimitedWithIOException(PARSER, input);
       }
 
-      public static v12proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth parseDelimitedFrom(
+      public static v10proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth parseDelimitedFrom(
           java.io.InputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessage
             .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
       }
-      public static v12proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth parseFrom(
+      public static v10proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth parseFrom(
           com.google.protobuf.CodedInputStream input)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessage
             .parseWithIOException(PARSER, input);
       }
-      public static v12proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth parseFrom(
+      public static v10proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth parseFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
@@ -1472,7 +1472,7 @@ public final class IamOuterClass {
       public static Builder newBuilder() {
         return DEFAULT_INSTANCE.toBuilder();
       }
-      public static Builder newBuilder(v12proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth prototype) {
+      public static Builder newBuilder(v10proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth prototype) {
         return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
       }
       @java.lang.Override
@@ -1488,26 +1488,26 @@ public final class IamOuterClass {
         return builder;
       }
       /**
-       * Protobuf type {@code v12proto.iam.v1.LoginResponse.DeviceAuth}
+       * Protobuf type {@code v10proto.iam.v1.LoginResponse.DeviceAuth}
        */
       public static final class Builder extends
           com.google.protobuf.GeneratedMessage.Builder<Builder> implements
-          // @@protoc_insertion_point(builder_implements:v12proto.iam.v1.LoginResponse.DeviceAuth)
-          v12proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuthOrBuilder {
+          // @@protoc_insertion_point(builder_implements:v10proto.iam.v1.LoginResponse.DeviceAuth)
+          v10proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuthOrBuilder {
         public static final com.google.protobuf.Descriptors.Descriptor
             getDescriptor() {
-          return v12proto.iam.v1.IamOuterClass.internal_static_v12proto_iam_v1_LoginResponse_DeviceAuth_descriptor;
+          return v10proto.iam.v1.IamOuterClass.internal_static_v10proto_iam_v1_LoginResponse_DeviceAuth_descriptor;
         }
 
         @java.lang.Override
         protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
             internalGetFieldAccessorTable() {
-          return v12proto.iam.v1.IamOuterClass.internal_static_v12proto_iam_v1_LoginResponse_DeviceAuth_fieldAccessorTable
+          return v10proto.iam.v1.IamOuterClass.internal_static_v10proto_iam_v1_LoginResponse_DeviceAuth_fieldAccessorTable
               .ensureFieldAccessorsInitialized(
-                  v12proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth.class, v12proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth.Builder.class);
+                  v10proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth.class, v10proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth.Builder.class);
         }
 
-        // Construct using v12proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth.newBuilder()
+        // Construct using v10proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth.newBuilder()
         private Builder() {
 
         }
@@ -1530,17 +1530,17 @@ public final class IamOuterClass {
         @java.lang.Override
         public com.google.protobuf.Descriptors.Descriptor
             getDescriptorForType() {
-          return v12proto.iam.v1.IamOuterClass.internal_static_v12proto_iam_v1_LoginResponse_DeviceAuth_descriptor;
+          return v10proto.iam.v1.IamOuterClass.internal_static_v10proto_iam_v1_LoginResponse_DeviceAuth_descriptor;
         }
 
         @java.lang.Override
-        public v12proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth getDefaultInstanceForType() {
-          return v12proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth.getDefaultInstance();
+        public v10proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth getDefaultInstanceForType() {
+          return v10proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth.getDefaultInstance();
         }
 
         @java.lang.Override
-        public v12proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth build() {
-          v12proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth result = buildPartial();
+        public v10proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth build() {
+          v10proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth result = buildPartial();
           if (!result.isInitialized()) {
             throw newUninitializedMessageException(result);
           }
@@ -1548,14 +1548,14 @@ public final class IamOuterClass {
         }
 
         @java.lang.Override
-        public v12proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth buildPartial() {
-          v12proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth result = new v12proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth(this);
+        public v10proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth buildPartial() {
+          v10proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth result = new v10proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth(this);
           if (bitField0_ != 0) { buildPartial0(result); }
           onBuilt();
           return result;
         }
 
-        private void buildPartial0(v12proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth result) {
+        private void buildPartial0(v10proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth result) {
           int from_bitField0_ = bitField0_;
           if (((from_bitField0_ & 0x00000001) != 0)) {
             result.userCode_ = userCode_;
@@ -1570,16 +1570,16 @@ public final class IamOuterClass {
 
         @java.lang.Override
         public Builder mergeFrom(com.google.protobuf.Message other) {
-          if (other instanceof v12proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth) {
-            return mergeFrom((v12proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth)other);
+          if (other instanceof v10proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth) {
+            return mergeFrom((v10proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth)other);
           } else {
             super.mergeFrom(other);
             return this;
           }
         }
 
-        public Builder mergeFrom(v12proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth other) {
-          if (other == v12proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth.getDefaultInstance()) return this;
+        public Builder mergeFrom(v10proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth other) {
+          if (other == v10proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth.getDefaultInstance()) return this;
           if (!other.getUserCode().isEmpty()) {
             userCode_ = other.userCode_;
             bitField0_ |= 0x00000001;
@@ -1827,16 +1827,16 @@ public final class IamOuterClass {
           return this;
         }
 
-        // @@protoc_insertion_point(builder_scope:v12proto.iam.v1.LoginResponse.DeviceAuth)
+        // @@protoc_insertion_point(builder_scope:v10proto.iam.v1.LoginResponse.DeviceAuth)
       }
 
-      // @@protoc_insertion_point(class_scope:v12proto.iam.v1.LoginResponse.DeviceAuth)
-      private static final v12proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth DEFAULT_INSTANCE;
+      // @@protoc_insertion_point(class_scope:v10proto.iam.v1.LoginResponse.DeviceAuth)
+      private static final v10proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth DEFAULT_INSTANCE;
       static {
-        DEFAULT_INSTANCE = new v12proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth();
+        DEFAULT_INSTANCE = new v10proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth();
       }
 
-      public static v12proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth getDefaultInstance() {
+      public static v10proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth getDefaultInstance() {
         return DEFAULT_INSTANCE;
       }
 
@@ -1872,7 +1872,7 @@ public final class IamOuterClass {
       }
 
       @java.lang.Override
-      public v12proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth getDefaultInstanceForType() {
+      public v10proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth getDefaultInstanceForType() {
         return DEFAULT_INSTANCE;
       }
 
@@ -1880,9 +1880,9 @@ public final class IamOuterClass {
 
     private int bitField0_;
     public static final int DEVICE_AUTH_FIELD_NUMBER = 1;
-    private v12proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth deviceAuth_;
+    private v10proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth deviceAuth_;
     /**
-     * <code>.v12proto.iam.v1.LoginResponse.DeviceAuth device_auth = 1 [json_name = "deviceAuth"];</code>
+     * <code>.v10proto.iam.v1.LoginResponse.DeviceAuth device_auth = 1 [json_name = "deviceAuth"];</code>
      * @return Whether the deviceAuth field is set.
      */
     @java.lang.Override
@@ -1890,19 +1890,19 @@ public final class IamOuterClass {
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
-     * <code>.v12proto.iam.v1.LoginResponse.DeviceAuth device_auth = 1 [json_name = "deviceAuth"];</code>
+     * <code>.v10proto.iam.v1.LoginResponse.DeviceAuth device_auth = 1 [json_name = "deviceAuth"];</code>
      * @return The deviceAuth.
      */
     @java.lang.Override
-    public v12proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth getDeviceAuth() {
-      return deviceAuth_ == null ? v12proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth.getDefaultInstance() : deviceAuth_;
+    public v10proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth getDeviceAuth() {
+      return deviceAuth_ == null ? v10proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth.getDefaultInstance() : deviceAuth_;
     }
     /**
-     * <code>.v12proto.iam.v1.LoginResponse.DeviceAuth device_auth = 1 [json_name = "deviceAuth"];</code>
+     * <code>.v10proto.iam.v1.LoginResponse.DeviceAuth device_auth = 1 [json_name = "deviceAuth"];</code>
      */
     @java.lang.Override
-    public v12proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuthOrBuilder getDeviceAuthOrBuilder() {
-      return deviceAuth_ == null ? v12proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth.getDefaultInstance() : deviceAuth_;
+    public v10proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuthOrBuilder getDeviceAuthOrBuilder() {
+      return deviceAuth_ == null ? v10proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth.getDefaultInstance() : deviceAuth_;
     }
 
     public static final int ACCESS_TOKEN_FIELD_NUMBER = 2;
@@ -2023,10 +2023,10 @@ public final class IamOuterClass {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof v12proto.iam.v1.IamOuterClass.LoginResponse)) {
+      if (!(obj instanceof v10proto.iam.v1.IamOuterClass.LoginResponse)) {
         return super.equals(obj);
       }
-      v12proto.iam.v1.IamOuterClass.LoginResponse other = (v12proto.iam.v1.IamOuterClass.LoginResponse) obj;
+      v10proto.iam.v1.IamOuterClass.LoginResponse other = (v10proto.iam.v1.IamOuterClass.LoginResponse) obj;
 
       if (hasDeviceAuth() != other.hasDeviceAuth()) return false;
       if (hasDeviceAuth()) {
@@ -2066,44 +2066,44 @@ public final class IamOuterClass {
       return hash;
     }
 
-    public static v12proto.iam.v1.IamOuterClass.LoginResponse parseFrom(
+    public static v10proto.iam.v1.IamOuterClass.LoginResponse parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static v12proto.iam.v1.IamOuterClass.LoginResponse parseFrom(
+    public static v10proto.iam.v1.IamOuterClass.LoginResponse parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static v12proto.iam.v1.IamOuterClass.LoginResponse parseFrom(
+    public static v10proto.iam.v1.IamOuterClass.LoginResponse parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static v12proto.iam.v1.IamOuterClass.LoginResponse parseFrom(
+    public static v10proto.iam.v1.IamOuterClass.LoginResponse parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static v12proto.iam.v1.IamOuterClass.LoginResponse parseFrom(byte[] data)
+    public static v10proto.iam.v1.IamOuterClass.LoginResponse parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static v12proto.iam.v1.IamOuterClass.LoginResponse parseFrom(
+    public static v10proto.iam.v1.IamOuterClass.LoginResponse parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static v12proto.iam.v1.IamOuterClass.LoginResponse parseFrom(java.io.InputStream input)
+    public static v10proto.iam.v1.IamOuterClass.LoginResponse parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseWithIOException(PARSER, input);
     }
-    public static v12proto.iam.v1.IamOuterClass.LoginResponse parseFrom(
+    public static v10proto.iam.v1.IamOuterClass.LoginResponse parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -2111,26 +2111,26 @@ public final class IamOuterClass {
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    public static v12proto.iam.v1.IamOuterClass.LoginResponse parseDelimitedFrom(java.io.InputStream input)
+    public static v10proto.iam.v1.IamOuterClass.LoginResponse parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseDelimitedWithIOException(PARSER, input);
     }
 
-    public static v12proto.iam.v1.IamOuterClass.LoginResponse parseDelimitedFrom(
+    public static v10proto.iam.v1.IamOuterClass.LoginResponse parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static v12proto.iam.v1.IamOuterClass.LoginResponse parseFrom(
+    public static v10proto.iam.v1.IamOuterClass.LoginResponse parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseWithIOException(PARSER, input);
     }
-    public static v12proto.iam.v1.IamOuterClass.LoginResponse parseFrom(
+    public static v10proto.iam.v1.IamOuterClass.LoginResponse parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -2143,7 +2143,7 @@ public final class IamOuterClass {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(v12proto.iam.v1.IamOuterClass.LoginResponse prototype) {
+    public static Builder newBuilder(v10proto.iam.v1.IamOuterClass.LoginResponse prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -2163,26 +2163,26 @@ public final class IamOuterClass {
      * Response message for the Login rpc.
      * </pre>
      *
-     * Protobuf type {@code v12proto.iam.v1.LoginResponse}
+     * Protobuf type {@code v10proto.iam.v1.LoginResponse}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:v12proto.iam.v1.LoginResponse)
-        v12proto.iam.v1.IamOuterClass.LoginResponseOrBuilder {
+        // @@protoc_insertion_point(builder_implements:v10proto.iam.v1.LoginResponse)
+        v10proto.iam.v1.IamOuterClass.LoginResponseOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return v12proto.iam.v1.IamOuterClass.internal_static_v12proto_iam_v1_LoginResponse_descriptor;
+        return v10proto.iam.v1.IamOuterClass.internal_static_v10proto_iam_v1_LoginResponse_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return v12proto.iam.v1.IamOuterClass.internal_static_v12proto_iam_v1_LoginResponse_fieldAccessorTable
+        return v10proto.iam.v1.IamOuterClass.internal_static_v10proto_iam_v1_LoginResponse_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                v12proto.iam.v1.IamOuterClass.LoginResponse.class, v12proto.iam.v1.IamOuterClass.LoginResponse.Builder.class);
+                v10proto.iam.v1.IamOuterClass.LoginResponse.class, v10proto.iam.v1.IamOuterClass.LoginResponse.Builder.class);
       }
 
-      // Construct using v12proto.iam.v1.IamOuterClass.LoginResponse.newBuilder()
+      // Construct using v10proto.iam.v1.IamOuterClass.LoginResponse.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -2220,17 +2220,17 @@ public final class IamOuterClass {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return v12proto.iam.v1.IamOuterClass.internal_static_v12proto_iam_v1_LoginResponse_descriptor;
+        return v10proto.iam.v1.IamOuterClass.internal_static_v10proto_iam_v1_LoginResponse_descriptor;
       }
 
       @java.lang.Override
-      public v12proto.iam.v1.IamOuterClass.LoginResponse getDefaultInstanceForType() {
-        return v12proto.iam.v1.IamOuterClass.LoginResponse.getDefaultInstance();
+      public v10proto.iam.v1.IamOuterClass.LoginResponse getDefaultInstanceForType() {
+        return v10proto.iam.v1.IamOuterClass.LoginResponse.getDefaultInstance();
       }
 
       @java.lang.Override
-      public v12proto.iam.v1.IamOuterClass.LoginResponse build() {
-        v12proto.iam.v1.IamOuterClass.LoginResponse result = buildPartial();
+      public v10proto.iam.v1.IamOuterClass.LoginResponse build() {
+        v10proto.iam.v1.IamOuterClass.LoginResponse result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -2238,14 +2238,14 @@ public final class IamOuterClass {
       }
 
       @java.lang.Override
-      public v12proto.iam.v1.IamOuterClass.LoginResponse buildPartial() {
-        v12proto.iam.v1.IamOuterClass.LoginResponse result = new v12proto.iam.v1.IamOuterClass.LoginResponse(this);
+      public v10proto.iam.v1.IamOuterClass.LoginResponse buildPartial() {
+        v10proto.iam.v1.IamOuterClass.LoginResponse result = new v10proto.iam.v1.IamOuterClass.LoginResponse(this);
         if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
       }
 
-      private void buildPartial0(v12proto.iam.v1.IamOuterClass.LoginResponse result) {
+      private void buildPartial0(v10proto.iam.v1.IamOuterClass.LoginResponse result) {
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) != 0)) {
@@ -2268,16 +2268,16 @@ public final class IamOuterClass {
 
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof v12proto.iam.v1.IamOuterClass.LoginResponse) {
-          return mergeFrom((v12proto.iam.v1.IamOuterClass.LoginResponse)other);
+        if (other instanceof v10proto.iam.v1.IamOuterClass.LoginResponse) {
+          return mergeFrom((v10proto.iam.v1.IamOuterClass.LoginResponse)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(v12proto.iam.v1.IamOuterClass.LoginResponse other) {
-        if (other == v12proto.iam.v1.IamOuterClass.LoginResponse.getDefaultInstance()) return this;
+      public Builder mergeFrom(v10proto.iam.v1.IamOuterClass.LoginResponse other) {
+        if (other == v10proto.iam.v1.IamOuterClass.LoginResponse.getDefaultInstance()) return this;
         if (other.hasDeviceAuth()) {
           mergeDeviceAuth(other.getDeviceAuth());
         }
@@ -2351,31 +2351,31 @@ public final class IamOuterClass {
       }
       private int bitField0_;
 
-      private v12proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth deviceAuth_;
+      private v10proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth deviceAuth_;
       private com.google.protobuf.SingleFieldBuilder<
-          v12proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth, v12proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth.Builder, v12proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuthOrBuilder> deviceAuthBuilder_;
+          v10proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth, v10proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth.Builder, v10proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuthOrBuilder> deviceAuthBuilder_;
       /**
-       * <code>.v12proto.iam.v1.LoginResponse.DeviceAuth device_auth = 1 [json_name = "deviceAuth"];</code>
+       * <code>.v10proto.iam.v1.LoginResponse.DeviceAuth device_auth = 1 [json_name = "deviceAuth"];</code>
        * @return Whether the deviceAuth field is set.
        */
       public boolean hasDeviceAuth() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
-       * <code>.v12proto.iam.v1.LoginResponse.DeviceAuth device_auth = 1 [json_name = "deviceAuth"];</code>
+       * <code>.v10proto.iam.v1.LoginResponse.DeviceAuth device_auth = 1 [json_name = "deviceAuth"];</code>
        * @return The deviceAuth.
        */
-      public v12proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth getDeviceAuth() {
+      public v10proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth getDeviceAuth() {
         if (deviceAuthBuilder_ == null) {
-          return deviceAuth_ == null ? v12proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth.getDefaultInstance() : deviceAuth_;
+          return deviceAuth_ == null ? v10proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth.getDefaultInstance() : deviceAuth_;
         } else {
           return deviceAuthBuilder_.getMessage();
         }
       }
       /**
-       * <code>.v12proto.iam.v1.LoginResponse.DeviceAuth device_auth = 1 [json_name = "deviceAuth"];</code>
+       * <code>.v10proto.iam.v1.LoginResponse.DeviceAuth device_auth = 1 [json_name = "deviceAuth"];</code>
        */
-      public Builder setDeviceAuth(v12proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth value) {
+      public Builder setDeviceAuth(v10proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth value) {
         if (deviceAuthBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -2389,10 +2389,10 @@ public final class IamOuterClass {
         return this;
       }
       /**
-       * <code>.v12proto.iam.v1.LoginResponse.DeviceAuth device_auth = 1 [json_name = "deviceAuth"];</code>
+       * <code>.v10proto.iam.v1.LoginResponse.DeviceAuth device_auth = 1 [json_name = "deviceAuth"];</code>
        */
       public Builder setDeviceAuth(
-          v12proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth.Builder builderForValue) {
+          v10proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth.Builder builderForValue) {
         if (deviceAuthBuilder_ == null) {
           deviceAuth_ = builderForValue.build();
         } else {
@@ -2403,13 +2403,13 @@ public final class IamOuterClass {
         return this;
       }
       /**
-       * <code>.v12proto.iam.v1.LoginResponse.DeviceAuth device_auth = 1 [json_name = "deviceAuth"];</code>
+       * <code>.v10proto.iam.v1.LoginResponse.DeviceAuth device_auth = 1 [json_name = "deviceAuth"];</code>
        */
-      public Builder mergeDeviceAuth(v12proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth value) {
+      public Builder mergeDeviceAuth(v10proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth value) {
         if (deviceAuthBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0) &&
             deviceAuth_ != null &&
-            deviceAuth_ != v12proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth.getDefaultInstance()) {
+            deviceAuth_ != v10proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth.getDefaultInstance()) {
             getDeviceAuthBuilder().mergeFrom(value);
           } else {
             deviceAuth_ = value;
@@ -2424,7 +2424,7 @@ public final class IamOuterClass {
         return this;
       }
       /**
-       * <code>.v12proto.iam.v1.LoginResponse.DeviceAuth device_auth = 1 [json_name = "deviceAuth"];</code>
+       * <code>.v10proto.iam.v1.LoginResponse.DeviceAuth device_auth = 1 [json_name = "deviceAuth"];</code>
        */
       public Builder clearDeviceAuth() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -2437,33 +2437,33 @@ public final class IamOuterClass {
         return this;
       }
       /**
-       * <code>.v12proto.iam.v1.LoginResponse.DeviceAuth device_auth = 1 [json_name = "deviceAuth"];</code>
+       * <code>.v10proto.iam.v1.LoginResponse.DeviceAuth device_auth = 1 [json_name = "deviceAuth"];</code>
        */
-      public v12proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth.Builder getDeviceAuthBuilder() {
+      public v10proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth.Builder getDeviceAuthBuilder() {
         bitField0_ |= 0x00000001;
         onChanged();
         return getDeviceAuthFieldBuilder().getBuilder();
       }
       /**
-       * <code>.v12proto.iam.v1.LoginResponse.DeviceAuth device_auth = 1 [json_name = "deviceAuth"];</code>
+       * <code>.v10proto.iam.v1.LoginResponse.DeviceAuth device_auth = 1 [json_name = "deviceAuth"];</code>
        */
-      public v12proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuthOrBuilder getDeviceAuthOrBuilder() {
+      public v10proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuthOrBuilder getDeviceAuthOrBuilder() {
         if (deviceAuthBuilder_ != null) {
           return deviceAuthBuilder_.getMessageOrBuilder();
         } else {
           return deviceAuth_ == null ?
-              v12proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth.getDefaultInstance() : deviceAuth_;
+              v10proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth.getDefaultInstance() : deviceAuth_;
         }
       }
       /**
-       * <code>.v12proto.iam.v1.LoginResponse.DeviceAuth device_auth = 1 [json_name = "deviceAuth"];</code>
+       * <code>.v10proto.iam.v1.LoginResponse.DeviceAuth device_auth = 1 [json_name = "deviceAuth"];</code>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          v12proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth, v12proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth.Builder, v12proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuthOrBuilder> 
+          v10proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth, v10proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth.Builder, v10proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuthOrBuilder> 
           getDeviceAuthFieldBuilder() {
         if (deviceAuthBuilder_ == null) {
           deviceAuthBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              v12proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth, v12proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth.Builder, v12proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuthOrBuilder>(
+              v10proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth, v10proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuth.Builder, v10proto.iam.v1.IamOuterClass.LoginResponse.DeviceAuthOrBuilder>(
                   getDeviceAuth(),
                   getParentForChildren(),
                   isClean());
@@ -2665,16 +2665,16 @@ public final class IamOuterClass {
         return statusBuilder_;
       }
 
-      // @@protoc_insertion_point(builder_scope:v12proto.iam.v1.LoginResponse)
+      // @@protoc_insertion_point(builder_scope:v10proto.iam.v1.LoginResponse)
     }
 
-    // @@protoc_insertion_point(class_scope:v12proto.iam.v1.LoginResponse)
-    private static final v12proto.iam.v1.IamOuterClass.LoginResponse DEFAULT_INSTANCE;
+    // @@protoc_insertion_point(class_scope:v10proto.iam.v1.LoginResponse)
+    private static final v10proto.iam.v1.IamOuterClass.LoginResponse DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new v12proto.iam.v1.IamOuterClass.LoginResponse();
+      DEFAULT_INSTANCE = new v10proto.iam.v1.IamOuterClass.LoginResponse();
     }
 
-    public static v12proto.iam.v1.IamOuterClass.LoginResponse getDefaultInstance() {
+    public static v10proto.iam.v1.IamOuterClass.LoginResponse getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
@@ -2710,14 +2710,14 @@ public final class IamOuterClass {
     }
 
     @java.lang.Override
-    public v12proto.iam.v1.IamOuterClass.LoginResponse getDefaultInstanceForType() {
+    public v10proto.iam.v1.IamOuterClass.LoginResponse getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
   }
 
   public interface WhoAmIRequestOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:v12proto.iam.v1.WhoAmIRequest)
+      // @@protoc_insertion_point(interface_extends:v10proto.iam.v1.WhoAmIRequest)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -2737,11 +2737,11 @@ public final class IamOuterClass {
    * Request message for the WhoAmI rpc.
    * </pre>
    *
-   * Protobuf type {@code v12proto.iam.v1.WhoAmIRequest}
+   * Protobuf type {@code v10proto.iam.v1.WhoAmIRequest}
    */
   public static final class WhoAmIRequest extends
       com.google.protobuf.GeneratedMessage implements
-      // @@protoc_insertion_point(message_implements:v12proto.iam.v1.WhoAmIRequest)
+      // @@protoc_insertion_point(message_implements:v10proto.iam.v1.WhoAmIRequest)
       WhoAmIRequestOrBuilder {
   private static final long serialVersionUID = 0L;
     static {
@@ -2763,15 +2763,15 @@ public final class IamOuterClass {
 
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return v12proto.iam.v1.IamOuterClass.internal_static_v12proto_iam_v1_WhoAmIRequest_descriptor;
+      return v10proto.iam.v1.IamOuterClass.internal_static_v10proto_iam_v1_WhoAmIRequest_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return v12proto.iam.v1.IamOuterClass.internal_static_v12proto_iam_v1_WhoAmIRequest_fieldAccessorTable
+      return v10proto.iam.v1.IamOuterClass.internal_static_v10proto_iam_v1_WhoAmIRequest_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              v12proto.iam.v1.IamOuterClass.WhoAmIRequest.class, v12proto.iam.v1.IamOuterClass.WhoAmIRequest.Builder.class);
+              v10proto.iam.v1.IamOuterClass.WhoAmIRequest.class, v10proto.iam.v1.IamOuterClass.WhoAmIRequest.Builder.class);
     }
 
     public static final int ACCESS_TOKEN_FIELD_NUMBER = 1;
@@ -2852,10 +2852,10 @@ public final class IamOuterClass {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof v12proto.iam.v1.IamOuterClass.WhoAmIRequest)) {
+      if (!(obj instanceof v10proto.iam.v1.IamOuterClass.WhoAmIRequest)) {
         return super.equals(obj);
       }
-      v12proto.iam.v1.IamOuterClass.WhoAmIRequest other = (v12proto.iam.v1.IamOuterClass.WhoAmIRequest) obj;
+      v10proto.iam.v1.IamOuterClass.WhoAmIRequest other = (v10proto.iam.v1.IamOuterClass.WhoAmIRequest) obj;
 
       if (!getAccessToken()
           .equals(other.getAccessToken())) return false;
@@ -2877,44 +2877,44 @@ public final class IamOuterClass {
       return hash;
     }
 
-    public static v12proto.iam.v1.IamOuterClass.WhoAmIRequest parseFrom(
+    public static v10proto.iam.v1.IamOuterClass.WhoAmIRequest parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static v12proto.iam.v1.IamOuterClass.WhoAmIRequest parseFrom(
+    public static v10proto.iam.v1.IamOuterClass.WhoAmIRequest parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static v12proto.iam.v1.IamOuterClass.WhoAmIRequest parseFrom(
+    public static v10proto.iam.v1.IamOuterClass.WhoAmIRequest parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static v12proto.iam.v1.IamOuterClass.WhoAmIRequest parseFrom(
+    public static v10proto.iam.v1.IamOuterClass.WhoAmIRequest parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static v12proto.iam.v1.IamOuterClass.WhoAmIRequest parseFrom(byte[] data)
+    public static v10proto.iam.v1.IamOuterClass.WhoAmIRequest parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static v12proto.iam.v1.IamOuterClass.WhoAmIRequest parseFrom(
+    public static v10proto.iam.v1.IamOuterClass.WhoAmIRequest parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static v12proto.iam.v1.IamOuterClass.WhoAmIRequest parseFrom(java.io.InputStream input)
+    public static v10proto.iam.v1.IamOuterClass.WhoAmIRequest parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseWithIOException(PARSER, input);
     }
-    public static v12proto.iam.v1.IamOuterClass.WhoAmIRequest parseFrom(
+    public static v10proto.iam.v1.IamOuterClass.WhoAmIRequest parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -2922,26 +2922,26 @@ public final class IamOuterClass {
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    public static v12proto.iam.v1.IamOuterClass.WhoAmIRequest parseDelimitedFrom(java.io.InputStream input)
+    public static v10proto.iam.v1.IamOuterClass.WhoAmIRequest parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseDelimitedWithIOException(PARSER, input);
     }
 
-    public static v12proto.iam.v1.IamOuterClass.WhoAmIRequest parseDelimitedFrom(
+    public static v10proto.iam.v1.IamOuterClass.WhoAmIRequest parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static v12proto.iam.v1.IamOuterClass.WhoAmIRequest parseFrom(
+    public static v10proto.iam.v1.IamOuterClass.WhoAmIRequest parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseWithIOException(PARSER, input);
     }
-    public static v12proto.iam.v1.IamOuterClass.WhoAmIRequest parseFrom(
+    public static v10proto.iam.v1.IamOuterClass.WhoAmIRequest parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -2954,7 +2954,7 @@ public final class IamOuterClass {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(v12proto.iam.v1.IamOuterClass.WhoAmIRequest prototype) {
+    public static Builder newBuilder(v10proto.iam.v1.IamOuterClass.WhoAmIRequest prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -2974,26 +2974,26 @@ public final class IamOuterClass {
      * Request message for the WhoAmI rpc.
      * </pre>
      *
-     * Protobuf type {@code v12proto.iam.v1.WhoAmIRequest}
+     * Protobuf type {@code v10proto.iam.v1.WhoAmIRequest}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:v12proto.iam.v1.WhoAmIRequest)
-        v12proto.iam.v1.IamOuterClass.WhoAmIRequestOrBuilder {
+        // @@protoc_insertion_point(builder_implements:v10proto.iam.v1.WhoAmIRequest)
+        v10proto.iam.v1.IamOuterClass.WhoAmIRequestOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return v12proto.iam.v1.IamOuterClass.internal_static_v12proto_iam_v1_WhoAmIRequest_descriptor;
+        return v10proto.iam.v1.IamOuterClass.internal_static_v10proto_iam_v1_WhoAmIRequest_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return v12proto.iam.v1.IamOuterClass.internal_static_v12proto_iam_v1_WhoAmIRequest_fieldAccessorTable
+        return v10proto.iam.v1.IamOuterClass.internal_static_v10proto_iam_v1_WhoAmIRequest_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                v12proto.iam.v1.IamOuterClass.WhoAmIRequest.class, v12proto.iam.v1.IamOuterClass.WhoAmIRequest.Builder.class);
+                v10proto.iam.v1.IamOuterClass.WhoAmIRequest.class, v10proto.iam.v1.IamOuterClass.WhoAmIRequest.Builder.class);
       }
 
-      // Construct using v12proto.iam.v1.IamOuterClass.WhoAmIRequest.newBuilder()
+      // Construct using v10proto.iam.v1.IamOuterClass.WhoAmIRequest.newBuilder()
       private Builder() {
 
       }
@@ -3014,17 +3014,17 @@ public final class IamOuterClass {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return v12proto.iam.v1.IamOuterClass.internal_static_v12proto_iam_v1_WhoAmIRequest_descriptor;
+        return v10proto.iam.v1.IamOuterClass.internal_static_v10proto_iam_v1_WhoAmIRequest_descriptor;
       }
 
       @java.lang.Override
-      public v12proto.iam.v1.IamOuterClass.WhoAmIRequest getDefaultInstanceForType() {
-        return v12proto.iam.v1.IamOuterClass.WhoAmIRequest.getDefaultInstance();
+      public v10proto.iam.v1.IamOuterClass.WhoAmIRequest getDefaultInstanceForType() {
+        return v10proto.iam.v1.IamOuterClass.WhoAmIRequest.getDefaultInstance();
       }
 
       @java.lang.Override
-      public v12proto.iam.v1.IamOuterClass.WhoAmIRequest build() {
-        v12proto.iam.v1.IamOuterClass.WhoAmIRequest result = buildPartial();
+      public v10proto.iam.v1.IamOuterClass.WhoAmIRequest build() {
+        v10proto.iam.v1.IamOuterClass.WhoAmIRequest result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -3032,14 +3032,14 @@ public final class IamOuterClass {
       }
 
       @java.lang.Override
-      public v12proto.iam.v1.IamOuterClass.WhoAmIRequest buildPartial() {
-        v12proto.iam.v1.IamOuterClass.WhoAmIRequest result = new v12proto.iam.v1.IamOuterClass.WhoAmIRequest(this);
+      public v10proto.iam.v1.IamOuterClass.WhoAmIRequest buildPartial() {
+        v10proto.iam.v1.IamOuterClass.WhoAmIRequest result = new v10proto.iam.v1.IamOuterClass.WhoAmIRequest(this);
         if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
       }
 
-      private void buildPartial0(v12proto.iam.v1.IamOuterClass.WhoAmIRequest result) {
+      private void buildPartial0(v10proto.iam.v1.IamOuterClass.WhoAmIRequest result) {
         int from_bitField0_ = bitField0_;
         if (((from_bitField0_ & 0x00000001) != 0)) {
           result.accessToken_ = accessToken_;
@@ -3048,16 +3048,16 @@ public final class IamOuterClass {
 
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof v12proto.iam.v1.IamOuterClass.WhoAmIRequest) {
-          return mergeFrom((v12proto.iam.v1.IamOuterClass.WhoAmIRequest)other);
+        if (other instanceof v10proto.iam.v1.IamOuterClass.WhoAmIRequest) {
+          return mergeFrom((v10proto.iam.v1.IamOuterClass.WhoAmIRequest)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(v12proto.iam.v1.IamOuterClass.WhoAmIRequest other) {
-        if (other == v12proto.iam.v1.IamOuterClass.WhoAmIRequest.getDefaultInstance()) return this;
+      public Builder mergeFrom(v10proto.iam.v1.IamOuterClass.WhoAmIRequest other) {
+        if (other == v10proto.iam.v1.IamOuterClass.WhoAmIRequest.getDefaultInstance()) return this;
         if (!other.getAccessToken().isEmpty()) {
           accessToken_ = other.accessToken_;
           bitField0_ |= 0x00000001;
@@ -3183,16 +3183,16 @@ public final class IamOuterClass {
         return this;
       }
 
-      // @@protoc_insertion_point(builder_scope:v12proto.iam.v1.WhoAmIRequest)
+      // @@protoc_insertion_point(builder_scope:v10proto.iam.v1.WhoAmIRequest)
     }
 
-    // @@protoc_insertion_point(class_scope:v12proto.iam.v1.WhoAmIRequest)
-    private static final v12proto.iam.v1.IamOuterClass.WhoAmIRequest DEFAULT_INSTANCE;
+    // @@protoc_insertion_point(class_scope:v10proto.iam.v1.WhoAmIRequest)
+    private static final v10proto.iam.v1.IamOuterClass.WhoAmIRequest DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new v12proto.iam.v1.IamOuterClass.WhoAmIRequest();
+      DEFAULT_INSTANCE = new v10proto.iam.v1.IamOuterClass.WhoAmIRequest();
     }
 
-    public static v12proto.iam.v1.IamOuterClass.WhoAmIRequest getDefaultInstance() {
+    public static v10proto.iam.v1.IamOuterClass.WhoAmIRequest getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
@@ -3228,14 +3228,14 @@ public final class IamOuterClass {
     }
 
     @java.lang.Override
-    public v12proto.iam.v1.IamOuterClass.WhoAmIRequest getDefaultInstanceForType() {
+    public v10proto.iam.v1.IamOuterClass.WhoAmIRequest getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
   }
 
   public interface WhoAmIResponseOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:v12proto.iam.v1.WhoAmIResponse)
+      // @@protoc_insertion_point(interface_extends:v10proto.iam.v1.WhoAmIResponse)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -3279,11 +3279,11 @@ public final class IamOuterClass {
    * Request message for the WhoAmI rpc.
    * </pre>
    *
-   * Protobuf type {@code v12proto.iam.v1.WhoAmIResponse}
+   * Protobuf type {@code v10proto.iam.v1.WhoAmIResponse}
    */
   public static final class WhoAmIResponse extends
       com.google.protobuf.GeneratedMessage implements
-      // @@protoc_insertion_point(message_implements:v12proto.iam.v1.WhoAmIResponse)
+      // @@protoc_insertion_point(message_implements:v10proto.iam.v1.WhoAmIResponse)
       WhoAmIResponseOrBuilder {
   private static final long serialVersionUID = 0L;
     static {
@@ -3307,15 +3307,15 @@ public final class IamOuterClass {
 
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return v12proto.iam.v1.IamOuterClass.internal_static_v12proto_iam_v1_WhoAmIResponse_descriptor;
+      return v10proto.iam.v1.IamOuterClass.internal_static_v10proto_iam_v1_WhoAmIResponse_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return v12proto.iam.v1.IamOuterClass.internal_static_v12proto_iam_v1_WhoAmIResponse_fieldAccessorTable
+      return v10proto.iam.v1.IamOuterClass.internal_static_v10proto_iam_v1_WhoAmIResponse_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              v12proto.iam.v1.IamOuterClass.WhoAmIResponse.class, v12proto.iam.v1.IamOuterClass.WhoAmIResponse.Builder.class);
+              v10proto.iam.v1.IamOuterClass.WhoAmIResponse.class, v10proto.iam.v1.IamOuterClass.WhoAmIResponse.Builder.class);
     }
 
     public static final int ID_FIELD_NUMBER = 1;
@@ -3486,10 +3486,10 @@ public final class IamOuterClass {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof v12proto.iam.v1.IamOuterClass.WhoAmIResponse)) {
+      if (!(obj instanceof v10proto.iam.v1.IamOuterClass.WhoAmIResponse)) {
         return super.equals(obj);
       }
-      v12proto.iam.v1.IamOuterClass.WhoAmIResponse other = (v12proto.iam.v1.IamOuterClass.WhoAmIResponse) obj;
+      v10proto.iam.v1.IamOuterClass.WhoAmIResponse other = (v10proto.iam.v1.IamOuterClass.WhoAmIResponse) obj;
 
       if (!getId()
           .equals(other.getId())) return false;
@@ -3519,44 +3519,44 @@ public final class IamOuterClass {
       return hash;
     }
 
-    public static v12proto.iam.v1.IamOuterClass.WhoAmIResponse parseFrom(
+    public static v10proto.iam.v1.IamOuterClass.WhoAmIResponse parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static v12proto.iam.v1.IamOuterClass.WhoAmIResponse parseFrom(
+    public static v10proto.iam.v1.IamOuterClass.WhoAmIResponse parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static v12proto.iam.v1.IamOuterClass.WhoAmIResponse parseFrom(
+    public static v10proto.iam.v1.IamOuterClass.WhoAmIResponse parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static v12proto.iam.v1.IamOuterClass.WhoAmIResponse parseFrom(
+    public static v10proto.iam.v1.IamOuterClass.WhoAmIResponse parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static v12proto.iam.v1.IamOuterClass.WhoAmIResponse parseFrom(byte[] data)
+    public static v10proto.iam.v1.IamOuterClass.WhoAmIResponse parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static v12proto.iam.v1.IamOuterClass.WhoAmIResponse parseFrom(
+    public static v10proto.iam.v1.IamOuterClass.WhoAmIResponse parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static v12proto.iam.v1.IamOuterClass.WhoAmIResponse parseFrom(java.io.InputStream input)
+    public static v10proto.iam.v1.IamOuterClass.WhoAmIResponse parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseWithIOException(PARSER, input);
     }
-    public static v12proto.iam.v1.IamOuterClass.WhoAmIResponse parseFrom(
+    public static v10proto.iam.v1.IamOuterClass.WhoAmIResponse parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -3564,26 +3564,26 @@ public final class IamOuterClass {
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    public static v12proto.iam.v1.IamOuterClass.WhoAmIResponse parseDelimitedFrom(java.io.InputStream input)
+    public static v10proto.iam.v1.IamOuterClass.WhoAmIResponse parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseDelimitedWithIOException(PARSER, input);
     }
 
-    public static v12proto.iam.v1.IamOuterClass.WhoAmIResponse parseDelimitedFrom(
+    public static v10proto.iam.v1.IamOuterClass.WhoAmIResponse parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static v12proto.iam.v1.IamOuterClass.WhoAmIResponse parseFrom(
+    public static v10proto.iam.v1.IamOuterClass.WhoAmIResponse parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseWithIOException(PARSER, input);
     }
-    public static v12proto.iam.v1.IamOuterClass.WhoAmIResponse parseFrom(
+    public static v10proto.iam.v1.IamOuterClass.WhoAmIResponse parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -3596,7 +3596,7 @@ public final class IamOuterClass {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(v12proto.iam.v1.IamOuterClass.WhoAmIResponse prototype) {
+    public static Builder newBuilder(v10proto.iam.v1.IamOuterClass.WhoAmIResponse prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -3616,26 +3616,26 @@ public final class IamOuterClass {
      * Request message for the WhoAmI rpc.
      * </pre>
      *
-     * Protobuf type {@code v12proto.iam.v1.WhoAmIResponse}
+     * Protobuf type {@code v10proto.iam.v1.WhoAmIResponse}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:v12proto.iam.v1.WhoAmIResponse)
-        v12proto.iam.v1.IamOuterClass.WhoAmIResponseOrBuilder {
+        // @@protoc_insertion_point(builder_implements:v10proto.iam.v1.WhoAmIResponse)
+        v10proto.iam.v1.IamOuterClass.WhoAmIResponseOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return v12proto.iam.v1.IamOuterClass.internal_static_v12proto_iam_v1_WhoAmIResponse_descriptor;
+        return v10proto.iam.v1.IamOuterClass.internal_static_v10proto_iam_v1_WhoAmIResponse_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return v12proto.iam.v1.IamOuterClass.internal_static_v12proto_iam_v1_WhoAmIResponse_fieldAccessorTable
+        return v10proto.iam.v1.IamOuterClass.internal_static_v10proto_iam_v1_WhoAmIResponse_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                v12proto.iam.v1.IamOuterClass.WhoAmIResponse.class, v12proto.iam.v1.IamOuterClass.WhoAmIResponse.Builder.class);
+                v10proto.iam.v1.IamOuterClass.WhoAmIResponse.class, v10proto.iam.v1.IamOuterClass.WhoAmIResponse.Builder.class);
       }
 
-      // Construct using v12proto.iam.v1.IamOuterClass.WhoAmIResponse.newBuilder()
+      // Construct using v10proto.iam.v1.IamOuterClass.WhoAmIResponse.newBuilder()
       private Builder() {
 
       }
@@ -3658,17 +3658,17 @@ public final class IamOuterClass {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return v12proto.iam.v1.IamOuterClass.internal_static_v12proto_iam_v1_WhoAmIResponse_descriptor;
+        return v10proto.iam.v1.IamOuterClass.internal_static_v10proto_iam_v1_WhoAmIResponse_descriptor;
       }
 
       @java.lang.Override
-      public v12proto.iam.v1.IamOuterClass.WhoAmIResponse getDefaultInstanceForType() {
-        return v12proto.iam.v1.IamOuterClass.WhoAmIResponse.getDefaultInstance();
+      public v10proto.iam.v1.IamOuterClass.WhoAmIResponse getDefaultInstanceForType() {
+        return v10proto.iam.v1.IamOuterClass.WhoAmIResponse.getDefaultInstance();
       }
 
       @java.lang.Override
-      public v12proto.iam.v1.IamOuterClass.WhoAmIResponse build() {
-        v12proto.iam.v1.IamOuterClass.WhoAmIResponse result = buildPartial();
+      public v10proto.iam.v1.IamOuterClass.WhoAmIResponse build() {
+        v10proto.iam.v1.IamOuterClass.WhoAmIResponse result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -3676,14 +3676,14 @@ public final class IamOuterClass {
       }
 
       @java.lang.Override
-      public v12proto.iam.v1.IamOuterClass.WhoAmIResponse buildPartial() {
-        v12proto.iam.v1.IamOuterClass.WhoAmIResponse result = new v12proto.iam.v1.IamOuterClass.WhoAmIResponse(this);
+      public v10proto.iam.v1.IamOuterClass.WhoAmIResponse buildPartial() {
+        v10proto.iam.v1.IamOuterClass.WhoAmIResponse result = new v10proto.iam.v1.IamOuterClass.WhoAmIResponse(this);
         if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
       }
 
-      private void buildPartial0(v12proto.iam.v1.IamOuterClass.WhoAmIResponse result) {
+      private void buildPartial0(v10proto.iam.v1.IamOuterClass.WhoAmIResponse result) {
         int from_bitField0_ = bitField0_;
         if (((from_bitField0_ & 0x00000001) != 0)) {
           result.id_ = id_;
@@ -3698,16 +3698,16 @@ public final class IamOuterClass {
 
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof v12proto.iam.v1.IamOuterClass.WhoAmIResponse) {
-          return mergeFrom((v12proto.iam.v1.IamOuterClass.WhoAmIResponse)other);
+        if (other instanceof v10proto.iam.v1.IamOuterClass.WhoAmIResponse) {
+          return mergeFrom((v10proto.iam.v1.IamOuterClass.WhoAmIResponse)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(v12proto.iam.v1.IamOuterClass.WhoAmIResponse other) {
-        if (other == v12proto.iam.v1.IamOuterClass.WhoAmIResponse.getDefaultInstance()) return this;
+      public Builder mergeFrom(v10proto.iam.v1.IamOuterClass.WhoAmIResponse other) {
+        if (other == v10proto.iam.v1.IamOuterClass.WhoAmIResponse.getDefaultInstance()) return this;
         if (!other.getId().isEmpty()) {
           id_ = other.id_;
           bitField0_ |= 0x00000001;
@@ -3997,16 +3997,16 @@ public final class IamOuterClass {
         return this;
       }
 
-      // @@protoc_insertion_point(builder_scope:v12proto.iam.v1.WhoAmIResponse)
+      // @@protoc_insertion_point(builder_scope:v10proto.iam.v1.WhoAmIResponse)
     }
 
-    // @@protoc_insertion_point(class_scope:v12proto.iam.v1.WhoAmIResponse)
-    private static final v12proto.iam.v1.IamOuterClass.WhoAmIResponse DEFAULT_INSTANCE;
+    // @@protoc_insertion_point(class_scope:v10proto.iam.v1.WhoAmIResponse)
+    private static final v10proto.iam.v1.IamOuterClass.WhoAmIResponse DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new v12proto.iam.v1.IamOuterClass.WhoAmIResponse();
+      DEFAULT_INSTANCE = new v10proto.iam.v1.IamOuterClass.WhoAmIResponse();
     }
 
-    public static v12proto.iam.v1.IamOuterClass.WhoAmIResponse getDefaultInstance() {
+    public static v10proto.iam.v1.IamOuterClass.WhoAmIResponse getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
@@ -4042,37 +4042,37 @@ public final class IamOuterClass {
     }
 
     @java.lang.Override
-    public v12proto.iam.v1.IamOuterClass.WhoAmIResponse getDefaultInstanceForType() {
+    public v10proto.iam.v1.IamOuterClass.WhoAmIResponse getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
   }
 
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_v12proto_iam_v1_LoginRequest_descriptor;
+    internal_static_v10proto_iam_v1_LoginRequest_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_v12proto_iam_v1_LoginRequest_fieldAccessorTable;
+      internal_static_v10proto_iam_v1_LoginRequest_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_v12proto_iam_v1_LoginResponse_descriptor;
+    internal_static_v10proto_iam_v1_LoginResponse_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_v12proto_iam_v1_LoginResponse_fieldAccessorTable;
+      internal_static_v10proto_iam_v1_LoginResponse_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_v12proto_iam_v1_LoginResponse_DeviceAuth_descriptor;
+    internal_static_v10proto_iam_v1_LoginResponse_DeviceAuth_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_v12proto_iam_v1_LoginResponse_DeviceAuth_fieldAccessorTable;
+      internal_static_v10proto_iam_v1_LoginResponse_DeviceAuth_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_v12proto_iam_v1_WhoAmIRequest_descriptor;
+    internal_static_v10proto_iam_v1_WhoAmIRequest_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_v12proto_iam_v1_WhoAmIRequest_fieldAccessorTable;
+      internal_static_v10proto_iam_v1_WhoAmIRequest_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_v12proto_iam_v1_WhoAmIResponse_descriptor;
+    internal_static_v10proto_iam_v1_WhoAmIResponse_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_v12proto_iam_v1_WhoAmIResponse_fieldAccessorTable;
+      internal_static_v10proto_iam_v1_WhoAmIResponse_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -4082,14 +4082,14 @@ public final class IamOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\020iam/v1/iam.proto\022\017v12proto.iam.v1\032\034goo" +
+      "\n\020iam/v1/iam.proto\022\017v10proto.iam.v1\032\034goo" +
       "gle/api/annotations.proto\032\027google/rpc/st" +
       "atus.proto\032.protoc-gen-openapiv2/options" +
       "/annotations.proto\"~\n\014LoginRequest\022!\n\014ac" +
       "cess_token\030\001 \001(\tR\013accessToken\022\016\n\002id\030\002 \001(" +
       "\tR\002id\022\032\n\010password\030\003 \001(\tR\010password\022\037\n\013dev" +
       "ice_auth\030\004 \001(\tR\ndeviceAuth\"\261\002\n\rLoginResp" +
-      "onse\022J\n\013device_auth\030\001 \001(\0132).v12proto.iam" +
+      "onse\022J\n\013device_auth\030\001 \001(\0132).v10proto.iam" +
       ".v1.LoginResponse.DeviceAuthR\ndeviceAuth" +
       "\022!\n\014access_token\030\002 \001(\tR\013accessToken\022*\n\006s" +
       "tatus\030\003 \001(\0132\022.google.rpc.StatusR\006status\032" +
@@ -4100,17 +4100,16 @@ public final class IamOuterClass {
       "s_token\030\001 \001(\tR\013accessToken\"J\n\016WhoAmIResp" +
       "onse\022\016\n\002id\030\001 \001(\tR\002id\022\022\n\004name\030\002 \001(\tR\004name" +
       "\022\024\n\005email\030\003 \001(\tR\005email2\364\002\n\003Iam\022f\n\005Login\022" +
-      "\035.v12proto.iam.v1.LoginRequest\032\036.v12prot" +
-      "o.iam.v1.LoginResponse\"\034\202\323\344\223\002\026\"\021/v12/iam" +
-      "/v1/login:\001*0\001\022e\n\006WhoAmI\022\036.v12proto.iam." +
-      "v1.WhoAmIRequest\032\037.v12proto.iam.v1.WhoAm" +
-      "IResponse\"\032\202\323\344\223\002\024\022\022/v12/iam/v1/whoami\032\235\001" +
+      "\035.v10proto.iam.v1.LoginRequest\032\036.v10prot" +
+      "o.iam.v1.LoginResponse\"\034\202\323\344\223\002\026\"\021/v10/iam" +
+      "/v1/login:\001*0\001\022e\n\006WhoAmI\022\036.v10proto.iam." +
+      "v1.WhoAmIRequest\032\037.v10proto.iam.v1.WhoAm" +
+      "IResponse\"\032\202\323\344\223\002\024\022\022/v10/iam/v1/whoami\032\235\001" +
       "\222A\231\001\0223(ALPHA) IAM API. Base URL: https:/" +
       "/api.nightblue.io\032b\n$See here for the se" +
       "rvice definition.\022:https://github.com/ni" +
-      "ghtblue-io/v12-proto/tree/main/iam/v1B$Z" +
-      "\"github.com/nightblue-io/v12-go/iamb\006pro" +
-      "to3"
+      "ghtblue-io/v10-proto/tree/main/iam/v1B!Z" +
+      "\037github.com/drival-ai/v10-go/iamb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -4119,35 +4118,35 @@ public final class IamOuterClass {
           com.google.rpc.StatusProto.getDescriptor(),
           grpc.gateway.protoc_gen_openapiv2.options.Annotations.getDescriptor(),
         });
-    internal_static_v12proto_iam_v1_LoginRequest_descriptor =
+    internal_static_v10proto_iam_v1_LoginRequest_descriptor =
       getDescriptor().getMessageTypes().get(0);
-    internal_static_v12proto_iam_v1_LoginRequest_fieldAccessorTable = new
+    internal_static_v10proto_iam_v1_LoginRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-        internal_static_v12proto_iam_v1_LoginRequest_descriptor,
+        internal_static_v10proto_iam_v1_LoginRequest_descriptor,
         new java.lang.String[] { "AccessToken", "Id", "Password", "DeviceAuth", });
-    internal_static_v12proto_iam_v1_LoginResponse_descriptor =
+    internal_static_v10proto_iam_v1_LoginResponse_descriptor =
       getDescriptor().getMessageTypes().get(1);
-    internal_static_v12proto_iam_v1_LoginResponse_fieldAccessorTable = new
+    internal_static_v10proto_iam_v1_LoginResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-        internal_static_v12proto_iam_v1_LoginResponse_descriptor,
+        internal_static_v10proto_iam_v1_LoginResponse_descriptor,
         new java.lang.String[] { "DeviceAuth", "AccessToken", "Status", });
-    internal_static_v12proto_iam_v1_LoginResponse_DeviceAuth_descriptor =
-      internal_static_v12proto_iam_v1_LoginResponse_descriptor.getNestedTypes().get(0);
-    internal_static_v12proto_iam_v1_LoginResponse_DeviceAuth_fieldAccessorTable = new
+    internal_static_v10proto_iam_v1_LoginResponse_DeviceAuth_descriptor =
+      internal_static_v10proto_iam_v1_LoginResponse_descriptor.getNestedTypes().get(0);
+    internal_static_v10proto_iam_v1_LoginResponse_DeviceAuth_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-        internal_static_v12proto_iam_v1_LoginResponse_DeviceAuth_descriptor,
+        internal_static_v10proto_iam_v1_LoginResponse_DeviceAuth_descriptor,
         new java.lang.String[] { "UserCode", "VerificationUriComplete", "ExpiresIn", });
-    internal_static_v12proto_iam_v1_WhoAmIRequest_descriptor =
+    internal_static_v10proto_iam_v1_WhoAmIRequest_descriptor =
       getDescriptor().getMessageTypes().get(2);
-    internal_static_v12proto_iam_v1_WhoAmIRequest_fieldAccessorTable = new
+    internal_static_v10proto_iam_v1_WhoAmIRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-        internal_static_v12proto_iam_v1_WhoAmIRequest_descriptor,
+        internal_static_v10proto_iam_v1_WhoAmIRequest_descriptor,
         new java.lang.String[] { "AccessToken", });
-    internal_static_v12proto_iam_v1_WhoAmIResponse_descriptor =
+    internal_static_v10proto_iam_v1_WhoAmIResponse_descriptor =
       getDescriptor().getMessageTypes().get(3);
-    internal_static_v12proto_iam_v1_WhoAmIResponse_fieldAccessorTable = new
+    internal_static_v10proto_iam_v1_WhoAmIResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-        internal_static_v12proto_iam_v1_WhoAmIResponse_descriptor,
+        internal_static_v10proto_iam_v1_WhoAmIResponse_descriptor,
         new java.lang.String[] { "Id", "Name", "Email", });
     descriptor.resolveAllFeaturesImmutable();
     com.google.api.AnnotationsProto.getDescriptor();

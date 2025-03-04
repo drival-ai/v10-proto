@@ -193,7 +193,7 @@ func RegisterOperationsHandlerServer(ctx context.Context, mux *runtime.ServeMux,
 		var stream runtime.ServerTransportStream
 		ctx = grpc.NewContextWithServerTransportStream(ctx, &stream)
 		inboundMarshaler, outboundMarshaler := runtime.MarshalerForRequest(mux, req)
-		annotatedContext, err := runtime.AnnotateIncomingContext(ctx, mux, req, "/v12proto.operations.v1.Operations/ListOperations", runtime.WithHTTPPathPattern("/v12/ops/v1"))
+		annotatedContext, err := runtime.AnnotateIncomingContext(ctx, mux, req, "/v10proto.operations.v1.Operations/ListOperations", runtime.WithHTTPPathPattern("/v10/ops/v1"))
 		if err != nil {
 			runtime.HTTPError(ctx, mux, outboundMarshaler, w, req, err)
 			return
@@ -213,7 +213,7 @@ func RegisterOperationsHandlerServer(ctx context.Context, mux *runtime.ServeMux,
 		var stream runtime.ServerTransportStream
 		ctx = grpc.NewContextWithServerTransportStream(ctx, &stream)
 		inboundMarshaler, outboundMarshaler := runtime.MarshalerForRequest(mux, req)
-		annotatedContext, err := runtime.AnnotateIncomingContext(ctx, mux, req, "/v12proto.operations.v1.Operations/GetOperation", runtime.WithHTTPPathPattern("/v12/ops/v1/{name}"))
+		annotatedContext, err := runtime.AnnotateIncomingContext(ctx, mux, req, "/v10proto.operations.v1.Operations/GetOperation", runtime.WithHTTPPathPattern("/v10/ops/v1/{name}"))
 		if err != nil {
 			runtime.HTTPError(ctx, mux, outboundMarshaler, w, req, err)
 			return
@@ -233,7 +233,7 @@ func RegisterOperationsHandlerServer(ctx context.Context, mux *runtime.ServeMux,
 		var stream runtime.ServerTransportStream
 		ctx = grpc.NewContextWithServerTransportStream(ctx, &stream)
 		inboundMarshaler, outboundMarshaler := runtime.MarshalerForRequest(mux, req)
-		annotatedContext, err := runtime.AnnotateIncomingContext(ctx, mux, req, "/v12proto.operations.v1.Operations/DeleteOperation", runtime.WithHTTPPathPattern("/v12/ops/v1/{name}"))
+		annotatedContext, err := runtime.AnnotateIncomingContext(ctx, mux, req, "/v10proto.operations.v1.Operations/DeleteOperation", runtime.WithHTTPPathPattern("/v10/ops/v1/{name}"))
 		if err != nil {
 			runtime.HTTPError(ctx, mux, outboundMarshaler, w, req, err)
 			return
@@ -253,7 +253,7 @@ func RegisterOperationsHandlerServer(ctx context.Context, mux *runtime.ServeMux,
 		var stream runtime.ServerTransportStream
 		ctx = grpc.NewContextWithServerTransportStream(ctx, &stream)
 		inboundMarshaler, outboundMarshaler := runtime.MarshalerForRequest(mux, req)
-		annotatedContext, err := runtime.AnnotateIncomingContext(ctx, mux, req, "/v12proto.operations.v1.Operations/CancelOperation", runtime.WithHTTPPathPattern("/v12/ops/v1/{name}:cancel"))
+		annotatedContext, err := runtime.AnnotateIncomingContext(ctx, mux, req, "/v10proto.operations.v1.Operations/CancelOperation", runtime.WithHTTPPathPattern("/v10/ops/v1/{name}:cancel"))
 		if err != nil {
 			runtime.HTTPError(ctx, mux, outboundMarshaler, w, req, err)
 			return
@@ -311,7 +311,7 @@ func RegisterOperationsHandlerClient(ctx context.Context, mux *runtime.ServeMux,
 		ctx, cancel := context.WithCancel(req.Context())
 		defer cancel()
 		inboundMarshaler, outboundMarshaler := runtime.MarshalerForRequest(mux, req)
-		annotatedContext, err := runtime.AnnotateContext(ctx, mux, req, "/v12proto.operations.v1.Operations/ListOperations", runtime.WithHTTPPathPattern("/v12/ops/v1"))
+		annotatedContext, err := runtime.AnnotateContext(ctx, mux, req, "/v10proto.operations.v1.Operations/ListOperations", runtime.WithHTTPPathPattern("/v10/ops/v1"))
 		if err != nil {
 			runtime.HTTPError(ctx, mux, outboundMarshaler, w, req, err)
 			return
@@ -328,7 +328,7 @@ func RegisterOperationsHandlerClient(ctx context.Context, mux *runtime.ServeMux,
 		ctx, cancel := context.WithCancel(req.Context())
 		defer cancel()
 		inboundMarshaler, outboundMarshaler := runtime.MarshalerForRequest(mux, req)
-		annotatedContext, err := runtime.AnnotateContext(ctx, mux, req, "/v12proto.operations.v1.Operations/GetOperation", runtime.WithHTTPPathPattern("/v12/ops/v1/{name}"))
+		annotatedContext, err := runtime.AnnotateContext(ctx, mux, req, "/v10proto.operations.v1.Operations/GetOperation", runtime.WithHTTPPathPattern("/v10/ops/v1/{name}"))
 		if err != nil {
 			runtime.HTTPError(ctx, mux, outboundMarshaler, w, req, err)
 			return
@@ -345,7 +345,7 @@ func RegisterOperationsHandlerClient(ctx context.Context, mux *runtime.ServeMux,
 		ctx, cancel := context.WithCancel(req.Context())
 		defer cancel()
 		inboundMarshaler, outboundMarshaler := runtime.MarshalerForRequest(mux, req)
-		annotatedContext, err := runtime.AnnotateContext(ctx, mux, req, "/v12proto.operations.v1.Operations/DeleteOperation", runtime.WithHTTPPathPattern("/v12/ops/v1/{name}"))
+		annotatedContext, err := runtime.AnnotateContext(ctx, mux, req, "/v10proto.operations.v1.Operations/DeleteOperation", runtime.WithHTTPPathPattern("/v10/ops/v1/{name}"))
 		if err != nil {
 			runtime.HTTPError(ctx, mux, outboundMarshaler, w, req, err)
 			return
@@ -362,7 +362,7 @@ func RegisterOperationsHandlerClient(ctx context.Context, mux *runtime.ServeMux,
 		ctx, cancel := context.WithCancel(req.Context())
 		defer cancel()
 		inboundMarshaler, outboundMarshaler := runtime.MarshalerForRequest(mux, req)
-		annotatedContext, err := runtime.AnnotateContext(ctx, mux, req, "/v12proto.operations.v1.Operations/CancelOperation", runtime.WithHTTPPathPattern("/v12/ops/v1/{name}:cancel"))
+		annotatedContext, err := runtime.AnnotateContext(ctx, mux, req, "/v10proto.operations.v1.Operations/CancelOperation", runtime.WithHTTPPathPattern("/v10/ops/v1/{name}:cancel"))
 		if err != nil {
 			runtime.HTTPError(ctx, mux, outboundMarshaler, w, req, err)
 			return
@@ -379,10 +379,10 @@ func RegisterOperationsHandlerClient(ctx context.Context, mux *runtime.ServeMux,
 }
 
 var (
-	pattern_Operations_ListOperations_0  = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 1, 2, 2}, []string{"v12", "ops", "v1"}, ""))
-	pattern_Operations_GetOperation_0    = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 1, 2, 2, 1, 0, 4, 1, 5, 3}, []string{"v12", "ops", "v1", "name"}, ""))
-	pattern_Operations_DeleteOperation_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 1, 2, 2, 1, 0, 4, 1, 5, 3}, []string{"v12", "ops", "v1", "name"}, ""))
-	pattern_Operations_CancelOperation_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 1, 2, 2, 1, 0, 4, 1, 5, 3}, []string{"v12", "ops", "v1", "name"}, "cancel"))
+	pattern_Operations_ListOperations_0  = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 1, 2, 2}, []string{"v10", "ops", "v1"}, ""))
+	pattern_Operations_GetOperation_0    = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 1, 2, 2, 1, 0, 4, 1, 5, 3}, []string{"v10", "ops", "v1", "name"}, ""))
+	pattern_Operations_DeleteOperation_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 1, 2, 2, 1, 0, 4, 1, 5, 3}, []string{"v10", "ops", "v1", "name"}, ""))
+	pattern_Operations_CancelOperation_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 1, 2, 2, 1, 0, 4, 1, 5, 3}, []string{"v10", "ops", "v1", "name"}, "cancel"))
 )
 
 var (

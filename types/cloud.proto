@@ -1,8 +1,8 @@
 syntax = "proto3";
 
-package v12proto.types;
+package v10proto.types;
 
-option go_package = "github.com/drival-ai/v12-go/types";
+option go_package = "github.com/drival-ai/v10-go/types";
 
 message Location {
   // If set, prioritize over active region.

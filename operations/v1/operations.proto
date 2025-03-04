@@ -1,20 +1,20 @@
 syntax = "proto3";
 
-package v12proto.operations.v1;
+package v10proto.operations.v1;
 
 import "google/api/annotations.proto";
 import "google/protobuf/empty.proto";
 import "protoc-gen-openapiv2/options/annotations.proto";
 import "types/operation.proto";
 
-option go_package = "github.com/drival-ai/v12-go/operations";
+option go_package = "github.com/drival-ai/v10-go/operations";
 
 // Operations service definition.
 service Operations {
   option (grpc.gateway.protoc_gen_openapiv2.options.openapiv2_tag) = {
     description: "(ALPHA) Operations API. Base URL: https://api.nightblue.io"
     external_docs: {
-      url: "https://github.com/nightblue-io/v12-proto/tree/main/operations/v1";
+      url: "https://github.com/nightblue-io/v10-proto/tree/main/operations/v1";
       description: "See here for the service definition.";
     }
   };
@@ -22,34 +22,34 @@ service Operations {
   // List long-running operations.
   rpc ListOperations(ListOperationsRequest) returns (ListOperationsResponse) {
     option (google.api.http) = {
-      get: "/v12/ops/v1"
+      get: "/v10/ops/v1"
     };
   }
 
   // Get a long-running operation.
-  rpc GetOperation(GetOperationRequest) returns (v12proto.types.Operation) {
+  rpc GetOperation(GetOperationRequest) returns (v10proto.types.Operation) {
     option (google.api.http) = {
-      get: "/v12/ops/v1/{name}"
+      get: "/v10/ops/v1/{name}"
     };
   }
 
   // Delete a long-running operation.
   rpc DeleteOperation(DeleteOperationRequest) returns (google.protobuf.Empty) {
     option (google.api.http) = {
-      delete: "/v12/ops/v1/{name}"
+      delete: "/v10/ops/v1/{name}"
     };
   }
 
   // Cancel a long-running operation.
   rpc CancelOperation(CancelOperationRequest) returns (google.protobuf.Empty) {
     option (google.api.http) = {
-      post: "/v12/ops/v1/{name}:cancel"
+      post: "/v10/ops/v1/{name}:cancel"
       body: "*"
     };
   }
 
   // Wait on a long-running operation.
-  rpc WaitOperation(WaitOperationRequest) returns (v12proto.types.Operation) {
+  rpc WaitOperation(WaitOperationRequest) returns (v10proto.types.Operation) {
   }
 }
 
@@ -61,7 +61,7 @@ message ListOperationsRequest {
 
 // Response message for the ListOperations rpc.
 message ListOperationsResponse {
-  repeated v12proto.types.Operation operations = 1;
+  repeated v10proto.types.Operation operations = 1;
   string next_token = 2;
 }
 
