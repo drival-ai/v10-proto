@@ -1,0 +1,75 @@
+syntax = "proto3";
+
+package v12proto.iam.v1;
+
+import "google/api/annotations.proto";
+import "google/rpc/status.proto";
+import "protoc-gen-openapiv2/options/annotations.proto";
+
+option go_package = "github.com/nightblue-io/v12-go/iam";
+
+// Iam service definition.
+service Iam {
+  option (grpc.gateway.protoc_gen_openapiv2.options.openapiv2_tag) = {
+    description: "(ALPHA) IAM API. Base URL: https://api.nightblue.io"
+    external_docs: {
+      url: "https://github.com/nightblue-io/v12-proto/tree/main/iam/v1";
+      description: "See here for the service definition.";
+    }
+  };
+
+  // Create an account for the V12 Platform.
+  rpc Login(LoginRequest) returns (stream LoginResponse) {
+    option (google.api.http) = {
+      post: "/v12/iam/v1/login"
+      body: "*"
+    };
+  }
+
+  // Testing endpoint.
+  rpc WhoAmI(WhoAmIRequest) returns (WhoAmIResponse) {
+    option (google.api.http) = {
+      get: "/v12/iam/v1/whoami"
+    };
+  }
+}
+
+// Request message for the Login rpc.
+message LoginRequest {
+  // Optional. If set, use to call user profile.
+  string access_token = 1;
+
+  string id = 2;
+  string password = 3;
+
+  // Optional. If non-empty, do a device auth flow.
+  string device_auth = 4;
+}
+
+// Response message for the Login rpc.
+message LoginResponse {
+  message DeviceAuth {
+    string user_code = 1;
+    string verification_uri_complete = 2;
+    int64 expires_in = 3;
+  }
+
+  DeviceAuth device_auth = 1;
+
+  string access_token = 2;
+
+  google.rpc.Status status = 3;
+}
+
+// Request message for the WhoAmI rpc.
+message WhoAmIRequest {
+  string access_token = 1;
+}
+
+// Request message for the WhoAmI rpc.
+message WhoAmIResponse {
+  string id = 1;
+  string name = 2;
+  string email = 3;
+}
+
