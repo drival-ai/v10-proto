@@ -22,7 +22,7 @@ service V10 {
   option (grpc.gateway.protoc_gen_openapiv2.options.openapiv2_tag) = {
     description: "(ALPHA) V10 API. Base URL: https://api.drival.ai"
     external_docs: {
-      url: "https://github.com/nightblue-io/v10-proto/tree/main/v10/v1";
+      url: "https://github.com/drival-ai/v10-proto/tree/main/v10/v1";
       description: "See here for the service definition.";
     }
   };

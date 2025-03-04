@@ -3711,7 +3711,7 @@ public final class OperationsOuterClass {
       "t\022\022\n\004name\030\001 \001(\tR\004name\",\n\026DeleteOperation" +
       "Request\022\022\n\004name\030\001 \001(\tR\004name\",\n\026CancelOpe" +
       "rationRequest\022\022\n\004name\030\001 \001(\tR\004name\"*\n\024Wai" +
-      "tOperationRequest\022\022\n\004name\030\001 \001(\tR\004name2\211\006" +
+      "tOperationRequest\022\022\n\004name\030\001 \001(\tR\004name2\203\006" +
       "\n\nOperations\022\204\001\n\016ListOperations\022-.v10pro" +
       "to.operations.v1.ListOperationsRequest\032." +
       ".v10proto.operations.v1.ListOperationsRe" +
@@ -3727,12 +3727,12 @@ public final class OperationsOuterClass {
       "\036\"\031/v10/ops/v1/{name}:cancel:\001*\022Z\n\rWaitO" +
       "peration\022,.v10proto.operations.v1.WaitOp" +
       "erationRequest\032\031.v10proto.types.Operatio" +
-      "n\"\000\032\253\001\222A\247\001\022:(ALPHA) Operations API. Base" +
-      " URL: https://api.nightblue.io\032i\n$See he" +
-      "re for the service definition.\022Ahttps://" +
-      "github.com/nightblue-io/v10-proto/tree/m" +
-      "ain/operations/v1B(Z&github.com/drival-a" +
-      "i/v10-go/operationsb\006proto3"
+      "n\"\000\032\245\001\222A\241\001\0227(ALPHA) Operations API. Base" +
+      " URL: https://api.drival.ai\032f\n$See here " +
+      "for the service definition.\022>https://git" +
+      "hub.com/drival-ai/v10-proto/tree/main/op" +
+      "erations/v1B(Z&github.com/drival-ai/v10-" +
+      "go/operationsb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

@@ -11,23 +11,23 @@
       "description": "(ALPHA) V10 API. Base URL: https://api.drival.ai",
       "externalDocs": {
         "description": "See here for the service definition.",
-        "url": "https://github.com/nightblue-io/v10-proto/tree/main/v10/v1"
+        "url": "https://github.com/drival-ai/v10-proto/tree/main/v10/v1"
       }
     },
     {
       "name": "Iam",
-      "description": "(ALPHA) IAM API. Base URL: https://api.nightblue.io",
+      "description": "(ALPHA) IAM API. Base URL: https://api.drival.ai",
       "externalDocs": {
         "description": "See here for the service definition.",
-        "url": "https://github.com/nightblue-io/v10-proto/tree/main/iam/v1"
+        "url": "https://github.com/drival-ai/v10-proto/tree/main/iam/v1"
       }
     },
     {
       "name": "Operations",
-      "description": "(ALPHA) Operations API. Base URL: https://api.nightblue.io",
+      "description": "(ALPHA) Operations API. Base URL: https://api.drival.ai",
       "externalDocs": {
         "description": "See here for the service definition.",
-        "url": "https://github.com/nightblue-io/v10-proto/tree/main/operations/v1"
+        "url": "https://github.com/drival-ai/v10-proto/tree/main/operations/v1"
       }
     }
   ],

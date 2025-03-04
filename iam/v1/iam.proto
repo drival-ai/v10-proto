@@ -11,9 +11,9 @@ option go_package = "github.com/drival-ai/v10-go/iam";
 // Iam service definition.
 service Iam {
   option (grpc.gateway.protoc_gen_openapiv2.options.openapiv2_tag) = {
-    description: "(ALPHA) IAM API. Base URL: https://api.nightblue.io"
+    description: "(ALPHA) IAM API. Base URL: https://api.drival.ai"
     external_docs: {
-      url: "https://github.com/nightblue-io/v10-proto/tree/main/iam/v1";
+      url: "https://github.com/drival-ai/v10-proto/tree/main/iam/v1";
       description: "See here for the service definition.";
     }
   };

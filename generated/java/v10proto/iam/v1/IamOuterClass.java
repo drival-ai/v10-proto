@@ -4099,17 +4099,17 @@ public final class IamOuterClass {
       "\001(\003R\texpiresIn\"2\n\rWhoAmIRequest\022!\n\014acces" +
       "s_token\030\001 \001(\tR\013accessToken\"J\n\016WhoAmIResp" +
       "onse\022\016\n\002id\030\001 \001(\tR\002id\022\022\n\004name\030\002 \001(\tR\004name" +
-      "\022\024\n\005email\030\003 \001(\tR\005email2\364\002\n\003Iam\022f\n\005Login\022" +
+      "\022\024\n\005email\030\003 \001(\tR\005email2\356\002\n\003Iam\022f\n\005Login\022" +
       "\035.v10proto.iam.v1.LoginRequest\032\036.v10prot" +
       "o.iam.v1.LoginResponse\"\034\202\323\344\223\002\026\"\021/v10/iam" +
       "/v1/login:\001*0\001\022e\n\006WhoAmI\022\036.v10proto.iam." +
       "v1.WhoAmIRequest\032\037.v10proto.iam.v1.WhoAm" +
-      "IResponse\"\032\202\323\344\223\002\024\022\022/v10/iam/v1/whoami\032\235\001" +
-      "\222A\231\001\0223(ALPHA) IAM API. Base URL: https:/" +
-      "/api.nightblue.io\032b\n$See here for the se" +
-      "rvice definition.\022:https://github.com/ni" +
-      "ghtblue-io/v10-proto/tree/main/iam/v1B!Z" +
-      "\037github.com/drival-ai/v10-go/iamb\006proto3"
+      "IResponse\"\032\202\323\344\223\002\024\022\022/v10/iam/v1/whoami\032\227\001" +
+      "\222A\223\001\0220(ALPHA) IAM API. Base URL: https:/" +
+      "/api.drival.ai\032_\n$See here for the servi" +
+      "ce definition.\0227https://github.com/driva" +
+      "l-ai/v10-proto/tree/main/iam/v1B!Z\037githu" +
+      "b.com/drival-ai/v10-go/iamb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
