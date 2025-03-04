@@ -4,8 +4,6 @@ package v10proto.base.v1;
 
 import "google/api/annotations.proto";
 import "protoc-gen-openapiv2/options/annotations.proto";
-import "types/cloud.proto";
-import "types/operation.proto";
 
 option go_package = "github.com/drival-ai/v10-go/base";
 
@@ -29,35 +27,6 @@ service V10 {
     }
   };
 
-  // Create a deployment environment.
-  rpc CreateEnvironment(CreateEnvironmentRequest) returns (CreateEnvironmentResponse) {
-    option (google.api.http) = {
-      post: "/v10/v1/envs"
-      body: "*"
-    };
-  }
-
-  // Describe a deployment environment.
-  rpc GetEnvironment(GetEnvironmentRequest) returns (GetEnvironmentResponse) {
-    option (google.api.http) = {
-      get: "/v10/v1/envs/{name}"
-    };
-  }
-
-  // List deployment environments.
-  rpc ListEnvironments(ListEnvironmentsRequest) returns (ListEnvironmentsResponse) {
-    option (google.api.http) = {
-      get: "/v10/v1/envs"
-    };
-  }
-
-  // Delete a deployment environment.
-  rpc DeleteEnvironment(DeleteEnvironmentRequest) returns (DeleteEnvironmentResponse) {
-    option (google.api.http) = {
-      delete: "/v10/v1/envs/{name}"
-    };
-  }
-
   // Testing endpoint.
   rpc Do(DoRequest) returns (DoResponse) {
     option (google.api.http) = {
@@ -65,64 +34,6 @@ service V10 {
       body: "*"
     };
   }
-}
-
-// Request message for the CreateEnvironment rpc.
-message CreateEnvironmentRequest {
-  string name = 1;
-
-  // Valid values:
-  //
-  // SC_MR_GCP
-  // SC_SR_GCP
-  // SC_MR_AWS
-  // SC_SR_AWS
-  // MC_AUTO
-  string profile = 2;
-
-  v10proto.types.GCPInfo gcp_info = 3;
-
-  v10proto.types.AWSInfo aws_info = 4;
-
-  // TBD.
-  v10proto.types.AzureInfo azure_info = 5;
-
-}
-
-// Response message for the CreateEnvironment rpc.
-message CreateEnvironmentResponse {
-  string name = 1;
-  v10proto.types.Operation operation = 2;
-}
-
-// Request message for the GetEnvironment rpc.
-message GetEnvironmentRequest {
-  string name = 1;
-}
-
-// Response message for the GetEnvironment rpc.
-message GetEnvironmentResponse {
-  string name = 1;
-}
-
-// Request message for the ListEnvironments rpc.
-message ListEnvironmentsRequest {
-  string name = 1;
-}
-
-// Response message for the ListEnvironments rpc.
-message ListEnvironmentsResponse {
-  string name = 1;
-}
-
-// Request message for the DeleteEnvironment rpc.
-message DeleteEnvironmentRequest {
-  string name = 1;
-}
-
-// Response message for the DeleteEnvironment rpc.
-message DeleteEnvironmentResponse {
-  string name = 1;
 }
 
 // Request message for the Do rpc.
