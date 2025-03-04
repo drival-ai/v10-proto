@@ -1,4 +1,4 @@
-[![build](https://github.com/nightblue-io/vortex-proto/actions/workflows/main.yml/badge.svg)](https://github.com/nightblue-io/vortex-proto/actions/workflows/main.yml)
+[![main](https://github.com/drival-ai/v12-proto/actions/workflows/main.yml/badge.svg)](https://github.com/drival-ai/v12-proto/actions/workflows/main.yml)
 
 The folder `google/*` was cloned from [github.com/googleapis/api-common-protos](https://github.com/googleapis/api-common-protos). The folder `protoc-gen-openapiv2/*` was cloned from [github.com/grpc-ecosystem/grpc-gateway/protoc-gen-openapiv2](https://github.com/grpc-ecosystem/grpc-gateway).
 
@@ -25,5 +25,5 @@ $ ./build.sh
 
 Generated artifacts from this repository:
 
-* https://github.com/nightblue-io/vortex-go/ - Go SDK
-* https://nightblue-io.github.io/vortex-apidocs/ - OpenAPI docs
+* https://github.com/drival-ai/v12-go/ - Go SDK
+* https://drival-ai.github.io/v12-apidocs/ - OpenAPI docs
