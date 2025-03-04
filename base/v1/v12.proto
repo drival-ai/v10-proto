@@ -1,13 +1,13 @@
 syntax = "proto3";
 
-package v12proto.v12.v1;
+package v12proto.base.v1;
 
 import "google/api/annotations.proto";
 import "protoc-gen-openapiv2/options/annotations.proto";
 import "types/cloud.proto";
 import "types/operation.proto";
 
-option go_package = "github.com/nightblue-io/v12-go/v12";
+option go_package = "github.com/drival-ai/v12-go/base";
 
 option (grpc.gateway.protoc_gen_openapiv2.options.openapiv2_swagger) = {
   info: {

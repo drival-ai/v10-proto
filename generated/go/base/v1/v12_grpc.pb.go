@@ -2,9 +2,9 @@
 // versions:
 // - protoc-gen-go-grpc v1.5.1
 // - protoc             (unknown)
-// source: v12/v1/v12.proto
+// source: base/v1/v12.proto
 
-package v12
+package base
 
 import (
 	context "context"
@@ -19,11 +19,11 @@ import (
 const _ = grpc.SupportPackageIsVersion9
 
 const (
-	V12_CreateEnvironment_FullMethodName = "/v12proto.v12.v1.V12/CreateEnvironment"
-	V12_GetEnvironment_FullMethodName    = "/v12proto.v12.v1.V12/GetEnvironment"
-	V12_ListEnvironments_FullMethodName  = "/v12proto.v12.v1.V12/ListEnvironments"
-	V12_DeleteEnvironment_FullMethodName = "/v12proto.v12.v1.V12/DeleteEnvironment"
-	V12_Do_FullMethodName                = "/v12proto.v12.v1.V12/Do"
+	V12_CreateEnvironment_FullMethodName = "/v12proto.base.v1.V12/CreateEnvironment"
+	V12_GetEnvironment_FullMethodName    = "/v12proto.base.v1.V12/GetEnvironment"
+	V12_ListEnvironments_FullMethodName  = "/v12proto.base.v1.V12/ListEnvironments"
+	V12_DeleteEnvironment_FullMethodName = "/v12proto.base.v1.V12/DeleteEnvironment"
+	V12_Do_FullMethodName                = "/v12proto.base.v1.V12/Do"
 )
 
 // V12Client is the client API for V12 service.
@@ -258,7 +258,7 @@ func _V12_Do_Handler(srv interface{}, ctx context.Context, dec func(interface{})
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
 var V12_ServiceDesc = grpc.ServiceDesc{
-	ServiceName: "v12proto.v12.v1.V12",
+	ServiceName: "v12proto.base.v1.V12",
 	HandlerType: (*V12Server)(nil),
 	Methods: []grpc.MethodDesc{
 		{
@@ -283,5 +283,5 @@ var V12_ServiceDesc = grpc.ServiceDesc{
 		},
 	},
 	Streams:  []grpc.StreamDesc{},
-	Metadata: "v12/v1/v12.proto",
+	Metadata: "base/v1/v12.proto",
 }
