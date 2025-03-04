@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package v12proto.types;
 
-option go_package = "github.com/nightblue-io/v12-go/types";
+option go_package = "github.com/drival-ai/v12-go/types";
 
 message Location {
   // If set, prioritize over active region.

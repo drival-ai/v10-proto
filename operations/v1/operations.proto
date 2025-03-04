@@ -7,7 +7,7 @@ import "google/protobuf/empty.proto";
 import "protoc-gen-openapiv2/options/annotations.proto";
 import "types/operation.proto";
 
-option go_package = "github.com/nightblue-io/v12-go/operations";
+option go_package = "github.com/drival-ai/v12-go/operations";
 
 // Operations service definition.
 service Operations {
