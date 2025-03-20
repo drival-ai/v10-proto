@@ -46,7 +46,13 @@ service V10 {
 }
 
 message RegisterVehicleRequest {
-  string chasisNumber = 1;
+  // Either chassis number or vin must be provided.
+  string chassisNumber = 1;
+  string vin = 2;
+  string make = 3;
+  string model = 4;
+  int32 year = 5;
+  int32 kilometers = 6;
 }
 
 
