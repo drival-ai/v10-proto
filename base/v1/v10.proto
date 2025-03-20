@@ -2,6 +2,7 @@ syntax = "proto3";
 
 package v10proto.base.v1;
 
+import "google/protobuf/empty.proto";
 import "google/api/annotations.proto";
 import "protoc-gen-openapiv2/options/annotations.proto";
 
@@ -34,7 +35,20 @@ service V10 {
       body: "*"
     };
   }
+
+  rpc RegisterVehicle(RegisterVehicleRequest) returns (google.protobuf.Empty) {
+    option (google.api.http) = {
+      post: "/v10/vehicle/register"
+      body: "*"
+    };
+  }
+
 }
+
+message RegisterVehicleRequest {
+  string chasisNumber = 1;
+}
+
 
 // Request message for the Do rpc.
 message DoRequest {
