@@ -305,8 +305,32 @@
         ]
       }
     },
+    "/v10/vehicle/list": {
+      "get": {
+        "summary": "List vehicles owned by the user.",
+        "operationId": "V10_ListVehicles",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/v1ListVehiclesResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/rpcStatus"
+            }
+          }
+        },
+        "tags": [
+          "V10"
+        ]
+      }
+    },
     "/v10/vehicle/register": {
       "post": {
+        "summary": "Vehicle manual registration endpoint.",
         "operationId": "V10_RegisterVehicle",
         "responses": {
           "200": {
@@ -326,6 +350,7 @@
         "parameters": [
           {
             "name": "body",
+            "description": "Request message for the RegisterVehicle rpc.",
             "in": "body",
             "required": true,
             "schema": {
@@ -438,6 +463,20 @@
       },
       "description": "Response message for the ListOperations rpc."
     },
+    "v1ListVehiclesResponse": {
+      "type": "object",
+      "properties": {
+        "vehicle": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "$ref": "#/definitions/v1Vehicle"
+          },
+          "description": "Either chassis number or vin must be provided."
+        }
+      },
+      "description": "Response message for the ListVehicles rpc."
+    },
     "v1LoginRequest": {
       "type": "object",
       "properties": {
@@ -495,9 +534,18 @@
     "v1RegisterVehicleRequest": {
       "type": "object",
       "properties": {
-        "chassisNumber": {
-          "type": "string",
+        "vehicle": {
+          "$ref": "#/definitions/v1Vehicle",
           "description": "Either chassis number or vin must be provided."
+        }
+      },
+      "description": "Request message for the RegisterVehicle rpc."
+    },
+    "v1Vehicle": {
+      "type": "object",
+      "properties": {
+        "chassisNumber": {
+          "type": "string"
         },
         "vin": {
           "type": "string"
@@ -516,7 +564,8 @@
           "type": "integer",
           "format": "int32"
         }
-      }
+      },
+      "description": "Vehicle message definition."
     },
     "v1WhoAmIResponse": {
       "type": "object",

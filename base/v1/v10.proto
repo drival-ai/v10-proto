@@ -36,6 +36,7 @@ service V10 {
     };
   }
 
+  // Vehicle manual registration endpoint.
   rpc RegisterVehicle(RegisterVehicleRequest) returns (google.protobuf.Empty) {
     option (google.api.http) = {
       post: "/v10/vehicle/register"
@@ -43,16 +44,39 @@ service V10 {
     };
   }
 
+  // List vehicles owned by the user.
+  rpc ListVehicles(ListVehiclesRequest) returns (ListVehiclesResponse) {
+    option (google.api.http) = {
+      get: "/v10/vehicle/list"
+    };
+  }
 }
 
-message RegisterVehicleRequest {
-  // Either chassis number or vin must be provided.
+
+// Vehicle message definition.
+message Vehicle {
   string chassisNumber = 1;
   string vin = 2;
   string make = 3;
   string model = 4;
   int32 year = 5;
   int32 kilometers = 6;
+}
+
+// Request message for the RegisterVehicle rpc. 
+message RegisterVehicleRequest {
+  // Either chassis number or vin must be provided.
+  Vehicle vehicle = 1;
+}
+
+// Request message for the RegisterVehicle rpc.
+message ListVehiclesRequest {}
+
+
+// Response message for the ListVehicles rpc.
+message ListVehiclesResponse {
+  // Either chassis number or vin must be provided.
+  repeated Vehicle vehicle = 1;
 }
 
 
