@@ -44,22 +44,13 @@
   "paths": {
     "/v10/iam/v1/login": {
       "post": {
-        "summary": "Create an account for the V10 Platform.",
+        "summary": "Login an account.",
         "operationId": "Iam_Login",
         "responses": {
           "200": {
-            "description": "A successful response.(streaming responses)",
+            "description": "A successful response.",
             "schema": {
-              "type": "object",
-              "properties": {
-                "result": {
-                  "$ref": "#/definitions/v1LoginResponse"
-                },
-                "error": {
-                  "$ref": "#/definitions/rpcStatus"
-                }
-              },
-              "title": "Stream result of v1LoginResponse"
+              "$ref": "#/definitions/v1LoginResponse"
             }
           },
           "default": {
@@ -77,6 +68,40 @@
             "required": true,
             "schema": {
               "$ref": "#/definitions/v1LoginRequest"
+            }
+          }
+        ],
+        "tags": [
+          "Iam"
+        ]
+      }
+    },
+    "/v10/iam/v1/register": {
+      "post": {
+        "summary": "Register an account.",
+        "operationId": "Iam_Register",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/v1RegisterResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/rpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "body",
+            "description": "Request message for the Register rpc.",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/v1RegisterRequest"
             }
           }
         ],
@@ -103,14 +128,6 @@
             }
           }
         },
-        "parameters": [
-          {
-            "name": "accessToken",
-            "in": "query",
-            "required": false,
-            "type": "string"
-          }
-        ],
         "tags": [
           "Iam"
         ]
@@ -323,21 +340,6 @@
     }
   },
   "definitions": {
-    "LoginResponseDeviceAuth": {
-      "type": "object",
-      "properties": {
-        "userCode": {
-          "type": "string"
-        },
-        "verificationUriComplete": {
-          "type": "string"
-        },
-        "expiresIn": {
-          "type": "string",
-          "format": "int64"
-        }
-      }
-    },
     "OperationsCancelOperationBody": {
       "type": "object",
       "description": "Request message for the CancelOperation rpc."
@@ -439,19 +441,14 @@
     "v1LoginRequest": {
       "type": "object",
       "properties": {
-        "accessToken": {
-          "type": "string",
-          "description": "Optional. If set, use to call user profile."
+        "token": {
+          "type": "string"
         },
-        "id": {
+        "email": {
           "type": "string"
         },
         "password": {
           "type": "string"
-        },
-        "deviceAuth": {
-          "type": "string",
-          "description": "Optional. If non-empty, do a device auth flow."
         }
       },
       "description": "Request message for the Login rpc."
@@ -459,9 +456,6 @@
     "v1LoginResponse": {
       "type": "object",
       "properties": {
-        "deviceAuth": {
-          "$ref": "#/definitions/LoginResponseDeviceAuth"
-        },
         "accessToken": {
           "type": "string"
         },
@@ -470,6 +464,33 @@
         }
       },
       "description": "Response message for the Login rpc."
+    },
+    "v1RegisterRequest": {
+      "type": "object",
+      "properties": {
+        "token": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "password": {
+          "type": "string"
+        }
+      },
+      "description": "Request message for the Register rpc."
+    },
+    "v1RegisterResponse": {
+      "type": "object",
+      "properties": {
+        "accessToken": {
+          "type": "string"
+        },
+        "status": {
+          "$ref": "#/definitions/rpcStatus"
+        }
+      },
+      "description": "Response message for the Register rpc."
     },
     "v1RegisterVehicleRequest": {
       "type": "object",

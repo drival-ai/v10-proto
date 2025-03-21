@@ -18,8 +18,16 @@ service Iam {
     }
   };
 
-  // Create an account for the V10 Platform.
-  rpc Login(LoginRequest) returns (stream LoginResponse) {
+  // Register an account.
+  rpc Register(RegisterRequest) returns (RegisterResponse) {
+    option (google.api.http) = {
+      post: "/v10/iam/v1/register"
+      body: "*"
+    };
+  }
+
+  // Login an account.
+  rpc Login(LoginRequest) returns (LoginResponse) {
     option (google.api.http) = {
       post: "/v10/iam/v1/login"
       body: "*"
@@ -34,37 +42,38 @@ service Iam {
   }
 }
 
-// Request message for the Login rpc.
-message LoginRequest {
-  // Optional. If set, use to call user profile.
+// Request message for the Register rpc.
+message RegisterRequest {
+  string token = 1;
+
+  string email = 2;
+  string password = 3;
+}
+
+// Response message for the Register rpc.
+message RegisterResponse {
   string access_token = 1;
 
-  string id = 2;
-  string password = 3;
+  google.rpc.Status status = 2;
+}
 
-  // Optional. If non-empty, do a device auth flow.
-  string device_auth = 4;
+// Request message for the Login rpc.
+message LoginRequest {
+  string token = 1;
+
+  string email = 2;
+  string password = 3;
 }
 
 // Response message for the Login rpc.
 message LoginResponse {
-  message DeviceAuth {
-    string user_code = 1;
-    string verification_uri_complete = 2;
-    int64 expires_in = 3;
-  }
+  string access_token = 1;
 
-  DeviceAuth device_auth = 1;
-
-  string access_token = 2;
-
-  google.rpc.Status status = 3;
+  google.rpc.Status status = 2;
 }
 
 // Request message for the WhoAmI rpc.
-message WhoAmIRequest {
-  string access_token = 1;
-}
+message WhoAmIRequest {}
 
 // Request message for the WhoAmI rpc.
 message WhoAmIResponse {
