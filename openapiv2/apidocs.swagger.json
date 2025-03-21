@@ -466,7 +466,7 @@
     "v1ListVehiclesResponse": {
       "type": "object",
       "properties": {
-        "vehicle": {
+        "vehicles": {
           "type": "array",
           "items": {
             "type": "object",
@@ -544,6 +544,9 @@
     "v1Vehicle": {
       "type": "object",
       "properties": {
+        "id": {
+          "type": "string"
+        },
         "chassisNumber": {
           "type": "string"
         },

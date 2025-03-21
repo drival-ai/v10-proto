@@ -55,12 +55,13 @@ service V10 {
 
 // Vehicle message definition.
 message Vehicle {
-  string chassisNumber = 1;
-  string vin = 2;
-  string make = 3;
-  string model = 4;
-  int32 year = 5;
-  int32 kilometers = 6;
+  string id = 1;
+  string chassisNumber = 2;
+  string vin = 3;
+  string make = 4;
+  string model = 5;
+  int32 year = 6;
+  int32 kilometers = 7;
 }
 
 // Request message for the RegisterVehicle rpc. 
@@ -76,7 +77,7 @@ message ListVehiclesRequest {}
 // Response message for the ListVehicles rpc.
 message ListVehiclesResponse {
   // Either chassis number or vin must be provided.
-  repeated Vehicle vehicle = 1;
+  repeated Vehicle vehicles = 1;
 }
 
 
