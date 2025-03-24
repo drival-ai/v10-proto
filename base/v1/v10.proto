@@ -50,6 +50,12 @@ service V10 {
       get: "/v10/vehicle/list"
     };
   }
+
+  rpc DeleteVehicle(DeleteVehicleRequest) returns (google.protobuf.Empty) {
+    option (google.api.http) = {
+      delete: "/v10/vehicle/{id}"
+    };
+  }
 }
 
 
@@ -78,6 +84,12 @@ message ListVehiclesRequest {}
 message ListVehiclesResponse {
   // Either chassis number or vin must be provided.
   repeated Vehicle vehicles = 1;
+}
+
+
+message DeleteVehicleRequest {
+  // Required. Vehicle id.
+  string id = 1;
 }
 
 
