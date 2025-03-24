@@ -53,7 +53,7 @@ service V10 {
 
   rpc DeleteVehicle(DeleteVehicleRequest) returns (google.protobuf.Empty) {
     option (google.api.http) = {
-      delete: "/v10/vehicle/{id}"
+      delete: "/v10/vehicle/{vin}"
     };
   }
 }
@@ -61,18 +61,15 @@ service V10 {
 
 // Vehicle message definition.
 message Vehicle {
-  string id = 1;
-  string chassisNumber = 2;
-  string vin = 3;
-  string make = 4;
-  string model = 5;
-  int32 year = 6;
-  int32 kilometers = 7;
+  string vin = 1;
+  string make = 2;
+  string model = 3;
+  int32 year = 4;
+  int32 kilometers = 5;
 }
 
 // Request message for the RegisterVehicle rpc. 
 message RegisterVehicleRequest {
-  // Either chassis number or vin must be provided.
   Vehicle vehicle = 1;
 }
 
@@ -82,14 +79,13 @@ message ListVehiclesRequest {}
 
 // Response message for the ListVehicles rpc.
 message ListVehiclesResponse {
-  // Either chassis number or vin must be provided.
   repeated Vehicle vehicles = 1;
 }
 
 
 message DeleteVehicleRequest {
-  // Required. Vehicle id.
-  string id = 1;
+  // Required. Vehicle Identification Number (VIN) to delete.
+  string vin = 1;
 }
 
 
