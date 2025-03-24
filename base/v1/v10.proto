@@ -51,9 +51,18 @@ service V10 {
     };
   }
 
+  // Delete vehicle by VIN.
   rpc DeleteVehicle(DeleteVehicleRequest) returns (google.protobuf.Empty) {
     option (google.api.http) = {
       delete: "/v10/vehicle/{vin}"
+    };
+  }
+
+  // Update vehicle by VIN.
+  rpc UpdateVehicle(UpdateVehicleRequest) returns (google.protobuf.Empty) {
+    option (google.api.http) = {
+      put: "/v10/vehicle/{vin}"
+      body: "*"
     };
   }
 }
@@ -86,6 +95,14 @@ message ListVehiclesResponse {
 message DeleteVehicleRequest {
   // Required. Vehicle Identification Number (VIN) to delete.
   string vin = 1;
+}
+
+message UpdateVehicleRequest {
+  // Required. Vehicle Identification Number (VIN) to update.
+  string vin = 1;
+
+  // Required. Vehicle data.
+  Vehicle vehicle = 2;
 }
 
 

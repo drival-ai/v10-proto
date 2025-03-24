@@ -365,6 +365,7 @@
     },
     "/v10/vehicle/{vin}": {
       "delete": {
+        "summary": "Delete vehicle by VIN.",
         "operationId": "V10_DeleteVehicle",
         "responses": {
           "200": {
@@ -393,6 +394,45 @@
         "tags": [
           "V10"
         ]
+      },
+      "put": {
+        "summary": "Update vehicle by VIN.",
+        "operationId": "V10_UpdateVehicle",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "type": "object",
+              "properties": {}
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/rpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "vin",
+            "description": "Required. Vehicle Identification Number (VIN) to update.",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/V10UpdateVehicleBody"
+            }
+          }
+        ],
+        "tags": [
+          "V10"
+        ]
       }
     }
   },
@@ -400,6 +440,15 @@
     "OperationsCancelOperationBody": {
       "type": "object",
       "description": "Request message for the CancelOperation rpc."
+    },
+    "V10UpdateVehicleBody": {
+      "type": "object",
+      "properties": {
+        "vehicle": {
+          "$ref": "#/definitions/v1Vehicle",
+          "description": "Required. Vehicle data."
+        }
+      }
     },
     "protobufAny": {
       "type": "object",
