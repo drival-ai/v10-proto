@@ -75,7 +75,7 @@ service V10 {
   }
 
   // Start a trip.
-  rpc StartTrip(CreateTripRequest) returns (google.protobuf.Empty) {
+  rpc StartTrip(StartTripRequest) returns (google.protobuf.Empty) {
     option (google.api.http) = {
       post: "/v10/trip/start"
       body: "*"
@@ -136,7 +136,7 @@ message UpdateUserMetadataRequest {
   UserMetadata userMetadata = 2;
 }
 
-message CreateTripRequest {
+message StartTripRequest {
   // Required. Vehicle Identification Number (VIN) to be used for the trip.
   string vin = 1;
 
