@@ -271,6 +271,81 @@
         ]
       }
     },
+    "/v10/trip/start": {
+      "post": {
+        "summary": "Start a trip.",
+        "operationId": "V10_StartTrip",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "type": "object",
+              "properties": {}
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/rpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/v1CreateTripRequest"
+            }
+          }
+        ],
+        "tags": [
+          "V10"
+        ]
+      }
+    },
+    "/v10/usermetadata/{id}": {
+      "put": {
+        "summary": "Update user metadata by id.",
+        "operationId": "V10_UpdateUserMetadata",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "type": "object",
+              "properties": {}
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/rpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "description": "Required. User ID to update.",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/V10UpdateUserMetadataBody"
+            }
+          }
+        ],
+        "tags": [
+          "V10"
+        ]
+      }
+    },
     "/v10/v1:do": {
       "post": {
         "summary": "Testing endpoint.",
@@ -441,6 +516,15 @@
       "type": "object",
       "description": "Request message for the CancelOperation rpc."
     },
+    "V10UpdateUserMetadataBody": {
+      "type": "object",
+      "properties": {
+        "userMetadata": {
+          "$ref": "#/definitions/v1UserMetadata",
+          "description": "Required. User metadata."
+        }
+      }
+    },
     "V10UpdateVehicleBody": {
       "type": "object",
       "properties": {
@@ -509,6 +593,19 @@
         }
       },
       "description": "This resource represents a long-running operation that is the result of a\nnetwork API call."
+    },
+    "v1CreateTripRequest": {
+      "type": "object",
+      "properties": {
+        "vin": {
+          "type": "string",
+          "description": "Required. Vehicle Identification Number (VIN) to be used for the trip."
+        },
+        "startTime": {
+          "type": "string",
+          "title": "Required. Start time of the trip"
+        }
+      }
     },
     "v1DoRequest": {
       "type": "object",
@@ -619,6 +716,21 @@
         }
       },
       "description": "Request message for the RegisterVehicle rpc."
+    },
+    "v1UserMetadata": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "rank": {
+          "type": "string"
+        },
+        "points": {
+          "type": "integer",
+          "format": "int32"
+        }
+      }
     },
     "v1Vehicle": {
       "type": "object",

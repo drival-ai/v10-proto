@@ -65,6 +65,22 @@ service V10 {
       body: "*"
     };
   }
+
+  // Update user metadata by id.
+  rpc UpdateUserMetadata(UpdateUserMetadataRequest) returns (google.protobuf.Empty) {
+    option (google.api.http) = {
+      put: "/v10/usermetadata/{id}"
+      body: "*"
+    };
+  }
+
+  // Start a trip.
+  rpc StartTrip(CreateTripRequest) returns (google.protobuf.Empty) {
+    option (google.api.http) = {
+      post: "/v10/trip/start"
+      body: "*"
+    };
+  }
 }
 
 
@@ -105,6 +121,28 @@ message UpdateVehicleRequest {
   Vehicle vehicle = 2;
 }
 
+
+message UserMetadata {
+  string id = 1;
+  string rank = 2;
+  int32 points = 3;
+}
+
+message UpdateUserMetadataRequest {
+  // Required. User ID to update.
+  string id = 1;
+
+  // Required. User metadata.
+  UserMetadata userMetadata = 2;
+}
+
+message CreateTripRequest {
+  // Required. Vehicle Identification Number (VIN) to be used for the trip.
+  string vin = 1;
+
+  // Required. Start time of the trip
+  string startTime = 2;
+}
 
 // Request message for the Do rpc.
 message DoRequest {
