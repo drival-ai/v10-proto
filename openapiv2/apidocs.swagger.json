@@ -307,7 +307,7 @@
     },
     "/v10/usermetadata/{id}": {
       "get": {
-        "summary": "Update user metadata by id.",
+        "summary": "Get user metadata by id.",
         "operationId": "V10_GetUserMetadata",
         "responses": {
           "200": {

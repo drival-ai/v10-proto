@@ -74,7 +74,7 @@ service V10 {
     };
   }
 
-  // Update user metadata by id.
+  // Get user metadata by id.
   rpc GetUserMetadata(GetUserMetadataRequest) returns (GetUserMetadataResponse) {
     option (google.api.http) = {
       get: "/v10/usermetadata/{id}"
