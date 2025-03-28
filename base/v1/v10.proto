@@ -74,6 +74,13 @@ service V10 {
     };
   }
 
+  // Update user metadata by id.
+  rpc GetUserMetadata(GetUserMetadataRequest) returns (GetUserMetadataResponse) {
+    option (google.api.http) = {
+      get: "/v10/usermetadata/{id}"
+    };
+  }
+
   // Start a trip.
   rpc StartTrip(StartTripRequest) returns (google.protobuf.Empty) {
     option (google.api.http) = {
@@ -134,6 +141,15 @@ message UpdateUserMetadataRequest {
 
   // Required. User metadata.
   UserMetadata userMetadata = 2;
+}
+
+message GetUserMetadataRequest {
+  // Required. User ID to get.
+  string id = 1;
+}
+
+message GetUserMetadataResponse {
+  UserMetadata userMetadata = 1;
 }
 
 message StartTripRequest {

@@ -306,6 +306,36 @@
       }
     },
     "/v10/usermetadata/{id}": {
+      "get": {
+        "summary": "Update user metadata by id.",
+        "operationId": "V10_GetUserMetadata",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/v1GetUserMetadataResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/rpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "description": "Required. User ID to get.",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "tags": [
+          "V10"
+        ]
+      },
       "put": {
         "summary": "Update user metadata by id.",
         "operationId": "V10_UpdateUserMetadata",
@@ -611,6 +641,14 @@
         }
       },
       "description": "Response message for the Do rpc."
+    },
+    "v1GetUserMetadataResponse": {
+      "type": "object",
+      "properties": {
+        "userMetadata": {
+          "$ref": "#/definitions/v1UserMetadata"
+        }
+      }
     },
     "v1ListOperationsResponse": {
       "type": "object",
