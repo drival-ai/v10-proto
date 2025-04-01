@@ -88,6 +88,29 @@ service V10 {
       body: "*"
     };
   }
+
+  // Update trip by id.
+  rpc UpdateTrip(UpdateTripRequest) returns (google.protobuf.Empty) {
+    option (google.api.http) = {
+      put: "/v10/trip/{id}"
+      body: "*"
+    };
+  }
+
+  // End a trip.
+  rpc EndTrip(EndTripRequest) returns (google.protobuf.Empty) {
+    option (google.api.http) = {
+      post: "/v10/trip/end"
+      body: "*"
+    };
+  }
+
+  // List trips.  
+  rpc ListTrips(ListVehiclesRequest) returns (ListVehiclesResponse) {
+    option (google.api.http) = {
+      get: "/v10/trip/list"
+    };
+  }
 }
 
 
@@ -158,6 +181,37 @@ message StartTripRequest {
 
   // Required. Start time of the trip
   string startTime = 2;
+}
+
+message UpdateTripRequest {
+  // Required. Trip ID to update.
+  string id = 1;
+
+  // Required. Trip data.
+  Trip trip = 2;
+}
+
+message Trip {
+  string id = 1;
+  string vin = 2;
+  string startTime = 3;
+  string endTime = 4;
+  int32 distance = 5;
+  int32 points = 6;
+}
+
+message EndTripRequest {
+  // Required. Trip ID to end.
+  string id = 1;
+
+  // Required. End time of the trip
+  string endTime = 2;
+}
+
+message ListTripsRequest {}
+
+message ListTripsResponse {
+  repeated Trip trips = 1;
 }
 
 // Request message for the Do rpc.

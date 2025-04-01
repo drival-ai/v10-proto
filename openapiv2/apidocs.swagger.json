@@ -271,6 +271,63 @@
         ]
       }
     },
+    "/v10/trip/end": {
+      "post": {
+        "summary": "End a trip.",
+        "operationId": "V10_EndTrip",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "type": "object",
+              "properties": {}
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/rpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/v1EndTripRequest"
+            }
+          }
+        ],
+        "tags": [
+          "V10"
+        ]
+      }
+    },
+    "/v10/trip/list": {
+      "get": {
+        "summary": "List trips.",
+        "operationId": "V10_ListTrips",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/v1ListVehiclesResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/rpcStatus"
+            }
+          }
+        },
+        "tags": [
+          "V10"
+        ]
+      }
+    },
     "/v10/trip/start": {
       "post": {
         "summary": "Start a trip.",
@@ -297,6 +354,47 @@
             "required": true,
             "schema": {
               "$ref": "#/definitions/v1StartTripRequest"
+            }
+          }
+        ],
+        "tags": [
+          "V10"
+        ]
+      }
+    },
+    "/v10/trip/{id}": {
+      "put": {
+        "summary": "Update trip by id.",
+        "operationId": "V10_UpdateTrip",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "type": "object",
+              "properties": {}
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/rpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "description": "Required. Trip ID to update.",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/V10UpdateTripBody"
             }
           }
         ],
@@ -546,6 +644,15 @@
       "type": "object",
       "description": "Request message for the CancelOperation rpc."
     },
+    "V10UpdateTripBody": {
+      "type": "object",
+      "properties": {
+        "trip": {
+          "$ref": "#/definitions/v1Trip",
+          "description": "Required. Trip data."
+        }
+      }
+    },
     "V10UpdateUserMetadataBody": {
       "type": "object",
       "properties": {
@@ -641,6 +748,19 @@
         }
       },
       "description": "Response message for the Do rpc."
+    },
+    "v1EndTripRequest": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Required. Trip ID to end."
+        },
+        "endTime": {
+          "type": "string",
+          "title": "Required. End time of the trip"
+        }
+      }
     },
     "v1GetUserMetadataResponse": {
       "type": "object",
@@ -752,6 +872,31 @@
         "startTime": {
           "type": "string",
           "title": "Required. Start time of the trip"
+        }
+      }
+    },
+    "v1Trip": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "vin": {
+          "type": "string"
+        },
+        "startTime": {
+          "type": "string"
+        },
+        "endTime": {
+          "type": "string"
+        },
+        "distance": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "points": {
+          "type": "integer",
+          "format": "int32"
         }
       }
     },
