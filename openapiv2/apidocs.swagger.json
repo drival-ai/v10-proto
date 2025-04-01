@@ -313,7 +313,7 @@
           "200": {
             "description": "A successful response.",
             "schema": {
-              "$ref": "#/definitions/v1ListVehiclesResponse"
+              "$ref": "#/definitions/v1ListTripsResponse"
             }
           },
           "default": {
@@ -794,6 +794,18 @@
         }
       },
       "description": "Response message for the ListOperations rpc."
+    },
+    "v1ListTripsResponse": {
+      "type": "object",
+      "properties": {
+        "trips": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "$ref": "#/definitions/v1Trip"
+          }
+        }
+      }
     },
     "v1ListVehiclesResponse": {
       "type": "object",

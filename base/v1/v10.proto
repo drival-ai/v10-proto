@@ -106,7 +106,7 @@ service V10 {
   }
 
   // List trips.  
-  rpc ListTrips(ListVehiclesRequest) returns (ListVehiclesResponse) {
+  rpc ListTrips(ListTripsRequest) returns (ListTripsResponse) {
     option (google.api.http) = {
       get: "/v10/trip/list"
     };
