@@ -336,8 +336,7 @@
           "200": {
             "description": "A successful response.",
             "schema": {
-              "type": "object",
-              "properties": {}
+              "$ref": "#/definitions/v1StartTripResponse"
             }
           },
           "default": {
@@ -756,9 +755,18 @@
           "type": "string",
           "description": "Required. Trip ID to end."
         },
+        "distance": {
+          "type": "string",
+          "description": "Required. Total distance."
+        },
+        "points": {
+          "type": "integer",
+          "format": "int32",
+          "description": "Required. Total points earned."
+        },
         "endTime": {
           "type": "string",
-          "title": "Required. End time of the trip"
+          "description": "Required. End time of the trip."
         }
       }
     },
@@ -872,6 +880,15 @@
         "startTime": {
           "type": "string",
           "title": "Required. Start time of the trip"
+        }
+      }
+    },
+    "v1StartTripResponse": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Trip id."
         }
       }
     },

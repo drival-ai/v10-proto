@@ -82,7 +82,7 @@ service V10 {
   }
 
   // Start a trip.
-  rpc StartTrip(StartTripRequest) returns (google.protobuf.Empty) {
+  rpc StartTrip(StartTripRequest) returns (StartTripResponse) {
     option (google.api.http) = {
       post: "/v10/trip/start"
       body: "*"
@@ -183,6 +183,11 @@ message StartTripRequest {
   string startTime = 2;
 }
 
+message StartTripResponse {
+  // Trip id.
+  string id = 1;
+}
+
 message UpdateTripRequest {
   // Required. Trip ID to update.
   string id = 1;
@@ -204,8 +209,14 @@ message EndTripRequest {
   // Required. Trip ID to end.
   string id = 1;
 
-  // Required. End time of the trip
-  string endTime = 2;
+  // Required. Total distance.
+  string distance = 2;
+
+  // Required. Total points earned.
+  int32 points = 3;
+
+  // Required. End time of the trip.
+  string endTime = 4;
 }
 
 message ListTripsRequest {}
