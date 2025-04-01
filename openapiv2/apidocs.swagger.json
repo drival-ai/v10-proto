@@ -756,8 +756,9 @@
           "description": "Required. Trip ID to end."
         },
         "distance": {
-          "type": "string",
-          "description": "Required. Total distance."
+          "type": "number",
+          "format": "float",
+          "title": "Required. Total distance in meters"
         },
         "points": {
           "type": "integer",
@@ -908,8 +909,8 @@
           "type": "string"
         },
         "distance": {
-          "type": "integer",
-          "format": "int32"
+          "type": "number",
+          "format": "float"
         },
         "points": {
           "type": "integer",

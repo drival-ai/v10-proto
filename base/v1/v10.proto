@@ -201,7 +201,7 @@ message Trip {
   string vin = 2;
   string startTime = 3;
   string endTime = 4;
-  int32 distance = 5;
+  float distance = 5;
   int32 points = 6;
 }
 
@@ -209,8 +209,8 @@ message EndTripRequest {
   // Required. Trip ID to end.
   string id = 1;
 
-  // Required. Total distance.
-  string distance = 2;
+  // Required. Total distance in meters
+  float distance = 2;
 
   // Required. Total points earned.
   int32 points = 3;
