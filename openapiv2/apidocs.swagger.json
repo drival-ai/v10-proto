@@ -768,6 +768,9 @@
         "endTime": {
           "type": "string",
           "description": "Required. End time of the trip."
+        },
+        "mapSnapshot": {
+          "type": "string"
         }
       }
     },
@@ -927,6 +930,9 @@
         "points": {
           "type": "integer",
           "format": "int32"
+        },
+        "mapSnapshot": {
+          "type": "string"
         }
       }
     },

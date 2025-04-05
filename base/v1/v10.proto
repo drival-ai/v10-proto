@@ -203,6 +203,7 @@ message Trip {
   string endTime = 4;
   float distance = 5;
   int32 points = 6;
+  string mapSnapshot = 7;
 }
 
 message EndTripRequest {
@@ -217,6 +218,8 @@ message EndTripRequest {
 
   // Required. End time of the trip.
   string endTime = 4;
+
+  string mapSnapshot = 5;
 }
 
 message ListTripsRequest {}
