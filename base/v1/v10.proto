@@ -45,7 +45,7 @@ service V10 {
   }
 
   // List vehicles owned by the user.
-  rpc ListVehicles(ListVehiclesRequest) returns (ListVehiclesResponse) {
+  rpc ListVehicles(ListVehiclesRequest) returns (stream Vehicle) {
     option (google.api.http) = {
       get: "/v10/vehicle/list"
     };
@@ -106,7 +106,7 @@ service V10 {
   }
 
   // List trips.  
-  rpc ListTrips(ListTripsRequest) returns (ListTripsResponse) {
+  rpc ListTrips(ListTripsRequest) returns (stream Trip) {
     option (google.api.http) = {
       get: "/v10/trip/list"
     };
@@ -130,12 +130,6 @@ message RegisterVehicleRequest {
 
 // Request message for the RegisterVehicle rpc.
 message ListVehiclesRequest {}
-
-
-// Response message for the ListVehicles rpc.
-message ListVehiclesResponse {
-  repeated Vehicle vehicles = 1;
-}
 
 
 message DeleteVehicleRequest {
@@ -224,9 +218,6 @@ message EndTripRequest {
 
 message ListTripsRequest {}
 
-message ListTripsResponse {
-  repeated Trip trips = 1;
-}
 
 // Request message for the Do rpc.
 message DoRequest {

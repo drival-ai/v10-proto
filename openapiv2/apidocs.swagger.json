@@ -311,9 +311,18 @@
         "operationId": "V10_ListTrips",
         "responses": {
           "200": {
-            "description": "A successful response.",
+            "description": "A successful response.(streaming responses)",
             "schema": {
-              "$ref": "#/definitions/v1ListTripsResponse"
+              "type": "object",
+              "properties": {
+                "result": {
+                  "$ref": "#/definitions/v1Trip"
+                },
+                "error": {
+                  "$ref": "#/definitions/rpcStatus"
+                }
+              },
+              "title": "Stream result of v1Trip"
             }
           },
           "default": {
@@ -513,9 +522,18 @@
         "operationId": "V10_ListVehicles",
         "responses": {
           "200": {
-            "description": "A successful response.",
+            "description": "A successful response.(streaming responses)",
             "schema": {
-              "$ref": "#/definitions/v1ListVehiclesResponse"
+              "type": "object",
+              "properties": {
+                "result": {
+                  "$ref": "#/definitions/v1Vehicle"
+                },
+                "error": {
+                  "$ref": "#/definitions/rpcStatus"
+                }
+              },
+              "title": "Stream result of v1Vehicle"
             }
           },
           "default": {
@@ -797,31 +815,6 @@
         }
       },
       "description": "Response message for the ListOperations rpc."
-    },
-    "v1ListTripsResponse": {
-      "type": "object",
-      "properties": {
-        "trips": {
-          "type": "array",
-          "items": {
-            "type": "object",
-            "$ref": "#/definitions/v1Trip"
-          }
-        }
-      }
-    },
-    "v1ListVehiclesResponse": {
-      "type": "object",
-      "properties": {
-        "vehicles": {
-          "type": "array",
-          "items": {
-            "type": "object",
-            "$ref": "#/definitions/v1Vehicle"
-          }
-        }
-      },
-      "description": "Response message for the ListVehicles rpc."
     },
     "v1LoginRequest": {
       "type": "object",
