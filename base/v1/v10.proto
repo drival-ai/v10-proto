@@ -197,6 +197,8 @@ message Trip {
   string endTime = 4;
   float distance = 5;
   int32 points = 6;
+
+  // Base64 ecncoded image of the map snapshot.
   string mapSnapshot = 7;
 }
 
@@ -213,6 +215,7 @@ message EndTripRequest {
   // Required. End time of the trip.
   string endTime = 4;
 
+  // Required. Base64 encoded image of the map snapshot.
   string mapSnapshot = 5;
 }
 

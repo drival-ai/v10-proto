@@ -788,7 +788,8 @@
           "description": "Required. End time of the trip."
         },
         "mapSnapshot": {
-          "type": "string"
+          "type": "string",
+          "description": "Required. Base64 encoded image of the map snapshot."
         }
       }
     },
@@ -925,7 +926,8 @@
           "format": "int32"
         },
         "mapSnapshot": {
-          "type": "string"
+          "type": "string",
+          "description": "Base64 ecncoded image of the map snapshot."
         }
       }
     },
