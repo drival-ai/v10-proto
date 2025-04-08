@@ -120,7 +120,7 @@ message Vehicle {
   string make = 2;
   string model = 3;
   int32 year = 4;
-  int32 kilometers = 5;
+  float kilometers = 5;
 }
 
 // Request message for the RegisterVehicle rpc. 
@@ -217,6 +217,9 @@ message EndTripRequest {
 
   // Required. Base64 encoded image of the map snapshot.
   string mapSnapshot = 5;
+
+  // Required. Vehicle Identification Number (VIN) used for the trip.
+  string vin = 6;
 }
 
 message ListTripsRequest {}

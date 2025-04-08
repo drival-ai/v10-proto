@@ -790,6 +790,10 @@
         "mapSnapshot": {
           "type": "string",
           "description": "Required. Base64 encoded image of the map snapshot."
+        },
+        "vin": {
+          "type": "string",
+          "description": "Required. Vehicle Identification Number (VIN) used for the trip."
         }
       }
     },
@@ -963,8 +967,8 @@
           "format": "int32"
         },
         "kilometers": {
-          "type": "integer",
-          "format": "int32"
+          "type": "number",
+          "format": "float"
         }
       },
       "description": "Vehicle message definition."
