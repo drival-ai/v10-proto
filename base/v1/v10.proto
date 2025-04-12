@@ -111,6 +111,13 @@ service V10 {
       get: "/v10/trip/list"
     };
   }
+
+  // Deletes a trip by id.
+  rpc DeleteTrip(DeleteTripRequest) returns (google.protobuf.Empty) {
+    option (google.api.http) = {
+      delete: "/v10/trip/{id}"
+    };
+  }
 }
 
 
@@ -223,6 +230,11 @@ message EndTripRequest {
 }
 
 message ListTripsRequest {}
+
+message DeleteTripRequest {
+  // Required. Trip ID to delete.
+  string id = 1;
+}
 
 
 // Request message for the Do rpc.

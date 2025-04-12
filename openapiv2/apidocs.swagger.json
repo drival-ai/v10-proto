@@ -371,6 +371,37 @@
       }
     },
     "/v10/trip/{id}": {
+      "delete": {
+        "summary": "Deletes a trip by id.",
+        "operationId": "V10_DeleteTrip",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "type": "object",
+              "properties": {}
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/rpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "description": "Required. Trip ID to delete.",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "tags": [
+          "V10"
+        ]
+      },
       "put": {
         "summary": "Update trip by id.",
         "operationId": "V10_UpdateTrip",
